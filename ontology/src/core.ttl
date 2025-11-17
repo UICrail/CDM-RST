@@ -1,4 +1,5 @@
 @prefix : <https://cdm.ovh/rst/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -7,7 +8,10 @@
 @base <https://cdm.ovh/rst/core> .
 
 <https://cdm.ovh/rst/core> rdf:type owl:Ontology ;
-                            owl:imports <https://cdm.ovh/rst/cons/rst-cons.ttl> .
+                            owl:imports <https://cdm.ovh/rst/cons/rst-cons.ttl> ;
+                            dc:description "Imports all CDM rolling stock-related ontologies" ;
+                            dc:license "EUPL 1.2" ;
+                            dc:title "Aggregated Rolling stock ontologies" .
 
 ###################################################################
 #    Annotations
