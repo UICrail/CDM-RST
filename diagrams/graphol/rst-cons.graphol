@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphol version="3">
+  <project name="RollingStock" version="http://cdm.ovh/rst/cons/0.1/">
+    <ontology iri="http://cdm.ovh/rst/cons" addLabelFromSimpleName="0" lang="en" addLabelFromUserInput="0">
+      <imports/>
+      <prefixes>
+        <prefix>
+          <value>list</value>
+          <namespace>https://w3id.org/list#</namespace>
+        </prefix>
+        <prefix>
+          <value>owl</value>
+          <namespace>http://www.w3.org/2002/07/owl#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdf</value>
+          <namespace>http://www.w3.org/1999/02/22-rdf-syntax-ns#</namespace>
+        </prefix>
+        <prefix>
+          <value>rdfs</value>
+          <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
+        </prefix>
+        <prefix>
+          <value>rst-cons</value>
+          <namespace>https://cdm.ovh/rst/cons#</namespace>
+        </prefix>
+        <prefix>
+          <value>xml</value>
+          <namespace>http://www.w3.org/XML/1998/namespace</namespace>
+        </prefix>
+        <prefix>
+          <value>xsd</value>
+          <namespace>http://www.w3.org/2001/XMLSchema#</namespace>
+        </prefix>
+      </prefixes>
+      <datatypes>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+        <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</datatype>
+        <datatype>http://www.w3.org/2000/01/rdf-schema#Literal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NCName</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#NMTOKEN</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#Name</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#anyURI</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#base64Binary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#boolean</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#byte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTime</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#dateTimeStamp</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#decimal</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#double</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#float</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#hexBinary</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#int</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#integer</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#language</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#long</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#negativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#nonPositiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#normalizedString</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#positiveInteger</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#short</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#string</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#token</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedByte</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedInt</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedLong</datatype>
+        <datatype>http://www.w3.org/2001/XMLSchema#unsignedShort</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#rational</datatype>
+        <datatype>http://www.w3.org/2002/07/owl#real</datatype>
+      </datatypes>
+      <languages>
+        <language>de</language>
+        <language>en</language>
+        <language>es</language>
+        <language>fr</language>
+        <language>it</language>
+      </languages>
+      <facets>
+        <facet>http://www.w3.org/2001/XMLSchema#langRange</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#length</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#maxLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minExclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minInclusive</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#minLength</facet>
+        <facet>http://www.w3.org/2001/XMLSchema#pattern</facet>
+      </facets>
+      <annotationProperties>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#comment</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</annotationProperty>
+        <annotationProperty>http://www.w3.org/2000/01/rdf-schema#label</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#backwardCompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#deprecated</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#incompatibleWith</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#priorVersion</annotationProperty>
+        <annotationProperty>http://www.w3.org/2002/07/owl#versionInfo</annotationProperty>
+      </annotationProperties>
+      <iris>
+        <iri>
+          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation</value>
+          <annotations>
+            <annotation>
+              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>ListedFormation</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>A Formation with an explicit sequence.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#atExtremity</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#atExtremity</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>atExtremity</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>http://cdm.ovh/rsm/rolling_tock/typology</value>
+        </iri>
+        <iri>
+          <value>http://cdm.ovh/rst/cons</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2000/01/rdf-schema#Literal</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2000/01/rdf-schema#backwardCompatibleWith</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2000/01/rdf-schema#comment</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2000/01/rdf-schema#label</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#NCName</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#NMTOKEN</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#Name</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#anyURI</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#base64Binary</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#boolean</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#byte</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#dateTime</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#dateTimeStamp</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#decimal</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#double</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#float</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#hexBinary</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#int</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#integer</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#langRange</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#language</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#length</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#long</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#maxExclusive</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#maxInclusive</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#maxLength</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#minExclusive</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#minInclusive</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#minLength</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#negativeInteger</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#nonPositiveInteger</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#normalizedString</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#pattern</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#positiveInteger</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#short</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#string</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#token</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#unsignedByte</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#unsignedInt</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#unsignedLong</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2001/XMLSchema#unsignedShort</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#Nothing</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#Thing</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#backwardCompatibleWith</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#bottomDataProperty</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#bottomObjectProperty</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#deprecated</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#incompatibleWith</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#priorVersion</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#rational</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#real</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#topDataProperty</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#topObjectProperty</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2002/07/owl#versionInfo</value>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#Extremity</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Extremity</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Extremity</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Extremity</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset).</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#Formation</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Formation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Formation</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Formation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually).</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#ListedRollingStock</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#ListedRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Listed rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#ListedRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Rolling stock that may have a predecessor or successor in a formation.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#ListedVehicle</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#ListedVehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Listed vehicle</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#ListedVehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>A Vehicle in a Consist</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#RollingStock</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#RollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Base type for rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#RollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#Vehicle</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Vehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Common definition in Directives 2016/797, 2016/798:
+ a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
+
+ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Vehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Vehicle</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#Vehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called "trailer").  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being "atomic" in operations is a necessary condition, but not a sufficient one to be called vehicle.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#coupledAt</value>
+          <symmetric/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#coupledAt</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>coupled at</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language/>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#coupledAt</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>relate two extremities of two rdistinct Rolling stock items (hence the "At" in the label). A symmetric property.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#extremity_1</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#extremity_1</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>extremity_1</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#extremity_1</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>"extremity 1" (actual designation may vary) of a Rolling stock.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#extremity_2</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#extremity_2</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>extremity_2</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#extremity_2</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>"extremity 2" of a piece of Rolling stock. Designation may vary.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#faces</value>
+          <symmetric/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#faces</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>faces</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#faces</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>object is the extremity of another Rolling stock that the subject extremity faces.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#hasHeadRollingStock</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#hasHeadRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has head rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#hasHeadRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Each formation has exactly one "First" rolling stock. This notion of "first" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting).</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#hasNextRollingStock</value>
+          <functional/>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#hasNextRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has next rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#hasNextRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Indicates which Rolling stock comes next in a Consist.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#includesRollingStock</value>
+          <inverseFunctional/>
+          <irreflexive/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#includesRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>includes Rolling stock</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#includesRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons#partOfFormation</value>
+          <functional/>
+          <irreflexive/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#partOfFormation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>part of formation</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons#partOfFormation</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Inverse of "includes Rolling Stock". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/list#EmptyList</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#EmptyList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Empty list</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://w3id.org/list#EmptyList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Closing element of any List under the List ontology. This element does not correspond with any rolling stock.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/list#OWLList</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#OWLList</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Using the List ontology also used by IfcOwl.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://w3id.org/list#hasNext</value>
+          <annotations>
+            <annotation>
+              <subject>https://w3id.org/list#hasNext</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has next</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>urn:x-graphol:origin</value>
+        </iri>
+      </iris>
+    </ontology>
+    <diagrams>
+      <diagram name="000 - Overall" width="5000" height="5000">
+        <node type="role" id="n0" color="#fcfcfc">
+          <geometry x="250" y="-240" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#extremity_1</iri>
+          <label size="12" x="250" y="-270" width="69" height="23" customSize="0"/>
+        </node>
+        <node type="domain-restriction" id="n1" color="#fcfcfc">
+          <geometry x="380" y="280" width="20" height="20"/>
+          <label size="12" x="380" y="258" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n10" color="#fcfcfc">
+          <geometry x="-310" y="230" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#hasHeadRollingStock</iri>
+          <label size="12" x="-310" y="200" width="124" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n11" color="#fcfcfc">
+          <geometry x="100" y="50" width="136" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#ListedVehicle</iri>
+          <label size="12" x="100" y="50" width="136" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n12" color="#000000">
+          <geometry x="520" y="-160" width="20" height="20"/>
+          <label size="12" x="520" y="-182" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n13" color="#646b63">
+          <geometry x="490" y="150" width="70" height="50"/>
+          <iri>https://w3id.org/list#hasNext</iri>
+          <label size="12" x="490" y="120" width="53" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n14" color="#fcfcfc">
+          <geometry x="600" y="-110" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#coupledAt</iri>
+          <label size="12" x="600" y="-140" width="63" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n15" color="#fcfcfc">
+          <geometry x="430" y="10" width="70" height="50"/>
+          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#atExtremity</iri>
+          <label size="12" x="430" y="-20" width="68" height="23" customSize="0"/>
+        </node>
+        <node type="union" id="n16" color="#fcfcfc">
+          <geometry x="290" y="230" width="50" height="30"/>
+          <label size="12" x="290" y="230" width="18" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n17" color="#646b63">
+          <geometry x="-100" y="-50" width="110" height="50"/>
+          <iri>https://w3id.org/list#OWLList</iri>
+          <label size="12" x="-100" y="-50" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n18" color="#000000">
+          <geometry x="380" y="230" width="20" height="20"/>
+          <label size="12" x="380" y="208" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n19" color="#000000">
+          <geometry x="320" y="-240" width="20" height="20"/>
+          <label size="12" x="320" y="-262" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n2" color="#fcfcfc">
+          <geometry x="600" y="-200" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#faces</iri>
+          <label size="12" x="600" y="-230" width="37" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n20" color="#fcfcfc">
+          <geometry x="-30" y="230" width="165" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#ListedRollingStock</iri>
+          <label size="12" x="-30" y="230" width="165" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n21" color="#000000">
+          <geometry x="320" y="-150" width="20" height="20"/>
+          <label size="12" x="320" y="-172" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n22" color="#fcfcfc">
+          <geometry x="-310" y="150" width="20" height="20"/>
+          <label size="12" x="-310" y="128" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="disjoint-union" id="n23" color="#000000">
+          <geometry x="-140" y="-120" width="50" height="30"/>
+        </node>
+        <node type="domain-restriction" id="n24" color="#fcfcfc">
+          <geometry x="520" y="-240" width="20" height="20"/>
+          <label size="12" x="520" y="-262" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n25" color="#000000">
+          <geometry x="429" y="-77" width="20" height="20"/>
+          <label size="12" x="429" y="-99" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n26" color="#000000">
+          <geometry x="-400" y="-210" width="20" height="20"/>
+          <label size="12" x="-400" y="-232" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n27" color="#fcfcfc">
+          <geometry x="0" y="-150" width="20" height="20"/>
+          <label size="12" x="0" y="-172" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n28" color="#fcfcfc">
+          <geometry x="430" y="90" width="20" height="20"/>
+          <label size="12" x="430" y="68" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n29" color="#fcfcfc">
+          <geometry x="0" y="-240" width="20" height="20"/>
+          <label size="12" x="0" y="-262" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n3" color="#000000">
+          <geometry x="-240" y="230" width="20" height="20"/>
+          <label size="12" x="-240" y="208" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="concept" id="n30" color="#fcfcfc">
+          <geometry x="430" y="-200" width="110" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Extremity</iri>
+          <label size="12" x="430" y="-200" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n31" color="#fcfcfc">
+          <geometry x="-140" y="-210" width="175" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#RollingStock</iri>
+          <label size="12" x="-140" y="-210" width="175" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n32" color="#fcfcfc">
+          <geometry x="250" y="-150" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#extremity_2</iri>
+          <label size="12" x="250" y="-180" width="69" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n33" color="#fcfcfc">
+          <geometry x="-400" y="-130" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#includesRollingStock</iri>
+          <label size="12" x="-400" y="-160" width="124" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n4" color="#fcfcfc">
+          <geometry x="-270" y="-50" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Formation</iri>
+          <label size="12" x="-270" y="-50" width="135" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n5" color="#fcfcfc">
+          <geometry x="-192" y="50" width="145" height="50"/>
+          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation</iri>
+          <label size="12" x="-192" y="50" width="145" height="23" customSize="0"/>
+        </node>
+        <node type="domain-restriction" id="n6" color="#fcfcfc">
+          <geometry x="-400" y="-50" width="20" height="20"/>
+          <label size="12" x="-400" y="-72" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n7" color="#fcfcfc">
+          <geometry x="490" y="250" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#hasNextRollingStock</iri>
+          <label size="12" x="490" y="220" width="121" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n8" color="#646b63">
+          <geometry x="290" y="150" width="110" height="50"/>
+          <iri>https://w3id.org/list#EmptyList</iri>
+          <label size="12" x="290" y="150" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n9" color="#fcfcfc">
+          <geometry x="100" y="-50" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Vehicle</iri>
+          <label size="12" x="100" y="-50" width="135" height="23" customSize="0"/>
+        </node>
+        <edge target="n19" type="input" source="n0" id="e0">
+          <point x="250" y="-240"/>
+          <point x="320" y="-240"/>
+        </edge>
+        <edge target="n29" type="input" source="n0" id="e1">
+          <point x="250" y="-240"/>
+          <point x="0" y="-240"/>
+        </edge>
+        <edge target="n4" type="inclusion" source="n6" id="e10">
+          <point x="-400" y="-50"/>
+          <point x="-270" y="-50"/>
+        </edge>
+        <edge target="n4" type="inclusion" source="n5" id="e11">
+          <point x="-192" y="50"/>
+          <point x="-270" y="-50"/>
+        </edge>
+        <edge target="n23" type="input" source="n4" id="e12">
+          <point x="-270" y="-50"/>
+          <point x="-140" y="-120"/>
+        </edge>
+        <edge target="n17" type="inclusion" source="n5" id="e13">
+          <point x="-192" y="50"/>
+          <point x="-100" y="-50"/>
+        </edge>
+        <edge target="n6" type="input" source="n33" id="e14">
+          <point x="-400" y="-130"/>
+          <point x="-400" y="-50"/>
+        </edge>
+        <edge target="n13" type="inclusion" source="n7" id="e15">
+          <point x="490" y="250"/>
+          <point x="490" y="150"/>
+        </edge>
+        <edge target="n18" type="input" source="n7" id="e16">
+          <point x="490" y="250"/>
+          <point x="380" y="230"/>
+        </edge>
+        <edge target="n16" type="input" source="n8" id="e17">
+          <point x="290" y="150"/>
+          <point x="290" y="230"/>
+        </edge>
+        <edge target="n9" type="inclusion" source="n11" id="e18">
+          <point x="100" y="50"/>
+          <point x="100" y="-50"/>
+        </edge>
+        <edge target="n23" type="input" source="n9" id="e19">
+          <point x="100" y="-50"/>
+          <point x="-140" y="-120"/>
+        </edge>
+        <edge target="n20" type="inclusion" source="n1" id="e2">
+          <point x="380" y="280"/>
+          <point x="80" y="280"/>
+          <point x="-30" y="230"/>
+        </edge>
+        <edge target="n22" type="input" source="n10" id="e20">
+          <point x="-310" y="230"/>
+          <point x="-310" y="150"/>
+        </edge>
+        <edge target="n17" type="inclusion" source="n11" id="e21">
+          <point x="100" y="50"/>
+          <point x="-100" y="-50"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n12" id="e22">
+          <point x="520" y="-160"/>
+          <point x="430" y="-200"/>
+        </edge>
+        <edge target="n25" type="input" source="n15" id="e23">
+          <point x="430" y="10"/>
+          <point x="429" y="-77"/>
+        </edge>
+        <edge target="n28" type="input" source="n15" id="e24">
+          <point x="430" y="10"/>
+          <point x="430" y="90"/>
+        </edge>
+        <edge target="n16" type="input" source="n20" id="e25">
+          <point x="-30" y="230"/>
+          <point x="290" y="230"/>
+        </edge>
+        <edge target="n16" type="inclusion" source="n18" id="e26">
+          <point x="380" y="230"/>
+          <point x="290" y="230"/>
+        </edge>
+        <edge target="n17" type="inclusion" source="n20" id="e27">
+          <point x="-30" y="230"/>
+          <point x="-100" y="-50"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n19" id="e28">
+          <point x="320" y="-240"/>
+          <point x="430" y="-200"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n20" id="e29">
+          <point x="-30" y="230"/>
+          <point x="-30" y="60"/>
+          <point x="-30" y="-120"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n1" type="input" source="n7" id="e3">
+          <point x="490" y="250"/>
+          <point x="380" y="280"/>
+        </edge>
+        <edge target="n20" type="inclusion" source="n28" id="e30">
+          <point x="430" y="90"/>
+          <point x="40" y="90"/>
+          <point x="-30" y="230"/>
+        </edge>
+        <edge target="n21" type="input" source="n32" id="e31">
+          <point x="250" y="-150"/>
+          <point x="320" y="-150"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n21" id="e32">
+          <point x="320" y="-150"/>
+          <point x="430" y="-200"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n23" id="e33">
+          <point x="-140" y="-120"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n24" id="e34">
+          <point x="520" y="-240"/>
+          <point x="430" y="-200"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n25" id="e35">
+          <point x="429" y="-77"/>
+          <point x="430" y="-200"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n26" id="e36">
+          <point x="-400" y="-210"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n26" type="input" source="n33" id="e37">
+          <point x="-400" y="-130"/>
+          <point x="-400" y="-210"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n27" id="e38">
+          <point x="0" y="-150"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n27" type="input" source="n32" id="e39">
+          <point x="250" y="-150"/>
+          <point x="0" y="-150"/>
+        </edge>
+        <edge target="n24" type="input" source="n2" id="e4">
+          <point x="600" y="-200"/>
+          <point x="520" y="-240"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n29" id="e40">
+          <point x="0" y="-240"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n12" type="input" source="n2" id="e5">
+          <point x="600" y="-200"/>
+          <point x="520" y="-160"/>
+        </edge>
+        <edge target="n2" type="inclusion" source="n14" id="e6">
+          <point x="600" y="-110"/>
+          <point x="600" y="-200"/>
+        </edge>
+        <edge target="n20" type="inclusion" source="n3" id="e7">
+          <point x="-240" y="230"/>
+          <point x="-30" y="230"/>
+        </edge>
+        <edge target="n3" type="input" source="n10" id="e8">
+          <point x="-310" y="230"/>
+          <point x="-240" y="230"/>
+        </edge>
+        <edge target="n4" type="inclusion" source="n22" id="e9">
+          <point x="-310" y="150"/>
+          <point x="-310" y="-26"/>
+        </edge>
+      </diagram>
+      <diagram name="001 - Vehicles and Formations" width="5000" height="5000">
+        <node type="disjoint-union" id="n23" color="#000000">
+          <geometry x="-140" y="-120" width="50" height="30"/>
+        </node>
+        <node type="range-restriction" id="n26" color="#000000">
+          <geometry x="-400" y="-210" width="20" height="20"/>
+          <label size="12" x="-400" y="-232" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="concept" id="n30" color="#fcfcfc">
+          <geometry x="-140" y="-210" width="175" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#RollingStock</iri>
+          <label size="12" x="-140" y="-210" width="175" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n33" color="#fcfcfc">
+          <geometry x="-400" y="-130" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#includesRollingStock</iri>
+          <label size="12" x="-400" y="-160" width="124" height="23" customSize="0"/>
+        </node>
+        <node type="role-inverse" id="n34" color="#fcfcfc">
+          <geometry x="-510" y="-130" width="50" height="30"/>
+          <label size="12" x="-510" y="-130" width="23" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n35" color="#fcfcfc">
+          <geometry x="-630" y="-130" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#partOfFormation</iri>
+          <label size="12" x="-630" y="-160" width="98" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n4" color="#fcfcfc">
+          <geometry x="-260" y="-50" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Formation</iri>
+          <label size="12" x="-260" y="-50" width="135" height="23" customSize="0"/>
+        </node>
+        <node type="domain-restriction" id="n6" color="#fcfcfc">
+          <geometry x="-400" y="-50" width="20" height="20"/>
+          <label size="12" x="-400" y="-72" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="concept" id="n9" color="#fcfcfc">
+          <geometry x="-20" y="-50" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Vehicle</iri>
+          <label size="12" x="-20" y="-50" width="135" height="23" customSize="0"/>
+        </node>
+        <edge target="n4" type="inclusion" source="n6" id="e10">
+          <point x="-400" y="-50"/>
+          <point x="-260" y="-50"/>
+        </edge>
+        <edge target="n23" type="input" source="n4" id="e12">
+          <point x="-260" y="-50"/>
+          <point x="-140" y="-120"/>
+        </edge>
+        <edge target="n6" type="input" source="n33" id="e14">
+          <point x="-400" y="-130"/>
+          <point x="-400" y="-50"/>
+        </edge>
+        <edge target="n23" type="input" source="n9" id="e19">
+          <point x="-20" y="-50"/>
+          <point x="-140" y="-120"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n23" id="e33">
+          <point x="-140" y="-120"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n26" id="e36">
+          <point x="-400" y="-210"/>
+          <point x="-140" y="-210"/>
+        </edge>
+        <edge target="n26" type="input" source="n33" id="e37">
+          <point x="-400" y="-130"/>
+          <point x="-400" y="-210"/>
+        </edge>
+        <edge target="n34" type="equivalence" source="n35" id="e41">
+          <point x="-630" y="-130"/>
+          <point x="-510" y="-130"/>
+        </edge>
+        <edge target="n34" type="input" source="n33" id="e42">
+          <point x="-400" y="-130"/>
+          <point x="-510" y="-130"/>
+        </edge>
+      </diagram>
+      <diagram name="002 - Extremities" width="5000" height="5000">
+        <node type="role" id="n0" color="#fcfcfc">
+          <geometry x="20" y="210" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#extremity_1</iri>
+          <label size="12" x="20" y="180" width="69" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n12" color="#000000">
+          <geometry x="330" y="310" width="20" height="20"/>
+          <label size="12" x="330" y="288" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n14" color="#fcfcfc">
+          <geometry x="410" y="360" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#coupledAt</iri>
+          <label size="12" x="410" y="330" width="63" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n19" color="#000000">
+          <geometry x="120" y="210" width="20" height="20"/>
+          <label size="12" x="120" y="188" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n2" color="#fcfcfc">
+          <geometry x="410" y="260" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#faces</iri>
+          <label size="12" x="410" y="230" width="37" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n21" color="#000000">
+          <geometry x="120" y="310" width="20" height="20"/>
+          <label size="12" x="120" y="288" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n24" color="#fcfcfc">
+          <geometry x="330" y="210" width="20" height="20"/>
+          <label size="12" x="330" y="188" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n27" color="#fcfcfc">
+          <geometry x="-80" y="310" width="20" height="20"/>
+          <label size="12" x="-80" y="288" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n29" color="#fcfcfc">
+          <geometry x="-80" y="210" width="20" height="20"/>
+          <label size="12" x="-80" y="188" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="concept" id="n30" color="#fcfcfc">
+          <geometry x="-190" y="260" width="117" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#RollingStock</iri>
+          <label size="12" x="-190" y="260" width="117" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n31" color="#fcfcfc">
+          <geometry x="250" y="260" width="110" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Extremity</iri>
+          <label size="12" x="250" y="260" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n32" color="#fcfcfc">
+          <geometry x="20" y="310" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#extremity_2</iri>
+          <label size="12" x="20" y="280" width="69" height="23" customSize="0"/>
+        </node>
+        <edge target="n19" type="input" source="n0" id="e0">
+          <point x="20" y="210"/>
+          <point x="120" y="210"/>
+        </edge>
+        <edge target="n29" type="input" source="n0" id="e1">
+          <point x="20" y="210"/>
+          <point x="-80" y="210"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n12" id="e22">
+          <point x="330" y="310"/>
+          <point x="270" y="310"/>
+          <point x="270" y="284"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n19" id="e28">
+          <point x="120" y="210"/>
+          <point x="220" y="210"/>
+          <point x="220" y="235"/>
+        </edge>
+        <edge target="n21" type="input" source="n32" id="e31">
+          <point x="20" y="310"/>
+          <point x="120" y="310"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n21" id="e32">
+          <point x="120" y="310"/>
+          <point x="220" y="310"/>
+          <point x="220" y="284"/>
+        </edge>
+        <edge target="n31" type="inclusion" source="n24" id="e34">
+          <point x="330" y="210"/>
+          <point x="270" y="210"/>
+          <point x="271" y="235"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n27" id="e38">
+          <point x="-80" y="310"/>
+          <point x="-190" y="310"/>
+          <point x="-190" y="260"/>
+        </edge>
+        <edge target="n27" type="input" source="n32" id="e39">
+          <point x="20" y="310"/>
+          <point x="-80" y="310"/>
+        </edge>
+        <edge target="n24" type="input" source="n2" id="e4">
+          <point x="410" y="260"/>
+          <point x="330" y="210"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n29" id="e40">
+          <point x="-80" y="210"/>
+          <point x="-190" y="210"/>
+          <point x="-190" y="260"/>
+        </edge>
+        <edge target="n12" type="input" source="n2" id="e5">
+          <point x="410" y="260"/>
+          <point x="330" y="310"/>
+        </edge>
+        <edge target="n2" type="inclusion" source="n14" id="e6">
+          <point x="410" y="360"/>
+          <point x="410" y="260"/>
+        </edge>
+      </diagram>
+      <diagram name="003 - Consist" width="5000" height="5000">
+        <node type="concept" id="n0" color="#fcfcfc">
+          <geometry x="-130" y="140" width="175" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#RollingStock</iri>
+          <label size="12" x="-130" y="140" width="175" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n1" color="#fcfcfc">
+          <geometry x="-290" y="-60" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Formation</iri>
+          <label size="12" x="-290" y="-60" width="135" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n12" color="#646b63">
+          <geometry x="-120" y="-60" width="110" height="50"/>
+          <iri>https://w3id.org/list#OWLList</iri>
+          <label size="12" x="-120" y="-60" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n13" color="#fcfcfc">
+          <geometry x="-330" y="-270" width="136" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#ListedVehicle</iri>
+          <label size="12" x="-330" y="-270" width="136" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n19" color="#fcfcfc">
+          <geometry x="-50" y="220" width="165" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#ListedRollingStock</iri>
+          <label size="12" x="-50" y="220" width="165" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n2" color="#fcfcfc">
+          <geometry x="-330" y="-420" width="135" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Vehicle</iri>
+          <label size="12" x="-330" y="-420" width="135" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n20" color="#fcfcfc">
+          <geometry x="-212" y="40" width="145" height="50"/>
+          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation</iri>
+          <label size="12" x="-212" y="40" width="145" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n22" color="#fcfcfc">
+          <geometry x="410" y="-210" width="110" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#Extremity</iri>
+          <label size="12" x="410" y="-210" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n32" color="#fcfcfc">
+          <geometry x="-330" y="220" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#hasHeadRollingStock</iri>
+          <label size="12" x="-330" y="190" width="124" height="23" customSize="0"/>
+        </node>
+        <node type="domain-restriction" id="n33" color="#fcfcfc">
+          <geometry x="-330" y="140" width="20" height="20"/>
+          <label size="12" x="-330" y="118" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n34" color="#000000">
+          <geometry x="-260" y="220" width="20" height="20"/>
+          <label size="12" x="-260" y="198" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="role" id="n36" color="#646b63">
+          <geometry x="470" y="140" width="70" height="50"/>
+          <iri>https://w3id.org/list#hasNext</iri>
+          <label size="12" x="470" y="110" width="53" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n56" color="#fcfcfc">
+          <geometry x="470" y="240" width="70" height="50"/>
+          <iri>https://cdm.ovh/rst/cons#hasNextRollingStock</iri>
+          <label size="12" x="470" y="210" width="121" height="23" customSize="0"/>
+        </node>
+        <node type="range-restriction" id="n57" color="#000000">
+          <geometry x="360" y="220" width="20" height="20"/>
+          <label size="12" x="360" y="198" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="domain-restriction" id="n58" color="#fcfcfc">
+          <geometry x="360" y="270" width="20" height="20"/>
+          <label size="12" x="360" y="248" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="union" id="n60" color="#fcfcfc">
+          <geometry x="270" y="220" width="50" height="30"/>
+          <label size="12" x="270" y="220" width="18" height="23" customSize="0"/>
+        </node>
+        <node type="concept" id="n61" color="#646b63">
+          <geometry x="270" y="140" width="110" height="50"/>
+          <iri>https://w3id.org/list#EmptyList</iri>
+          <label size="12" x="270" y="140" width="110" height="23" customSize="0"/>
+        </node>
+        <node type="role" id="n62" color="#fcfcfc">
+          <geometry x="410" y="0" width="70" height="50"/>
+          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#atExtremity</iri>
+          <label size="12" x="410" y="-30" width="68" height="23" customSize="0"/>
+        </node>
+        <node type="domain-restriction" id="n63" color="#fcfcfc">
+          <geometry x="410" y="80" width="20" height="20"/>
+          <label size="12" x="410" y="58" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <node type="range-restriction" id="n64" color="#000000">
+          <geometry x="409" y="-87" width="20" height="20"/>
+          <label size="12" x="409" y="-109" width="39" height="23" customSize="0">exists</label>
+        </node>
+        <edge target="n2" type="inclusion" source="n13" id="e12">
+          <point x="-330" y="-270"/>
+          <point x="-330" y="-420"/>
+        </edge>
+        <edge target="n12" type="inclusion" source="n13" id="e13">
+          <point x="-330" y="-270"/>
+          <point x="-120" y="-60"/>
+        </edge>
+        <edge target="n12" type="inclusion" source="n19" id="e27">
+          <point x="-50" y="220"/>
+          <point x="-120" y="-60"/>
+        </edge>
+        <edge target="n12" type="inclusion" source="n20" id="e28">
+          <point x="-212" y="40"/>
+          <point x="-120" y="-60"/>
+        </edge>
+        <edge target="n1" type="inclusion" source="n20" id="e29">
+          <point x="-212" y="40"/>
+          <point x="-290" y="-60"/>
+        </edge>
+        <edge target="n0" type="inclusion" source="n19" id="e44">
+          <point x="-50" y="220"/>
+          <point x="-130" y="140"/>
+        </edge>
+        <edge target="n34" type="input" source="n32" id="e46">
+          <point x="-330" y="220"/>
+          <point x="-260" y="220"/>
+        </edge>
+        <edge target="n33" type="input" source="n32" id="e47">
+          <point x="-330" y="220"/>
+          <point x="-330" y="140"/>
+        </edge>
+        <edge target="n36" type="inclusion" source="n56" id="e61">
+          <point x="470" y="240"/>
+          <point x="470" y="140"/>
+        </edge>
+        <edge target="n57" type="input" source="n56" id="e68">
+          <point x="470" y="240"/>
+          <point x="360" y="220"/>
+        </edge>
+        <edge target="n58" type="input" source="n56" id="e69">
+          <point x="470" y="240"/>
+          <point x="360" y="270"/>
+        </edge>
+        <edge target="n19" type="inclusion" source="n58" id="e70">
+          <point x="360" y="270"/>
+          <point x="60" y="270"/>
+          <point x="-50" y="220"/>
+        </edge>
+        <edge target="n1" type="inclusion" source="n33" id="e72">
+          <point x="-330" y="140"/>
+          <point x="-330" y="-36"/>
+        </edge>
+        <edge target="n19" type="inclusion" source="n34" id="e73">
+          <point x="-260" y="220"/>
+          <point x="-50" y="220"/>
+        </edge>
+        <edge target="n60" type="input" source="n61" id="e76">
+          <point x="270" y="140"/>
+          <point x="270" y="220"/>
+        </edge>
+        <edge target="n60" type="input" source="n19" id="e77">
+          <point x="-50" y="220"/>
+          <point x="270" y="220"/>
+        </edge>
+        <edge target="n60" type="inclusion" source="n57" id="e78">
+          <point x="360" y="220"/>
+          <point x="270" y="220"/>
+        </edge>
+        <edge target="n64" type="input" source="n62" id="e79">
+          <point x="410" y="0"/>
+          <point x="409" y="-87"/>
+        </edge>
+        <edge target="n63" type="input" source="n62" id="e80">
+          <point x="410" y="0"/>
+          <point x="410" y="80"/>
+        </edge>
+        <edge target="n22" type="inclusion" source="n64" id="e81">
+          <point x="409" y="-87"/>
+          <point x="410" y="-210"/>
+        </edge>
+        <edge target="n19" type="inclusion" source="n63" id="e82">
+          <point x="410" y="80"/>
+          <point x="20" y="80"/>
+          <point x="-50" y="220"/>
+        </edge>
+      </diagram>
+    </diagrams>
+  </project>
+</graphol>
