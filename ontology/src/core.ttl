@@ -10,7 +10,7 @@
 <https://cdm.ovh/rst/core> rdf:type owl:Ontology ;
                             owl:imports <https://cdm.ovh/rst/cons/rst-cons.ttl> ;
                             dc:description "Imports all CDM rolling stock-related ontologies" ;
-                            dc:license "EUPL 1.2" ;
+                            dc:license <https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12> ;
                             dc:title "Aggregated Rolling stock ontologies" .
 
 ###################################################################
