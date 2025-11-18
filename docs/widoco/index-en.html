@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Aggregated Rolling stock ontologies</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Tue Nov 18 15:48:18 UTC 2025"}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Aggregated Rolling stock ontologies</h1>
+
+
+<dl>
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://cdm.ovh/rst/cons">cons</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd> Aggregated Rolling stock ontologies.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div><div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Aggregated Rolling stock ontologies: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">
+         <span>O W L List</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">
+         <span>description</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/license" title="http://purl.org/dc/elements/1.1/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title">
+         <span>title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Aggregated Rolling stock ontologies: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Imports all CDM rolling stock-related ontologies</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Aggregated Rolling stock ontologies classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Aggregated Rolling stock ontologies.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a></li>
+  <li><a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList"> <span>O W L List</span> </a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a></li>
+ </ul>
+ <div class="entity" id="https://w3id.org/list#EmptyList">
+  <h3>Empty list<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/list#EmptyList</p>
+  <div class="comment">
+   <span class="markdown">Closing element of any List under the List ontology. This element does not correspond with any rolling stock.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#Extremity">
+  <h3>Extremity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Extremity</p>
+  <div class="comment">
+   <span class="markdown">denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#Formation">
+  <h3>Formation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Formation</p>
+  <div class="comment">
+   <span class="markdown">A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#ListedRollingStock">
+  <h3>Listed rolling stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#ListedRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Rolling stock that may have a predecessor or successor in a formation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">O W L List</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#ListedFormation">
+  <h3>ListedFormation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#ListedFormation</p>
+  <div class="comment">
+   <span class="markdown">A Formation with an explicit sequence of oriented vehicles or formations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">O W L List</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/list#OWLList">
+  <h3>O W L List<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/list#OWLList</p>
+  <div class="comment">
+   <span class="markdown">Using the List ontology also used by IfcOwl.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#RollingStock">
+  <h3>Rolling stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#RollingStock</p>
+  <div class="comment">
+   <span class="markdown">Base type for rolling stock. No direct instances are expected.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#Vehicle">
+  <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Vehicle</p>
+  <div class="comment">
+   <span class="markdown">Common definition in Directives 2016/797, 2016/798: a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a></li>
+  <li><a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a></li>
+ </ul>
+ <div class="entity" id="https://cdm.ovh/rst/cons#coupledTo">
+  <h3>coupled to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#coupledTo</p>
+  <div class="comment">
+   <span class="markdown">relate two extremities of two distinct Rolling stock items (hence the "At" in the label). A symmetric property. "Coupled at" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional, symmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#extremity_1">
+  <h3>extremity_1<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#extremity_1</p>
+  <div class="comment">
+   <span class="markdown">"extremity 1" (actual designation may vary) of a Rolling stock.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#extremity_2">
+  <h3>extremity_2<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#extremity_2</p>
+  <div class="comment">
+   <span class="markdown">"extremity 2" of a piece of Rolling stock. Designation may vary.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#facesExtremity">
+  <h3>faces extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#facesExtremity</p>
+  <div class="comment">
+   <span class="markdown">object is the extremity of another Rolling stock that the subject extremity faces.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional, symmetric, irreflexive</p>
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#frontExtremity">
+  <h3>front extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#frontExtremity</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#hasExtremity">
+  <h3>has extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasExtremity</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> inverse functional</p>
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#hasHeadRollingStock">
+  <h3>has head rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasHeadRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Each formation has exactly one "First" rolling stock. This notion of "first" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting).</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/list#hasNext">
+  <h3>has next<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/list#hasNext</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#hasNextRollingStock">
+  <h3>has next rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasNextRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Indicates which Rolling stock comes next in a Consist.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, inverse functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#includesRollingStock">
+  <h3>includes Rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#includesRollingStock</p>
+  <div class="comment">
+   <span class="markdown">This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> inverse functional, irreflexive</p>
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons#partOfFormation">
+  <h3>part of formation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#partOfFormation</p>
+  <div class="comment">
+   <span class="markdown">Inverse of "includes Rolling Stock". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional, irreflexive</p>
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description"> <span>description</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/license" title="http://purl.org/dc/elements/1.1/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/description</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

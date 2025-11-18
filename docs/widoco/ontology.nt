@@ -1,0 +1,206 @@
+<https://cdm.ovh/rst/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://cdm.ovh/rst/core> <http://www.w3.org/2002/07/owl#imports> <https://cdm.ovh/rst/cons/0.1/cons.ttl> .
+<https://cdm.ovh/rst/core> <http://purl.org/dc/elements/1.1/description> "Imports all CDM rolling stock-related ontologies" .
+<https://cdm.ovh/rst/core> <http://purl.org/dc/elements/1.1/license> <https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt> .
+<https://cdm.ovh/rst/core> <http://purl.org/dc/elements/1.1/title> "Aggregated Rolling stock ontologies" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://cdm.ovh/rst/cons#coupledTo
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://cdm.ovh/rst/cons#facesExtremity> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/2000/01/rdf-schema#comment> "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en .
+<https://cdm.ovh/rst/cons#coupledTo> <http://www.w3.org/2000/01/rdf-schema#label> "coupled to" .
+# 
+# https://cdm.ovh/rst/cons#extremity_1
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://cdm.ovh/rst/cons#hasExtremity> .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://cdm.ovh/rst/cons#extremity_2> .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/2000/01/rdf-schema#comment> "\"extremity 1\" (actual designation may vary) of a Rolling stock."@en .
+<https://cdm.ovh/rst/cons#extremity_1> <http://www.w3.org/2000/01/rdf-schema#label> "extremity_1"@en .
+# 
+# https://cdm.ovh/rst/cons#extremity_2
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://cdm.ovh/rst/cons#hasExtremity> .
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/2000/01/rdf-schema#comment> "\"extremity 2\" of a piece of Rolling stock. Designation may vary."@en .
+<https://cdm.ovh/rst/cons#extremity_2> <http://www.w3.org/2000/01/rdf-schema#label> "extremity_2"@en .
+# 
+# https://cdm.ovh/rst/cons#facesExtremity
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#Extremity> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons#Extremity> .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/2000/01/rdf-schema#comment> "object is the extremity of another Rolling stock that the subject extremity faces."@en .
+<https://cdm.ovh/rst/cons#facesExtremity> <http://www.w3.org/2000/01/rdf-schema#label> "faces extremity"@en .
+# 
+# https://cdm.ovh/rst/cons#frontExtremity
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://cdm.ovh/rst/cons#hasExtremity> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#ListedRollingStock> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons#Extremity> .
+<https://cdm.ovh/rst/cons#frontExtremity> <http://www.w3.org/2000/01/rdf-schema#label> "front extremity"@en .
+# 
+# https://cdm.ovh/rst/cons#hasExtremity
+<https://cdm.ovh/rst/cons#hasExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#hasExtremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#hasExtremity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#RollingStock> .
+<https://cdm.ovh/rst/cons#hasExtremity> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons#Extremity> .
+<https://cdm.ovh/rst/cons#hasExtremity> <http://www.w3.org/2000/01/rdf-schema#label> "has extremity"@en .
+# 
+# https://cdm.ovh/rst/cons#hasHeadRollingStock
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://cdm.ovh/rst/cons#includesRollingStock> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#ListedFormation> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons#ListedRollingStock> .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."@en .
+<https://cdm.ovh/rst/cons#hasHeadRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "has head rolling stock"@en .
+# 
+# https://cdm.ovh/rst/cons#hasNextRollingStock
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/list#hasNext> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#ListedRollingStock> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/list#EmptyList> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://cdm.ovh/rst/cons#ListedRollingStock> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which Rolling stock comes next in a Consist."@en .
+<https://cdm.ovh/rst/cons#hasNextRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "has next rolling stock"@en .
+# 
+# https://cdm.ovh/rst/cons#includesRollingStock
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons#partOfFormation> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons#Formation> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons#RollingStock> .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."@en .
+<https://cdm.ovh/rst/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "includes Rolling stock"@en .
+# 
+# https://cdm.ovh/rst/cons#partOfFormation
+<https://cdm.ovh/rst/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<https://cdm.ovh/rst/cons#partOfFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."@en .
+<https://cdm.ovh/rst/cons#partOfFormation> <http://www.w3.org/2000/01/rdf-schema#label> "part of formation"@en .
+# 
+# https://w3id.org/list#hasNext
+<https://w3id.org/list#hasNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/list#hasNext> <http://www.w3.org/2000/01/rdf-schema#label> "has next"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://cdm.ovh/rst/cons#Extremity
+<https://cdm.ovh/rst/cons#Extremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#comment> "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."@en .
+<https://cdm.ovh/rst/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#label> "Extremity"@en .
+# 
+# https://cdm.ovh/rst/cons#Formation
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons#RollingStock> .
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons#includesRollingStock> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/2002/07/owl#disjointWith> <https://cdm.ovh/rst/cons#Vehicle> .
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#comment> "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."@en .
+<https://cdm.ovh/rst/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#label> "Formation"@en .
+# 
+# https://cdm.ovh/rst/cons#ListedFormation
+<https://cdm.ovh/rst/cons#ListedFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#ListedFormation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons#Formation> .
+<https://cdm.ovh/rst/cons#ListedFormation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/list#OWLList> .
+<https://cdm.ovh/rst/cons#ListedFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "A Formation with an explicit sequence of oriented vehicles or formations."@en .
+<https://cdm.ovh/rst/cons#ListedFormation> <http://www.w3.org/2000/01/rdf-schema#label> "ListedFormation"@en .
+# 
+# https://cdm.ovh/rst/cons#ListedRollingStock
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons#RollingStock> .
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/list#OWLList> .
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/list#EmptyList> .
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Rolling stock that may have a predecessor or successor in a formation."@en .
+<https://cdm.ovh/rst/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "Listed rolling stock"@en .
+# 
+# https://cdm.ovh/rst/cons#RollingStock
+<https://cdm.ovh/rst/cons#RollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#RollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Base type for rolling stock. No direct instances are expected."@en .
+<https://cdm.ovh/rst/cons#RollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "Rolling stock"@en .
+# 
+# https://cdm.ovh/rst/cons#Vehicle
+<https://cdm.ovh/rst/cons#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons#Vehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons#RollingStock> .
+<https://cdm.ovh/rst/cons#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Common definition in Directives 2016/797, 2016/798:\n a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems\n\nERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."@en .
+<https://cdm.ovh/rst/cons#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called \"trailer\").  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being \"atomic\" in operations is a necessary condition, but not a sufficient one to be called vehicle."@en .
+<https://cdm.ovh/rst/cons#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+# 
+# https://w3id.org/list#EmptyList
+<https://w3id.org/list#EmptyList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/list#EmptyList> <http://www.w3.org/2000/01/rdf-schema#comment> "Closing element of any List under the List ontology. This element does not correspond with any rolling stock."@en .
+<https://w3id.org/list#EmptyList> <http://www.w3.org/2000/01/rdf-schema#label> "Empty list"@en .
+# 
+# https://w3id.org/list#OWLList
+<https://w3id.org/list#OWLList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/list#OWLList> <http://www.w3.org/2000/01/rdf-schema#comment> "Using the List ontology also used by IfcOwl."@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
