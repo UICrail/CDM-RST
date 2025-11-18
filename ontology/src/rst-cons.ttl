@@ -24,27 +24,33 @@
                                                                      rdfs:label "atExtremity"@en .
 
 
-###  https://cdm.ovh/rst/cons#coupledAt
-rst-cons:coupledAt rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf rst-cons:faces ;
-                   rdf:type owl:SymmetricProperty ;
-                   rdfs:comment "relate two extremities of two rdistinct Rolling stock items (hence the \"At\" in the label). A symmetric property."@en ;
-                   rdfs:label "coupled at" .
+###  https://cdm.ovh/rst/cons#coupledTo
+rst-cons:coupledTo rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf rst-cons:facesExtremity ;
+                   rdf:type owl:FunctionalProperty ,
+                            owl:InverseFunctionalProperty ,
+                            owl:SymmetricProperty ,
+                            owl:IrreflexiveProperty ;
+                   rdfs:comment "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en ;
+                   rdfs:label "coupled to" .
 
 
 ###  https://cdm.ovh/rst/cons#extremity_1
-rst-cons:extremity_1 rdf:type owl:ObjectProperty ,
-                              owl:FunctionalProperty ,
+rst-cons:extremity_1 rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf rst-cons:hasExtremity ;
+                     rdf:type owl:FunctionalProperty ,
                               owl:InverseFunctionalProperty ;
                      rdfs:domain rst-cons:RollingStock ;
                      rdfs:range rst-cons:Extremity ;
+                     owl:propertyDisjointWith rst-cons:extremity_2 ;
                      rdfs:comment "\"extremity 1\" (actual designation may vary) of a Rolling stock."@en ;
                      rdfs:label "extremity_1"@en .
 
 
 ###  https://cdm.ovh/rst/cons#extremity_2
-rst-cons:extremity_2 rdf:type owl:ObjectProperty ,
-                              owl:FunctionalProperty ,
+rst-cons:extremity_2 rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf rst-cons:hasExtremity ;
+                     rdf:type owl:FunctionalProperty ,
                               owl:InverseFunctionalProperty ;
                      rdfs:domain rst-cons:RollingStock ;
                      rdfs:range rst-cons:Extremity ;
@@ -52,13 +58,24 @@ rst-cons:extremity_2 rdf:type owl:ObjectProperty ,
                      rdfs:label "extremity_2"@en .
 
 
-###  https://cdm.ovh/rst/cons#faces
-rst-cons:faces rdf:type owl:ObjectProperty ,
-                        owl:SymmetricProperty ;
-               rdfs:domain rst-cons:Extremity ;
-               rdfs:range rst-cons:Extremity ;
-               rdfs:comment "object is the extremity of another Rolling stock that the subject extremity faces."@en ;
-               rdfs:label "faces"@en .
+###  https://cdm.ovh/rst/cons#facesExtremity
+rst-cons:facesExtremity rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ,
+                                 owl:InverseFunctionalProperty ,
+                                 owl:SymmetricProperty ,
+                                 owl:IrreflexiveProperty ;
+                        rdfs:domain rst-cons:Extremity ;
+                        rdfs:range rst-cons:Extremity ;
+                        rdfs:comment "object is the extremity of another Rolling stock that the subject extremity faces."@en ;
+                        rdfs:label "faces extremity"@en .
+
+
+###  https://cdm.ovh/rst/cons#hasExtremity
+rst-cons:hasExtremity rdf:type owl:ObjectProperty ,
+                               owl:InverseFunctionalProperty ;
+                      rdfs:domain rst-cons:RollingStock ;
+                      rdfs:range rst-cons:Extremity ;
+                      rdfs:label "has extremity"@en .
 
 
 ###  https://cdm.ovh/rst/cons#hasHeadRollingStock
