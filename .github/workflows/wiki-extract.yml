@@ -2,7 +2,7 @@
 name: Docs (Wiki)
 on:
   workflow_run:
-    workflows: ["Ontology verification"]
+    workflows: ["Docs (WIDOCO)"]
     types: [completed]
 
 permissions:
@@ -14,3 +14,4 @@ jobs:
   wiki:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: Airy59/OntoQA/.github/workflows/docs-wiki.yml@main
+    secrets: inherit
