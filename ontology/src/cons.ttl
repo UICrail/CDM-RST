@@ -157,7 +157,11 @@ rst-cons:Extremity rdf:type owl:Class ;
 
 ###  https://cdm.ovh/rst/cons#Formation
 rst-cons:Formation rdf:type owl:Class ;
-                   rdfs:subClassOf rst-cons:RollingStock ;
+                   rdfs:subClassOf rst-cons:RollingStock ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty rst-cons:includesRollingStock ;
+                                     owl:someValuesFrom owl:Thing
+                                   ] ;
                    owl:disjointWith rst-cons:Vehicle ;
                    rdfs:comment "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."@en ;
                    rdfs:label "Formation"@en .
