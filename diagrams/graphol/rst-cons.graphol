@@ -492,7 +492,7 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <subject>https://cdm.ovh/rst/cons#coupledTo</subject>
               <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
               <object>
-                <lexicalForm>relate two extremities of two distinct Rolling stock items (hence the "At" in the label). A symmetric property. "Coupled at" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</lexicalForm>
+                <lexicalForm>Symmetric property "coupled to" relates two extremities of two distinct Rolling stock items (hence the "to" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</lexicalForm>
                 <datatype/>
                 <language>en</language>
               </object>
@@ -808,10 +808,6 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <iri>https://cdm.ovh/rst/cons#Vehicle</iri>
           <label width="135" height="23" customSize="0" size="12" x="-190" y="-50"/>
         </node>
-        <edge type="inclusion" id="e10" target="n4" source="n6">
-          <point x="100" y="-50"/>
-          <point x="-30" y="-50"/>
-        </edge>
         <edge type="input" id="e12" target="n23" source="n4">
           <point x="-30" y="-50"/>
           <point x="-110" y="-120"/>
@@ -844,6 +840,10 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         <edge type="input" id="e42" target="n34" source="n33">
           <point x="210" y="-50"/>
           <point x="210" y="20"/>
+        </edge>
+        <edge type="equivalence" id="e43" target="n6" source="n4">
+          <point x="-30" y="-50"/>
+          <point x="100" y="-50"/>
         </edge>
       </diagram>
       <diagram width="5000" name="002 - Extremities" height="5000">
@@ -879,9 +879,9 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <label width="39" height="23" customSize="0" size="12" x="-70" y="8">exists</label>
         </node>
         <node type="concept" id="n30" color="#fcfcfc">
-          <geometry width="117" height="50" x="-210" y="30"/>
+          <geometry width="117" height="50" x="-190" y="30"/>
           <iri>https://cdm.ovh/rst/cons#RollingStock</iri>
-          <label width="117" height="23" customSize="0" size="12" x="-210" y="30"/>
+          <label width="117" height="23" customSize="0" size="12" x="-190" y="30"/>
         </node>
         <node type="concept" id="n31" color="#fcfcfc">
           <geometry width="110" height="50" x="240" y="30"/>
@@ -902,17 +902,13 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <geometry width="50" height="30" x="20" y="140"/>
           <label width="25" height="23" customSize="0" size="12" x="20" y="140"/>
         </node>
-        <edge type="inclusion" id="e28" target="n31" source="n19">
-          <point x="110" y="30"/>
-          <point x="185" y="30"/>
-        </edge>
         <edge type="input" id="e4" target="n24" source="n2">
           <point x="430" y="30"/>
           <point x="340" y="30"/>
         </edge>
         <edge type="inclusion" id="e40" target="n30" source="n29">
           <point x="-70" y="30"/>
-          <point x="-210" y="30"/>
+          <point x="-190" y="30"/>
         </edge>
         <edge type="input" id="e45" target="n29" source="n33">
           <point x="20" y="30"/>
@@ -956,6 +952,10 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         <edge type="input" id="e60" target="n38" source="n0">
           <point x="-70" y="140"/>
           <point x="20" y="140"/>
+        </edge>
+        <edge type="equivalence" id="e61" target="n31" source="n19">
+          <point x="110" y="30"/>
+          <point x="240" y="30"/>
         </edge>
       </diagram>
       <diagram width="5000" name="003 - Consist" height="5000">

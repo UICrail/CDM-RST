@@ -42,7 +42,7 @@ rst-cons:coupledTo rdf:type owl:ObjectProperty ;
                             owl:InverseFunctionalProperty ,
                             owl:SymmetricProperty ,
                             owl:IrreflexiveProperty ;
-                   rdfs:comment "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en ;
+                   rdfs:comment "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en ;
                    rdfs:label "coupled to" .
 
 
@@ -151,6 +151,11 @@ list:hasNext rdf:type owl:ObjectProperty ;
 
 ###  https://cdm.ovh/rst/cons#Extremity
 rst-cons:Extremity rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty [ owl:inverseOf rst-cons:hasExtremity
+                                                    ] ;
+                                     owl:someValuesFrom owl:Thing
+                                   ] ;
                    rdfs:comment "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."@en ;
                    rdfs:label "Extremity"@en .
 
