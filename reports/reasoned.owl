@@ -6,9 +6,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://cdm.ovh/rst/core">
-        <owl:imports rdf:resource="https://cdm.ovh/rst/cons/rst-cons.ttl"/>
+        <owl:imports rdf:resource="https://cdm.ovh/rst/cons/0.1/cons.ttl"/>
         <dc:description>Imports all CDM rolling stock-related ontologies</dc:description>
         <dc:license rdf:resource="https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt"/>
         <dc:title>Aggregated Rolling stock ontologies</dc:title>
@@ -56,15 +57,6 @@
     
 
 
-    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation -->
-
-    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#ListedFormation">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
-    </rdf:Description>
-    
-
-
     <!-- https://cdm.ovh/rst/cons#Formation -->
 
     <rdf:Description rdf:about="https://cdm.ovh/rst/cons#Formation">
@@ -73,19 +65,19 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
+    <!-- https://cdm.ovh/rst/cons#ListedFormation -->
 
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedFormation">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
     </rdf:Description>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedVehicle -->
+    <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
 
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedVehicle">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#Vehicle"/>
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
     </rdf:Description>
     
