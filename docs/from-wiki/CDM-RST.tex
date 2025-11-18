@@ -94,7 +94,7 @@ pages}\label{cdm-rst-compiled-wiki-pages}}
 \hypertarget{version}{%
 \subsection{Version}\label{version}}
 
-This document was generated on 2025-11-18 14:08:06 UTC
+This document was generated on 2025-11-18 17:25:17 UTC
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -216,6 +216,64 @@ relevant but do not match the self-imposed limitations on OWL2 usage.
 For instance, an ETCS Balise Group consists of at most 7 balises, but
 the qualified cardinality restriction ``at most 7'' cannot be expressed
 in the OWL2 RL profile; the OWL2 DL profile at least is required.
+
+\hypertarget{extremities}{%
+\subsection{Extremities}\label{extremities}}
+
+\hypertarget{purpose-2}{%
+\subsubsection{Purpose}\label{purpose-2}}
+
+All rolling stock is oriented on the drawing board. Extremities are
+usually designated ``extremity 1'', ``extremity 2'', and this
+distinction helps differentiating driving cabs on a locomotive, the
+placement of axles or loads, etc. independently from other information
+(e.g.~running direction). Rolling stock orientation is conventional and
+may rest on standards: see for instance EN 13775-1.
+
+\hypertarget{diagram-1}{%
+\subsubsection{Diagram}\label{diagram-1}}
+
+The diagram illustrates two properties: hasExtremity (``a rolling stock
+has two extremities'') and facesExtremity (on coupling, an extremity of
+a rolling stock faces the extremity of another rolling stock).
+
+\begin{figure}
+\centering
+\includegraphics{images/cons_002 - Extremities.png}
+\caption{diagram: extremities}
+\end{figure}
+
+An extremity belongs to one wagon (it cannot be shared with another
+one), so ``hasExtremity'' is inverse functional.
+
+Extremities of two adjacent wagons may face each other: this is
+expressed by ``faces extremity'', a symmetric property (if X1 faces Y2,
+then Y2 faces X1).
+
+Once extremities are facing each other, one may consider coupling them;
+if they are coupled, they are obviously facing each other. This is
+exactly the meaning of ``coupled to'' being a subproperty of ``faces
+extremity''.
+
+\hypertarget{comments-1}{%
+\subsubsection{Comments}\label{comments-1}}
+
+\hypertarget{about-cardinalities-subproperties-and-disjoint-properties}{%
+\paragraph{About cardinalities, subproperties, and disjoint
+properties}\label{about-cardinalities-subproperties-and-disjoint-properties}}
+
+Property hasExtremity should have a cardinality of exactly 2 (not
+available in OWL2 RL) and this cardinality is of little use anyway,
+since we need to identify extremity 1 and extremity 2 that will orient
+the rolling stock. These extremities are singled out by sub-properties
+of hasExtremity. These sub-properties are disjoint: by essence,
+extremity 2 of a wagon cannot be the same as extremity 1 of the same
+wagon. This is expressed by the ``not'' flattened hexagon in GRAPHOL,
+that tells that the set of (rolling stock, extremity) pairs satisfying
+``extremity\_2'' does not overlap the set of pairs satisfying
+``extremity\_1''. In set theory, Y does not overlap X iff Y is a subset
+of the complement of X (as the complement of X is the largest set not
+overlapping X).
 
 Original page:
 \href{https://github.com/UICrail/CDM-RST/wiki/01-\%E2\%80\%90-Rolling-stock-consist}{01-‐-Rolling-stock-consist.md}
