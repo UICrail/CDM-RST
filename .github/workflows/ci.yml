@@ -12,6 +12,7 @@ permissions:
 jobs:
   qa:
     uses: Airy59/OntoQA/.github/workflows/ci.yml@main    # shared GitHub pipeline. @main tells to use latest commit.
+    secrets: inherit
     with:
       main_ontology: ontology/src/core.ttl  # several file can be provided, but there must be a root ontology file (core.ttl) importing the others.
       shapes_glob:   ontology/shapes/**/*.ttl

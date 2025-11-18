@@ -15,6 +15,7 @@ jobs:
   widoco:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: Airy59/OntoQA/.github/workflows/docs-widoco.yml@main
+    secrets: inherit
     with:
       main_ontology: ontology/src/core.ttl
 
