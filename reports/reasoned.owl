@@ -65,15 +65,6 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedFormation -->
-
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedFormation">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
-    </rdf:Description>
-    
-
-
     <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
 
     <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
