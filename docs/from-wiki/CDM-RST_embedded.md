@@ -5,7 +5,7 @@ _Self-contained version with embedded images_
 
 ## Version
 
-This document was generated on 2025-11-19 15:13:17 UTC
+This document was generated on 2025-11-19 20:14:12 UTC
 
 
 ---
@@ -103,6 +103,12 @@ _Reading the GRAPHOL diagram from "Listed rolling stock" towards the right: ever
 The bottom of the diagram adds property "front extremity" that designates which extremity is at the front of the rolling stock in the formation.
 
 To know what is at the front of the formation, you can use the property chain (has head rolling stock)_o_(front extremity).
+
+### Comments
+
+Rolling stock orientation is secondary to rolling stock composition: you can express the sequence of rolling stock while ignoring orientation. You can also provide partial orientation information (e.g. expressing which cab of the locomotive is in the front, and nothing else). If you provide full orientation information, the relative positions of extremities (properties "faces extremity" and "coupled to") can be derived.
+
+If, on the other hand, your use case is only about the relative position of two vehicles, these do not need to be part of a formation and you can use the extremities in the second diagram.
 
 <sub>Original page: [01-‐-Rolling-stock-consist.md](https://github.com/UICrail/CDM-RST/wiki/01-%E2%80%90-Rolling-stock-consist)</sub>
 
