@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 14:40:10 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 15:01:17 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,7 +70,7 @@ $(function(){
 
 <dl>
 <dt>Imported Ontologies:</dt>
-<dd><a href="http://cdm.ovh/rst/cons">cons</a></dd><dd><a href="http://cdm.ovh/rst/typo/typo">typo</a></dd>
+<dd><a href="http://cdm.ovh/rst/cons/cons">cons</a></dd><dd><a href="http://cdm.ovh/rst/typo/typo">typo</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
@@ -103,10 +103,10 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock"
@@ -115,7 +115,7 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/typo/typo#Locomotive" title="https://cdm.ovh/rst/typo/typo#Locomotive">
@@ -170,7 +170,7 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/typo/typo#SlaveLocomotive" title="https://cdm.ovh/rst/typo/typo#SlaveLocomotive">
@@ -193,12 +193,7 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a>
-   </li>
-   <li>
-      <a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle">
-         <span>Vehicle</span>
-      </a>
+      <a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle">Vehicle</a>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/typo/typo#Wagon" title="https://cdm.ovh/rst/typo/typo#Wagon">
@@ -209,37 +204,40 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#coupledTo" title="https://cdm.ovh/rst/cons/cons#coupledTo">coupled to</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#extremity_1" title="https://cdm.ovh/rst/cons/cons#extremity_1">extremity_1</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#extremity_2" title="https://cdm.ovh/rst/cons/cons#extremity_2">extremity_2</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#facesExtremity" title="https://cdm.ovh/rst/cons/cons#facesExtremity">faces extremity</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#frontExtremity" title="https://cdm.ovh/rst/cons/cons#frontExtremity">front extremity</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock"
+         title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a>
    </li>
    <li>
       <a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock"
+         title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock"
+         title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -301,10 +299,10 @@ This section provides details for each class and property defined by Aggregated 
  <ul class="hlist">
   <li><a href="#https://cdm.ovh/rst/typo/typo#Coach" title="https://cdm.ovh/rst/typo/typo#Coach"> <span>Coach</span> </a></li>
   <li><a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock" title="https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock"> <span>Freight Carrying Rolling Stock</span> </a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Locomotive" title="https://cdm.ovh/rst/typo/typo#Locomotive"> <span>Locomotive</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#MotorCar" title="https://cdm.ovh/rst/typo/typo#MotorCar"> <span>Motor Car</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#MotoredRollingStock" title="https://cdm.ovh/rst/typo/typo#MotoredRollingStock"> <span>Motored Rolling Stock</span> </a></li>
@@ -315,13 +313,12 @@ This section provides details for each class and property defined by Aggregated 
   <li><a href="#https://cdm.ovh/rst/typo/typo#Rake" title="https://cdm.ovh/rst/typo/typo#Rake"> <span>Rake</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#RoadRailVehicle" title="https://cdm.ovh/rst/typo/typo#RoadRailVehicle"> <span>Road Rail Vehicle</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#RoadVehicleRake" title="https://cdm.ovh/rst/typo/typo#RoadVehicleRake"> <span>Road Vehicle Rake</span> </a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#SlaveLocomotive" title="https://cdm.ovh/rst/typo/typo#SlaveLocomotive"> <span>Slave Locomotive</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Trailer" title="https://cdm.ovh/rst/typo/typo#Trailer"> <span>Trailer</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Trainset" title="https://cdm.ovh/rst/typo/typo#Trainset"> <span>Trainset</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Van" title="https://cdm.ovh/rst/typo/typo#Van"> <span>Van</span> </a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle"> <span>Vehicle</span> </a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle">Vehicle</a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Wagon" title="https://cdm.ovh/rst/typo/typo#Wagon"> <span>Wagon</span> </a></li>
  </ul>
  <div class="entity" id="https://cdm.ovh/rst/typo/typo#Coach">
@@ -350,19 +347,19 @@ This section provides details for each class and property defined by Aggregated 
     is in range of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#Extremity">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Extremity">
   <h3>Extremity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Extremity</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Extremity</p>
   <div class="comment">
    <span class="markdown">denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset).</span>
   </div>
@@ -375,19 +372,19 @@ This section provides details for each class and property defined by Aggregated 
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#facesExtremity" title="https://cdm.ovh/rst/cons/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#facesExtremity" title="https://cdm.ovh/rst/cons/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#frontExtremity" title="https://cdm.ovh/rst/cons/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#Formation">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Formation">
   <h3>Formation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Formation</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Formation</p>
   <div class="comment">
    <span class="markdown">A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually).</span>
   </div>
@@ -396,19 +393,25 @@ This section provides details for each class and property defined by Aggregated 
     has super-classes
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/typo/typo#Rake" title="https://cdm.ovh/rst/typo/typo#Rake">Rake</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#RoadVehicleRake" title="https://cdm.ovh/rst/typo/typo#RoadVehicleRake">Road Vehicle Rake</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#Trainset" title="https://cdm.ovh/rst/typo/typo#Trainset">Trainset</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist">has Fixed Consist</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -433,9 +436,9 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#ListedRollingStock">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#ListedRollingStock">
   <h3>Listed rolling stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#ListedRollingStock</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#ListedRollingStock</p>
   <div class="comment">
    <span class="markdown">Rolling stock that may have a predecessor or successor in a formation.</span>
   </div>
@@ -444,19 +447,19 @@ This section provides details for each class and property defined by Aggregated 
     has super-classes
    </dt>
    <dd>
-    <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">O W L List</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">O W L List</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#frontExtremity" title="https://cdm.ovh/rst/cons/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
@@ -528,7 +531,7 @@ This section provides details for each class and property defined by Aggregated 
     has sub-classes
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -594,7 +597,7 @@ This section provides details for each class and property defined by Aggregated 
     has super-classes
    </dt>
    <dd>
-    <a href="https://cdm.ovh/rst/cons/cons#Formation" target="_blank" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -621,13 +624,13 @@ This section provides details for each class and property defined by Aggregated 
     has super-classes
    </dt>
    <dd>
-    <a href="https://cdm.ovh/rst/cons/cons#Formation" target="_blank" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#RollingStock">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#RollingStock">
   <h3>Rolling stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#RollingStock</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#RollingStock</p>
   <div class="comment">
    <span class="markdown">Base type for rolling stock. No direct instances are expected.</span>
   </div>
@@ -636,19 +639,19 @@ This section provides details for each class and property defined by Aggregated 
     has sub-classes
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons/cons#Vehicle" title="https://cdm.ovh/rst/cons/cons#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -693,7 +696,7 @@ This section provides details for each class and property defined by Aggregated 
     has super-classes
    </dt>
    <dd>
-    <a href="https://cdm.ovh/rst/cons/cons#Formation" target="_blank" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#MotoredRollingStock" title="https://cdm.ovh/rst/typo/typo#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#MotoredRollingStock" title="https://cdm.ovh/rst/typo/typo#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -712,27 +715,6 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#Vehicle">
-  <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Vehicle</p>
-  <div class="comment">
-   <span class="markdown">Common definition in Directives 2016/797, 2016/798: a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#Vehicle">
   <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Vehicle</p>
@@ -741,10 +723,22 @@ This section provides details for each class and property defined by Aggregated 
   </div>
   <dl class="description">
    <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
     has sub-classes
    </dt>
    <dd>
     <a href="#https://cdm.ovh/rst/typo/typo#Coach" title="https://cdm.ovh/rst/typo/typo#Coach">Coach</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#Locomotive" title="https://cdm.ovh/rst/typo/typo#Locomotive">Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#MotorCar" title="https://cdm.ovh/rst/typo/typo#MotorCar">Motor Car</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#OnTrackMachine" title="https://cdm.ovh/rst/typo/typo#OnTrackMachine">On Track Machine</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#RailCar" title="https://cdm.ovh/rst/typo/typo#RailCar">Rail Car</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#RoadRailVehicle" title="https://cdm.ovh/rst/typo/typo#RoadRailVehicle">Road Rail Vehicle</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#SlaveLocomotive" title="https://cdm.ovh/rst/typo/typo#SlaveLocomotive">Slave Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#Trailer" title="https://cdm.ovh/rst/typo/typo#Trailer">Trailer</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#Van" title="https://cdm.ovh/rst/typo/typo#Van">Van</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/typo/typo#Wagon" title="https://cdm.ovh/rst/typo/typo#Wagon">Wagon</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -766,21 +760,21 @@ This section provides details for each class and property defined by Aggregated 
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#coupledTo" title="https://cdm.ovh/rst/cons/cons#coupledTo">coupled to</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#extremity_1" title="https://cdm.ovh/rst/cons/cons#extremity_1">extremity_1</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#extremity_2" title="https://cdm.ovh/rst/cons/cons#extremity_2">extremity_2</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#facesExtremity" title="https://cdm.ovh/rst/cons/cons#facesExtremity">faces extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#frontExtremity" title="https://cdm.ovh/rst/cons/cons#frontExtremity">front extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a></li>
   <li><a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a></li>
  </ul>
- <div class="entity" id="https://cdm.ovh/rst/cons#coupledTo">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#coupledTo">
   <h3>coupled to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#coupledTo</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#coupledTo</p>
   <div class="comment">
    <span class="markdown">Symmetric property "coupled to" relates two extremities of two distinct Rolling stock items (hence the "to" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</span>
   </div>
@@ -791,14 +785,14 @@ This section provides details for each class and property defined by Aggregated 
      has super-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#facesExtremity" title="https://cdm.ovh/rst/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#facesExtremity" title="https://cdm.ovh/rst/cons/cons#facesExtremity">faces extremity</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#extremity_1">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#extremity_1">
   <h3>extremity_1<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#extremity_1</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#extremity_1</p>
   <div class="comment">
    <span class="markdown">"extremity 1" (actual designation may vary) of a Rolling stock.</span>
   </div>
@@ -809,14 +803,14 @@ This section provides details for each class and property defined by Aggregated 
      has super-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#extremity_2">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#extremity_2">
   <h3>extremity_2<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#extremity_2</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#extremity_2</p>
   <div class="comment">
    <span class="markdown">"extremity 2" of a piece of Rolling stock. Designation may vary.</span>
   </div>
@@ -827,14 +821,14 @@ This section provides details for each class and property defined by Aggregated 
      has super-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#facesExtremity">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#facesExtremity">
   <h3>faces extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#facesExtremity</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#facesExtremity</p>
   <div class="comment">
    <span class="markdown">object is the extremity of another Rolling stock that the subject extremity faces.</span>
   </div>
@@ -845,26 +839,26 @@ This section provides details for each class and property defined by Aggregated 
      has sub-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#coupledTo" title="https://cdm.ovh/rst/cons#coupledTo">coupled to</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#coupledTo" title="https://cdm.ovh/rst/cons/cons#coupledTo">coupled to</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#frontExtremity">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#frontExtremity">
   <h3>front extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#frontExtremity</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#frontExtremity</p>
   <div class="description">
    <p><strong>has characteristics: </strong> functional, inverse functional</p>
    <dl>
@@ -872,26 +866,26 @@ This section provides details for each class and property defined by Aggregated 
      has super-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#hasExtremity" title="https://cdm.ovh/rst/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#hasExtremity">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#hasExtremity">
   <h3>has extremity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasExtremity</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#hasExtremity</p>
   <div class="description">
    <p><strong>has characteristics: </strong> inverse functional</p>
    <dl>
@@ -899,26 +893,26 @@ This section provides details for each class and property defined by Aggregated 
      has sub-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#extremity_1" title="https://cdm.ovh/rst/cons#extremity_1">extremity_1</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#extremity_2" title="https://cdm.ovh/rst/cons#extremity_2">extremity_2</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#frontExtremity" title="https://cdm.ovh/rst/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#extremity_1" title="https://cdm.ovh/rst/cons/cons#extremity_1">extremity_1</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#extremity_2" title="https://cdm.ovh/rst/cons/cons#extremity_2">extremity_2</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#frontExtremity" title="https://cdm.ovh/rst/cons/cons#frontExtremity">front extremity</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Extremity" title="https://cdm.ovh/rst/cons/cons#Extremity">Extremity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#hasHeadRollingStock">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">
   <h3>has head rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasHeadRollingStock</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#hasHeadRollingStock</p>
   <div class="comment">
    <span class="markdown">Each formation has exactly one "First" rolling stock. This notion of "first" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting).</span>
   </div>
@@ -929,19 +923,19 @@ This section provides details for each class and property defined by Aggregated 
      has super-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -955,14 +949,14 @@ This section provides details for each class and property defined by Aggregated 
      has sub-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#hasNextRollingStock">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">
   <h3>has next rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#hasNextRollingStock</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#hasNextRollingStock</p>
   <div class="comment">
    <span class="markdown">Indicates which Rolling stock comes next in a Consist.</span>
   </div>
@@ -979,20 +973,20 @@ This section provides details for each class and property defined by Aggregated 
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#includesRollingStock">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#includesRollingStock">
   <h3>includes Rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#includesRollingStock</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#includesRollingStock</p>
   <div class="comment">
    <span class="markdown">This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts.</span>
   </div>
@@ -1003,32 +997,32 @@ This section provides details for each class and property defined by Aggregated 
      has sub-properties
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#partOfFormation">
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#partOfFormation">
   <h3>part of formation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#partOfFormation</p>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#partOfFormation</p>
   <div class="comment">
    <span class="markdown">Inverse of "includes Rolling Stock". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself.</span>
   </div>
@@ -1039,7 +1033,7 @@ This section provides details for each class and property defined by Aggregated 
      is inverse of
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1062,7 +1056,7 @@ This section provides details for each class and property defined by Aggregated 
      has domain
     </dt>
     <dd>
-     <a href="https://cdm.ovh/rst/cons/cons#Formation" target="_blank" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons/cons#Formation" title="https://cdm.ovh/rst/cons/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

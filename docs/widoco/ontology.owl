@@ -104,11 +104,11 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#coupledTo -->
+    <!-- https://cdm.ovh/rst/cons/cons#coupledTo -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#coupledTo">
-        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#facesExtremity"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#coupledTo">
+        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons/cons#facesExtremity"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
@@ -119,25 +119,25 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#extremity_1 -->
+    <!-- https://cdm.ovh/rst/cons/cons#extremity_1 -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#extremity_1">
-        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#hasExtremity"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#extremity_1">
+        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasExtremity"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <owl:propertyDisjointWith rdf:resource="https://cdm.ovh/rst/cons#extremity_2"/>
+        <owl:propertyDisjointWith rdf:resource="https://cdm.ovh/rst/cons/cons#extremity_2"/>
         <rdfs:comment xml:lang="en">&quot;extremity 1&quot; (actual designation may vary) of a Rolling stock.</rdfs:comment>
         <rdfs:label xml:lang="en">extremity_1</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#extremity_2 -->
+    <!-- https://cdm.ovh/rst/cons/cons#extremity_2 -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#extremity_2">
-        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#hasExtremity"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#extremity_2">
+        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasExtremity"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment xml:lang="en">&quot;extremity 2&quot; of a piece of Rolling stock. Designation may vary.</rdfs:comment>
@@ -146,75 +146,75 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#facesExtremity -->
+    <!-- https://cdm.ovh/rst/cons/cons#facesExtremity -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#facesExtremity">
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#facesExtremity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#Extremity"/>
-        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#Extremity"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#Extremity"/>
+        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons/cons#Extremity"/>
         <rdfs:comment xml:lang="en">object is the extremity of another Rolling stock that the subject extremity faces.</rdfs:comment>
         <rdfs:label xml:lang="en">faces extremity</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#frontExtremity -->
+    <!-- https://cdm.ovh/rst/cons/cons#frontExtremity -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#frontExtremity">
-        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#hasExtremity"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#frontExtremity">
+        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasExtremity"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#ListedRollingStock"/>
-        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#Extremity"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#ListedRollingStock"/>
+        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons/cons#Extremity"/>
         <rdfs:label xml:lang="en">front extremity</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#hasExtremity -->
+    <!-- https://cdm.ovh/rst/cons/cons#hasExtremity -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#hasExtremity">
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#hasExtremity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
-        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#Extremity"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
+        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons/cons#Extremity"/>
         <rdfs:label xml:lang="en">has extremity</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#hasHeadRollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#hasHeadRollingStock -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#hasHeadRollingStock">
-        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#includesRollingStock"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">
+        <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons/cons#includesRollingStock"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
-        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#ListedRollingStock"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#Formation"/>
+        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons/cons#ListedRollingStock"/>
         <rdfs:comment xml:lang="en">Each formation has exactly one &quot;First&quot; rolling stock. This notion of &quot;first&quot; is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting).</rdfs:comment>
         <rdfs:label xml:lang="en">has head rolling stock</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#hasNextRollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#hasNextRollingStock -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#hasNextRollingStock">
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/list#hasNext"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#ListedRollingStock"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#ListedRollingStock"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock"/>
+                    <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#ListedRollingStock"/>
                     <rdf:Description rdf:about="https://w3id.org/list#EmptyList"/>
                 </owl:unionOf>
             </owl:Class>
@@ -225,25 +225,25 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#includesRollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#includesRollingStock -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#includesRollingStock">
-        <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons#partOfFormation"/>
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#includesRollingStock">
+        <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons/cons#partOfFormation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
-        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons/cons#Formation"/>
+        <rdfs:range rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
         <rdfs:comment xml:lang="en">This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts.</rdfs:comment>
         <rdfs:label xml:lang="en">includes Rolling stock</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#partOfFormation -->
+    <!-- https://cdm.ovh/rst/cons/cons#partOfFormation -->
 
 
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons#partOfFormation">
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#partOfFormation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment xml:lang="en">Inverse of &quot;includes Rolling Stock&quot;. A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself.</rdfs:comment>
@@ -297,15 +297,15 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#Extremity -->
+    <!-- https://cdm.ovh/rst/cons/cons#Extremity -->
 
 
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#Extremity">
+    <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#Extremity">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
-                        <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons#hasExtremity"/>
+                        <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasExtremity"/>
                     </rdf:Description>
                 </owl:onProperty>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
@@ -317,33 +317,33 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#Formation -->
+    <!-- https://cdm.ovh/rst/cons/cons#Formation -->
 
 
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#Formation">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#Formation">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons#includesRollingStock"/>
+                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons/cons#includesRollingStock"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://cdm.ovh/rst/cons#Vehicle"/>
+        <owl:disjointWith rdf:resource="https://cdm.ovh/rst/cons/cons#Vehicle"/>
         <rdfs:comment xml:lang="en">A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually).</rdfs:comment>
         <rdfs:label xml:lang="en">Formation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#ListedRollingStock -->
 
 
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#ListedRollingStock">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons#hasNextRollingStock"/>
+                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons/cons#hasNextRollingStock"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -354,35 +354,13 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#RollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#RollingStock -->
 
 
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#RollingStock">
+    <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#RollingStock">
         <rdfs:comment xml:lang="en">Base type for rolling stock. No direct instances are expected.</rdfs:comment>
         <rdfs:label xml:lang="en">Rolling stock</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://cdm.ovh/rst/cons#Vehicle -->
-
-
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#Vehicle">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
-        <rdfs:comment xml:lang="en">Common definition in Directives 2016/797, 2016/798:
- a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
-
-ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called &quot;trailer&quot;).  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being &quot;atomic&quot; in operations is a necessary condition, but not a sufficient one to be called vehicle.</rdfs:comment>
-        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://cdm.ovh/rst/cons/cons#Formation -->
-
-
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#Formation"/>
     
 
 
@@ -390,10 +368,13 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
 
 
     <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
         <rdfs:comment xml:lang="en">Common definition in Directives 2016/797, 2016/798:
  a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
 
 ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called &quot;trailer&quot;).  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being &quot;atomic&quot; in operations is a necessary condition, but not a sufficient one to be called vehicle.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vehicle</rdfs:label>
     </owl:Class>
     
 
