@@ -10,9 +10,11 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://cdm.ovh/rst/core">
         <owl:imports rdf:resource="https://cdm.ovh/rst/cons/0.1/cons.ttl"/>
+        <owl:imports rdf:resource="https://cdm.ovh/rst/typo/0.2/typo.ttl"/>
         <dc:description>Imports all CDM rolling stock-related ontologies</dc:description>
         <dc:license rdf:resource="https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt"/>
         <dc:title>Aggregated Rolling stock ontologies</dc:title>
+        <rdfs:comment>Current direct imports: rolling stock consist and typology ontologies.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -54,6 +56,146 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon -->
+
+    <rdf:Description rdf:about="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon">
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"/>
+        <rdfs:subClassOf rdf:resource="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock"/>
+    </rdf:Description>
     
 
 
