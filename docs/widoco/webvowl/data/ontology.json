@@ -200,7 +200,7 @@
     },
     "subClasses" : [ "30", "12", "31", "3", "27", "5", "7", "32", "8", "9" ],
     "comment" : {
-      "en" : "Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called \"trailer\").  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being \"atomic\" in operations is a necessary condition, but not a sufficient one to be called vehicle."
+      "en" : "Common definition in Directives 2016/797, 2016/798:\r\n a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems\r\n\r\nERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."
     },
     "attributes" : [ "external" ],
     "id" : "4",
@@ -531,7 +531,7 @@
     "id" : "55",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "owl:disjointWith"
   }, {
     "id" : "29",
@@ -623,7 +623,7 @@
     "comment" : {
       "en" : "\"extremity 2\" of a piece of Rolling stock. Designation may vary."
     },
-    "attributes" : [ "object", "external", "inverse functional", "functional" ],
+    "attributes" : [ "external", "object", "inverse functional", "functional" ],
     "id" : "17"
   }, {
     "range" : "22",
@@ -643,7 +643,7 @@
     "comment" : {
       "en" : "\"extremity 1\" (actual designation may vary) of a Rolling stock."
     },
-    "attributes" : [ "object", "external", "inverse functional", "functional" ],
+    "attributes" : [ "external", "object", "inverse functional", "functional" ],
     "id" : "23"
   }, {
     "range" : "15",
@@ -665,7 +665,7 @@
     },
     "domain" : "24",
     "subproperty" : [ "17", "23", "29" ],
-    "attributes" : [ "object", "external", "inverse functional" ],
+    "attributes" : [ "external", "object", "inverse functional" ],
     "id" : "19"
   }, {
     "range" : "34",
@@ -695,7 +695,7 @@
     "comment" : {
       "en" : "Indicates which Rolling stock comes next in a Consist."
     },
-    "attributes" : [ "object", "external", "inverse functional", "functional" ],
+    "attributes" : [ "external", "object", "inverse functional", "functional" ],
     "id" : "37"
   }, {
     "iri" : "http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist",
@@ -708,7 +708,7 @@
     "comment" : {
       "en" : "Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop."
     },
-    "attributes" : [ "datatype", "external", "functional" ],
+    "attributes" : [ "external", "functional", "datatype" ],
     "id" : "40"
   }, {
     "range" : "34",
@@ -760,7 +760,7 @@
     },
     "domain" : "18",
     "subproperty" : [ "37" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "39"
   }, {
     "range" : "4",
@@ -781,7 +781,7 @@
     "range" : "50",
     "domain" : "21",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
+    "id" : "57"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#frontExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -792,7 +792,7 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "21",
-    "attributes" : [ "object", "external", "inverse functional", "functional" ],
+    "attributes" : [ "external", "object", "inverse functional", "functional" ],
     "id" : "29"
   }, {
     "range" : "4",
@@ -817,7 +817,7 @@
     "comment" : {
       "en" : "object is the extremity of another Rolling stock that the subject extremity faces."
     },
-    "attributes" : [ "object", "irreflexive", "external", "symmetric", "inverse functional", "functional" ],
+    "attributes" : [ "irreflexive", "external", "object", "symmetric", "inverse functional", "functional" ],
     "id" : "62"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#includesRollingStock",
@@ -833,7 +833,7 @@
     "comment" : {
       "en" : "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."
     },
-    "attributes" : [ "object", "irreflexive", "external", "inverse functional" ],
+    "attributes" : [ "irreflexive", "external", "object", "inverse functional" ],
     "id" : "64"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#hasHeadRollingStock",
@@ -848,7 +848,7 @@
     "comment" : {
       "en" : "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."
     },
-    "attributes" : [ "object", "external", "inverse functional", "functional" ],
+    "attributes" : [ "external", "object", "inverse functional", "functional" ],
     "id" : "66"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#coupledTo",
@@ -863,7 +863,7 @@
     "comment" : {
       "en" : "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
     },
-    "attributes" : [ "object", "irreflexive", "external", "symmetric", "inverse functional", "functional" ],
+    "attributes" : [ "irreflexive", "external", "object", "symmetric", "inverse functional", "functional" ],
     "id" : "63"
   }, {
     "range" : "14",
@@ -892,7 +892,7 @@
     "comment" : {
       "en" : "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."
     },
-    "attributes" : [ "object", "irreflexive", "external", "functional" ],
+    "attributes" : [ "irreflexive", "external", "object", "functional" ],
     "id" : "65"
   }, {
     "range" : "14",
