@@ -60,7 +60,7 @@
   "classAttribute" : [ {
     "instances" : 0,
     "union" : [ "5", "6" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "7"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -251,7 +251,7 @@
     "comment" : {
       "en" : "\"extremity 1\" (actual designation may vary) of a Rolling stock."
     },
-    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "functional" ],
     "id" : "0"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#extremity_2",
@@ -266,7 +266,7 @@
     "comment" : {
       "en" : "\"extremity 2\" of a piece of Rolling stock. Designation may vary."
     },
-    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "functional" ],
     "id" : "3"
   }, {
     "range" : "6",
@@ -302,7 +302,7 @@
     "comment" : {
       "en" : "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."
     },
-    "attributes" : [ "irreflexive", "inverse functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "irreflexive" ],
     "id" : "15"
   }, {
     "range" : "9",
@@ -332,7 +332,7 @@
     "comment" : {
       "en" : "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
     },
-    "attributes" : [ "irreflexive", "symmetric", "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "symmetric", "irreflexive", "functional" ],
     "id" : "23"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#partOfFormation",
@@ -346,7 +346,7 @@
     "comment" : {
       "en" : "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."
     },
-    "attributes" : [ "irreflexive", "functional", "object", "external" ],
+    "attributes" : [ "external", "object", "irreflexive", "functional" ],
     "id" : "16"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasNextRollingStock",
@@ -361,7 +361,7 @@
     "comment" : {
       "en" : "Indicates which Rolling stock comes next in a Consist."
     },
-    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "functional" ],
     "id" : "25"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasHeadRollingStock",
@@ -376,7 +376,7 @@
     "comment" : {
       "en" : "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."
     },
-    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "functional" ],
     "id" : "17"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#facesExtremity",
@@ -391,7 +391,7 @@
     "comment" : {
       "en" : "object is the extremity of another Rolling stock that the subject extremity faces."
     },
-    "attributes" : [ "irreflexive", "symmetric", "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "symmetric", "irreflexive", "functional" ],
     "id" : "24"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasExtremity",
@@ -403,7 +403,7 @@
     },
     "domain" : "9",
     "subproperty" : [ "0", "3", "28" ],
-    "attributes" : [ "inverse functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object" ],
     "id" : "2"
   }, {
     "range" : "9",
@@ -420,7 +420,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "25" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "26"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#frontExtremity",
@@ -432,7 +432,7 @@
     },
     "superproperty" : [ "2" ],
     "domain" : "5",
-    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "attributes" : [ "external", "inverse functional", "object", "functional" ],
     "id" : "28"
   } ]
 }
