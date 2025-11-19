@@ -92,7 +92,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:comment xml:lang="en">relate two extremities of two distinct Rolling stock items (hence the &quot;At&quot; in the label). A symmetric property. &quot;Coupled at&quot; is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Symmetric property &quot;coupled to&quot; relates two extremities of two distinct Rolling stock items (hence the &quot;to&quot; in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</rdfs:comment>
         <rdfs:label>coupled to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -174,7 +174,7 @@
         <rdfs:subPropertyOf rdf:resource="https://cdm.ovh/rst/cons#includesRollingStock"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#ListedFormation"/>
+        <rdfs:domain rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
         <rdfs:range rdf:resource="https://cdm.ovh/rst/cons#ListedRollingStock"/>
         <rdfs:comment xml:lang="en">Each formation has exactly one &quot;First&quot; rolling stock. This notion of &quot;first&quot; is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting).</rdfs:comment>
         <rdfs:label xml:lang="en">has head rolling stock</rdfs:label>
@@ -256,6 +256,16 @@
 
 
     <owl:Class rdf:about="https://cdm.ovh/rst/cons#Extremity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons#hasExtremity"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset).</rdfs:comment>
         <rdfs:label xml:lang="en">Extremity</rdfs:label>
     </owl:Class>
@@ -280,24 +290,18 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedFormation -->
-
-
-    <owl:Class rdf:about="https://cdm.ovh/rst/cons#ListedFormation">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#Formation"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
-        <rdfs:comment xml:lang="en">A Formation with an explicit sequence of oriented vehicles or formations.</rdfs:comment>
-        <rdfs:label xml:lang="en">ListedFormation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
 
 
     <owl:Class rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
         <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons#hasNextRollingStock"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/list#EmptyList"/>
         <rdfs:comment xml:lang="en">Rolling stock that may have a predecessor or successor in a formation.</rdfs:comment>
         <rdfs:label xml:lang="en">Listed rolling stock</rdfs:label>

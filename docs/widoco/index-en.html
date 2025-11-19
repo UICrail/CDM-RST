@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Tue Nov 18 17:24:56 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 09:45:24 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -105,9 +105,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a>
-   </li>
-   <li>
-      <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a>
    </li>
    <li>
       <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">
@@ -209,7 +206,6 @@ This section provides details for each class and property defined by Aggregated 
   <li><a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a></li>
   <li><a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a></li>
   <li><a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a></li>
   <li><a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList"> <span>O W L List</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a></li>
   <li><a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a></li>
@@ -243,6 +239,10 @@ This section provides details for each class and property defined by Aggregated 
   </div>
   <dl class="description">
    <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
     is in domain of
    </dt>
    <dd>
@@ -270,16 +270,10 @@ This section provides details for each class and property defined by Aggregated 
     <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons#includesRollingStock" title="https://cdm.ovh/rst/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is disjoint with
@@ -322,27 +316,6 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://cdm.ovh/rst/cons#ListedFormation">
-  <h3>ListedFormation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#ListedFormation</p>
-  <div class="comment">
-   <span class="markdown">A Formation with an explicit sequence of oriented vehicles or formations.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">O W L List</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://cdm.ovh/rst/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons#hasHeadRollingStock">has head rolling stock</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="https://w3id.org/list#OWLList">
   <h3>O W L List<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/list#OWLList</p>
@@ -354,7 +327,7 @@ This section provides details for each class and property defined by Aggregated 
     has sub-classes
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>, <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -425,7 +398,7 @@ This section provides details for each class and property defined by Aggregated 
   <h3>coupled to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#coupledTo</p>
   <div class="comment">
-   <span class="markdown">relate two extremities of two distinct Rolling stock items (hence the "At" in the label). A symmetric property. "Coupled at" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</span>
+   <span class="markdown">Symmetric property "coupled to" relates two extremities of two distinct Rolling stock items (hence the "to" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional, inverse functional, symmetric, irreflexive</p>
@@ -578,7 +551,7 @@ This section provides details for each class and property defined by Aggregated 
      has domain
     </dt>
     <dd>
-     <a href="#https://cdm.ovh/rst/cons#ListedFormation" title="https://cdm.ovh/rst/cons#ListedFormation">ListedFormation</a> <sup class="type-c" title="class">c</sup>
+     <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

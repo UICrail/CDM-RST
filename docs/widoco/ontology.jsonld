@@ -12,7 +12,30 @@
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://cdm.ovh/rst/cons#hasExtremity"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://cdm.ovh/rst/cons#includesRollingStock"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://cdm.ovh/rst/cons#hasNextRollingStock"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -45,6 +68,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Extremity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons#Formation",
@@ -60,26 +86,10 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://cdm.ovh/rst/cons#RollingStock"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid6"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://cdm.ovh/rst/cons#Vehicle"
-  } ]
-}, {
-  "@id" : "https://cdm.ovh/rst/cons#ListedFormation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Formation with an explicit sequence of oriented vehicles or formations."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "ListedFormation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://cdm.ovh/rst/cons#Formation"
-  }, {
-    "@id" : "https://w3id.org/list#OWLList"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons#ListedRollingStock",
@@ -96,6 +106,8 @@
     "@id" : "https://cdm.ovh/rst/cons#RollingStock"
   }, {
     "@id" : "https://w3id.org/list#OWLList"
+  }, {
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/list#EmptyList"
@@ -133,7 +145,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
+    "@value" : "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "coupled to"
@@ -226,7 +238,7 @@
     "@value" : "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://cdm.ovh/rst/cons#ListedFormation"
+    "@id" : "https://cdm.ovh/rst/cons#Formation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
