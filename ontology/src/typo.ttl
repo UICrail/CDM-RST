@@ -50,7 +50,7 @@ xsd:boolean rdf:type rdfs:Datatype .
 ###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist
 <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist> rdf:type owl:DatatypeProperty ,
                                                                                    owl:FunctionalProperty ;
-                                                                          rdfs:domain <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation> ;
+                                                                          rdfs:domain rst-cons:Formation ;
                                                                           rdfs:range xsd:boolean ;
                                                                           rdfs:comment "Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop."@en .
 
@@ -59,139 +59,139 @@ xsd:boolean rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation> rdf:type owl:Class .
+###  https://cdm.ovh/rst/cons/cons#Formation
+rst-cons:Formation rdf:type owl:Class .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> rdf:type owl:Class ;
-                                                                 rdfs:comment """Common definition in Directives 2016/797, 2016/798:
+###  https://cdm.ovh/rst/cons/cons#Vehicle
+rst-cons:Vehicle rdf:type owl:Class ;
+                 rdfs:comment """Common definition in Directives 2016/797, 2016/798:
  a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
 
 ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock> ;
-                                                                rdfs:comment """TSI LOCPAS 2020:
+###  https://cdm.ovh/rst/typo/typo#Coach
+rst-typo:Coach rdf:type owl:Class ;
+               rdfs:subClassOf rst-cons:Vehicle ,
+                               rst-typo:PassengerCarryingRollingStock ;
+               rdfs:comment """TSI LOCPAS 2020:
 a vehicle without traction in a fixed or variable formation capable of carrying passengers (by extension, requirements specified to apply to coaches in this TSI are deemed to apply also to restaurant cars, sleeping cars, couchettes cars, etc.)
 
 Note: was \"passenger carriage\" in earlier versions."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock> rdf:type owl:Class ;
-                                                                                      rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature> ;
-                                                                                      rdfs:comment "Feature of Rolling stock: ability to carry freight, by design."@en .
+###  https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock
+rst-typo:FreightCarryingRollingStock rdf:type owl:Class ;
+                                     rdfs:subClassOf rst-typo:RollingStockFeature ;
+                                     rdfs:comment "Feature of Rolling stock: ability to carry freight, by design."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive> rdf:type owl:Class ;
-                                                                     rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                     <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ;
-                                                                     rdfs:comment "Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations."@en .
+###  https://cdm.ovh/rst/typo/typo#Locomotive
+rst-typo:Locomotive rdf:type owl:Class ;
+                    rdfs:subClassOf rst-cons:Vehicle ,
+                                    rst-typo:MotoredRollingStock ;
+                    rdfs:comment "Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                   <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ;
-                                                                   rdfs:comment """Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs).
+###  https://cdm.ovh/rst/typo/typo#MotorCar
+rst-typo:MotorCar rdf:type owl:Class ;
+                  rdfs:subClassOf rst-cons:Vehicle ,
+                                  rst-typo:MotoredRollingStock ;
+                  rdfs:comment """Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs).
 May or may not carry passengers."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> rdf:type owl:Class ;
-                                                                              rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature> ;
-                                                                              rdfs:comment "Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels."@en .
+###  https://cdm.ovh/rst/typo/typo#MotoredRollingStock
+rst-typo:MotoredRollingStock rdf:type owl:Class ;
+                             rdfs:subClassOf rst-typo:RollingStockFeature ;
+                             rdfs:comment "Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine> rdf:type owl:Class ;
-                                                                         rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                         <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ;
-                                                                         rdfs:comment "a motored railway vehicle used for infrastructure maintenance"@en .
+###  https://cdm.ovh/rst/typo/typo#OnTrackMachine
+rst-typo:OnTrackMachine rdf:type owl:Class ;
+                        rdfs:subClassOf rst-cons:Vehicle ,
+                                        rst-typo:MotoredRollingStock ;
+                        rdfs:comment "a motored railway vehicle used for infrastructure maintenance"@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock> rdf:type owl:Class ;
-                                                                                        rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature> ;
-                                                                                        rdfs:comment "Feature of Rolling stock: ability to carry freight, by design."@en .
+###  https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock
+rst-typo:PassengerCarryingRollingStock rdf:type owl:Class ;
+                                       rdfs:subClassOf rst-typo:RollingStockFeature ;
+                                       rdfs:comment "Feature of Rolling stock: ability to carry freight, by design."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                  <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ,
-                                                                                  <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock> ;
-                                                                  rdfs:comment """Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers.
+###  https://cdm.ovh/rst/typo/typo#RailCar
+rst-typo:RailCar rdf:type owl:Class ;
+                 rdfs:subClassOf rst-cons:Vehicle ,
+                                 rst-typo:MotoredRollingStock ,
+                                 rst-typo:PassengerCarryingRollingStock ;
+                 rdfs:comment """Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers.
 Equiv. to FR: Autorail, DE: Schienenbus (narrower meaning: two axles only).
 Note however the numerous variants and ambiguities."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake> rdf:type owl:Class ;
-                                                               rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation> ;
-                                                               rdfs:comment """Any non-powered formation. Examples:
+###  https://cdm.ovh/rst/typo/typo#Rake
+rst-typo:Rake rdf:type owl:Class ;
+              rdfs:subClassOf rst-cons:Formation ;
+              rdfs:comment """Any non-powered formation. Examples:
 wagon rake;
 (fixed consist) set of TGV trailers;
 (fixed or variable consist) rake of coaches."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                          <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock> .
+###  https://cdm.ovh/rst/typo/typo#RoadRailVehicle
+rst-typo:RoadRailVehicle rdf:type owl:Class ;
+                         rdfs:subClassOf rst-cons:Vehicle ,
+                                         rst-typo:FreightCarryingRollingStock .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation> ;
-                                                                          rdfs:comment """From TSI WAG 2023, \"unit\", 3rd entry:
+###  https://cdm.ovh/rst/typo/typo#RoadVehicleRake
+rst-typo:RoadVehicleRake rdf:type owl:Class ;
+                         rdfs:subClassOf rst-cons:Formation ;
+                         rdfs:comment """From TSI WAG 2023, \"unit\", 3rd entry:
 separate rail bogies connected to compatible road vehicle(s), the combination of which forms a rake of a rail compatible system."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature> rdf:type owl:Class .
+###  https://cdm.ovh/rst/typo/typo#RollingStockFeature
+rst-typo:RollingStockFeature rdf:type owl:Class .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                          <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ;
-                                                                          rdfs:comment """Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass \"slug\").
+###  https://cdm.ovh/rst/typo/typo#SlaveLocomotive
+rst-typo:SlaveLocomotive rdf:type owl:Class ;
+                         rdfs:subClassOf rst-cons:Vehicle ,
+                                         rst-typo:MotoredRollingStock ;
+                         rdfs:comment """Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass \"slug\").
 Also called \"truck\" in France, e.g. TC61000.
 Do not confuse with master/slave configuration of two normal locomotives (\"multiple working\" in the UK)."""@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                  <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock> ;
-                                                                  rdfs:comment "non-traction, passenger-carrying vehicle that is part of a trainset or of a fixed-consist rake, such as TGV trailer or ICE3 trailer or Talgo trailer."@en .
+###  https://cdm.ovh/rst/typo/typo#Trailer
+rst-typo:Trailer rdf:type owl:Class ;
+                 rdfs:subClassOf rst-cons:Vehicle ,
+                                 rst-typo:PassengerCarryingRollingStock ;
+                 rdfs:comment "non-traction, passenger-carrying vehicle that is part of a trainset or of a fixed-consist rake, such as TGV trailer or ICE3 trailer or Talgo trailer."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset> rdf:type owl:Class ;
-                                                                   rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation> ,
-                                                                                   <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock> ;
-                                                                   rdfs:comment "TSI LOC&PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles."@en .
+###  https://cdm.ovh/rst/typo/typo#Trainset
+rst-typo:Trainset rdf:type owl:Class ;
+                  rdfs:subClassOf rst-cons:Formation ,
+                                  rst-typo:MotoredRollingStock ;
+                  rdfs:comment "TSI LOC&PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                              <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock> ;
-                                                              rdfs:comment "TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers."@en .
+###  https://cdm.ovh/rst/typo/typo#Van
+rst-typo:Van rdf:type owl:Class ;
+             rdfs:subClassOf rst-cons:Vehicle ,
+                             rst-typo:FreightCarryingRollingStock ;
+             rdfs:comment "TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers."@en .
 
 
-###  http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon
-<http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon> rdf:type owl:Class ;
-                                                                rdfs:subClassOf <http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle> ,
-                                                                                <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock> ;
-                                                                rdfs:comment "A non-powered vehicle designed for carrying freight."@en .
+###  https://cdm.ovh/rst/typo/typo#Wagon
+rst-typo:Wagon rdf:type owl:Class ;
+               rdfs:subClassOf rst-cons:Vehicle ,
+                               rst-typo:FreightCarryingRollingStock ;
+               rdfs:comment "A non-powered vehicle designed for carrying freight."@en .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

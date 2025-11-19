@@ -111,254 +111,6 @@
       </annotationProperties>
       <iris>
         <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation</value>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Common definition in Directives 2016/797, 2016/798:
- a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
-
-ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>TSI LOCPAS 2020:
-a vehicle without traction in a fixed or variable formation capable of carrying passengers (by extension, requirements specified to apply to coaches in this TSI are deemed to apply also to restaurant cars, sleeping cars, couchettes cars, etc.)
-
-Note: was "passenger carriage" in earlier versions.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Feature of Rolling stock: ability to carry freight, by design.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs).
-May or may not carry passengers.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>a motored railway vehicle used for infrastructure maintenance</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Feature of Rolling stock: ability to carry freight, by design.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers.
-Equiv. to FR: Autorail, DE: Schienenbus (narrower meaning: two axles only).
-Note however the numerous variants and ambiguities.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Any non-powered formation. Examples:
-wagon rake;
-(fixed consist) set of TGV trailers;
-(fixed or variable consist) rake of coaches.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle</value>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>From TSI WAG 2023, "unit", 3rd entry:
-separate rail bogies connected to compatible road vehicle(s), the combination of which forms a rake of a rail compatible system.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature</value>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass "slug").
-Also called "truck" in France, e.g. TC61000.
-Do not confuse with master/slave configuration of two normal locomotives ("multiple working" in the UK).</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>non-traction, passenger-carrying vehicle that is part of a trainset or of a fixed-consist rake, such as TGV trailer or ICE3 trailer or Talgo trailer.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>TSI LOC&amp;PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon</value>
-          <annotations>
-            <annotation>
-              <subject>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
-              <object>
-                <lexicalForm>A non-powered vehicle designed for carrying freight.</lexicalForm>
-                <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
           <value>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist</value>
           <functional/>
           <annotations>
@@ -623,6 +375,254 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
           <value>http://www.w3.org/2002/07/owl#versionInfo</value>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Formation</value>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Vehicle</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Vehicle</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Common definition in Directives 2016/797, 2016/798:
+ a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
+
+ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Coach</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Coach</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>TSI LOCPAS 2020:
+a vehicle without traction in a fixed or variable formation capable of carrying passengers (by extension, requirements specified to apply to coaches in this TSI are deemed to apply also to restaurant cars, sleeping cars, couchettes cars, etc.)
+
+Note: was "passenger carriage" in earlier versions.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Feature of Rolling stock: ability to carry freight, by design.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Locomotive</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Locomotive</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#MotorCar</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#MotorCar</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs).
+May or may not carry passengers.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#MotoredRollingStock</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#MotoredRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#OnTrackMachine</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#OnTrackMachine</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>a motored railway vehicle used for infrastructure maintenance</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Feature of Rolling stock: ability to carry freight, by design.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#RailCar</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#RailCar</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers.
+Equiv. to FR: Autorail, DE: Schienenbus (narrower meaning: two axles only).
+Note however the numerous variants and ambiguities.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Rake</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Rake</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Any non-powered formation. Examples:
+wagon rake;
+(fixed consist) set of TGV trailers;
+(fixed or variable consist) rake of coaches.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#RoadRailVehicle</value>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#RoadVehicleRake</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#RoadVehicleRake</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>From TSI WAG 2023, "unit", 3rd entry:
+separate rail bogies connected to compatible road vehicle(s), the combination of which forms a rake of a rail compatible system.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#RollingStockFeature</value>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#SlaveLocomotive</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#SlaveLocomotive</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass "slug").
+Also called "truck" in France, e.g. TC61000.
+Do not confuse with master/slave configuration of two normal locomotives ("multiple working" in the UK).</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Trailer</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Trailer</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>non-traction, passenger-carrying vehicle that is part of a trainset or of a fixed-consist rake, such as TGV trailer or ICE3 trailer or Talgo trailer.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Trainset</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Trainset</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>TSI LOC&amp;PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Van</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Van</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/typo/typo#Wagon</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Wagon</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>A non-powered vehicle designed for carrying freight.</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>ttps://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt</value>
         </iri>
         <iri>
@@ -634,67 +634,67 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
       <diagram name="Typology" width="12750" height="12750">
         <node color="#fcfcfc" id="n0" type="concept">
           <geometry height="50" width="165" y="-200" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#RailCar</iri>
           <label size="12" height="23" width="165" y="-200" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n1" type="concept">
           <geometry height="50" width="165" y="140" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Van</iri>
           <label size="12" height="23" width="165" y="140" x="-240" customSize="0"/>
         </node>
         <node color="#c2b078" id="n10" type="concept">
           <geometry height="50" width="110" y="-300" x="-510"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle</iri>
+          <iri>https://cdm.ovh/rst/cons/cons#Vehicle</iri>
           <label size="12" height="23" width="110" y="-300" x="-510" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n11" type="concept">
           <geometry height="50" width="165" y="340" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#RoadVehicleRake</iri>
           <label size="12" height="23" width="165" y="332" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n12" type="concept">
           <geometry height="50" width="165" y="220" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Trainset</iri>
           <label size="12" height="23" width="165" y="220" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n13" type="concept">
           <geometry height="50" width="165" y="280" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Rake</iri>
           <label size="12" height="23" width="165" y="280" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n18" type="concept">
           <geometry height="50" width="225" y="70" x="150"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock</iri>
           <label size="12" height="23" width="225" y="62" x="150" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n2" type="concept">
           <geometry height="50" width="165" y="-380" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#SlaveLocomotive</iri>
           <label size="12" height="23" width="165" y="-387" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n25" type="concept">
           <geometry height="50" width="225" y="-340" x="150"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#MotoredRollingStock</iri>
           <label size="12" height="23" width="225" y="-347" x="150" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n29" type="concept">
           <geometry height="50" width="250" y="-100" x="160"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock</iri>
           <label size="12" height="23" width="250" y="-115" x="145" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n3" type="concept">
           <geometry height="50" width="165" y="80" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#RoadRailVehicle</iri>
           <label size="12" height="23" width="165" y="72" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n30" type="concept">
           <geometry height="115" width="175" y="-100" x="460"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#RollingStockFeature</iri>
           <label size="12" height="23" width="175" y="-140" x="460" customSize="0"/>
         </node>
         <node color="#c2b078" id="n35" type="concept">
           <geometry height="50" width="145" y="270" x="-520"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation</iri>
+          <iri>https://cdm.ovh/rst/cons/cons#Formation</iri>
           <label size="12" height="23" width="145" y="270" x="-520" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n39" type="attribute">
@@ -704,7 +704,7 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
         </node>
         <node color="#fcfcfc" id="n4" type="concept">
           <geometry height="50" width="165" y="-260" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#OnTrackMachine</iri>
           <label size="12" height="23" width="165" y="-267" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n40" type="domain-restriction">
@@ -722,27 +722,27 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
         </node>
         <node color="#fcfcfc" id="n5" type="concept">
           <geometry height="50" width="165" y="-440" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Locomotive</iri>
           <label size="12" height="23" width="165" y="-447" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n6" type="concept">
           <geometry height="50" width="165" y="-120" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Coach</iri>
           <label size="12" height="23" width="165" y="-120" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n7" type="concept">
           <geometry height="50" width="165" y="-60" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Trailer</iri>
           <label size="12" height="23" width="165" y="-60" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n8" type="concept">
           <geometry height="50" width="165" y="20" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#Wagon</iri>
           <label size="12" height="23" width="165" y="20" x="-240" customSize="0"/>
         </node>
         <node color="#fcfcfc" id="n9" type="concept">
           <geometry height="50" width="165" y="-320" x="-240"/>
-          <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar</iri>
+          <iri>https://cdm.ovh/rst/typo/typo#MotorCar</iri>
           <label size="12" height="23" width="165" y="-320" x="-240" customSize="0"/>
         </node>
         <edge source="n0" target="n10" id="e0" type="inclusion">
