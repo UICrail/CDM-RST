@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 09:45:24 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 14:21:53 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -70,7 +70,7 @@ $(function(){
 
 <dl>
 <dt>Imported Ontologies:</dt>
-<dd><a href="http://cdm.ovh/rst/cons">cons</a></dd>
+<dd><a href="http://cdm.ovh/rst/cons">cons</a></dd><dd><a href="http://cdm.ovh/rst/typo/typo">typo</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
@@ -95,6 +95,12 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach">
+         <span>Coach</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a>
    </li>
    <li>
@@ -104,7 +110,31 @@ This ontology has the following classes and properties.</span>
       <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a>
    </li>
    <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">
+         <span>Freight Carrying Rolling Stock</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive">
+         <span>Locomotive</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar">
+         <span>Motor Car</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">
+         <span>Motored Rolling Stock</span>
+      </a>
    </li>
    <li>
       <a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList">
@@ -112,10 +142,82 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine">
+         <span>On Track Machine</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">
+         <span>Passenger Carrying Rolling Stock</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">
+         <span>Rail Car</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake">
+         <span>Rake</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle">
+         <span>Road Rail Vehicle</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake">
+         <span>Road Vehicle Rake</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a>
    </li>
    <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive">
+         <span>Slave Locomotive</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer">
+         <span>Trailer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset">
+         <span>Trainset</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van">
+         <span>Van</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">
+         <span>Vehicle</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a>
+   </li>
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon">
+         <span>Wagon</span>
+      </a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -152,6 +254,15 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://cdm.ovh/rst/cons#partOfFormation" title="https://cdm.ovh/rst/cons#partOfFormation">part of formation</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist"
+         title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist">
+         <span>has Fixed Consist</span>
+      </a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -202,14 +313,46 @@ This section provides details for each class and property defined by Aggregated 
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach"> <span>Coach</span> </a></li>
   <li><a href="#https://w3id.org/list#EmptyList" title="https://w3id.org/list#EmptyList">Empty list</a></li>
   <li><a href="#https://cdm.ovh/rst/cons#Extremity" title="https://cdm.ovh/rst/cons#Extremity">Extremity</a></li>
   <li><a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock"> <span>Freight Carrying Rolling Stock</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive"> <span>Locomotive</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar"> <span>Motor Car</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock"> <span>Motored Rolling Stock</span> </a></li>
   <li><a href="#https://w3id.org/list#OWLList" title="https://w3id.org/list#OWLList"> <span>O W L List</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine"> <span>On Track Machine</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock"> <span>Passenger Carrying Rolling Stock</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar"> <span>Rail Car</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake"> <span>Rake</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle"> <span>Road Rail Vehicle</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake"> <span>Road Vehicle Rake</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/cons#RollingStock" title="https://cdm.ovh/rst/cons#RollingStock">Rolling stock</a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive"> <span>Slave Locomotive</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer"> <span>Trailer</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset"> <span>Trainset</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van"> <span>Van</span> </a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle"> <span>Vehicle</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/cons#Vehicle" title="https://cdm.ovh/rst/cons#Vehicle">Vehicle</a></li>
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon"> <span>Wagon</span> </a></li>
  </ul>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach">
+  <h3>Coach<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach</p>
+  <div class="comment">
+   <span class="markdown">TSI LOCPAS 2020: a vehicle without traction in a fixed or variable formation capable of carrying passengers (by extension, requirements specified to apply to coaches in this TSI are deemed to apply also to restaurant cars, sleeping cars, couchettes cars, etc.) Note: was "passenger carriage" in earlier versions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">Passenger Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/list#EmptyList">
   <h3>Empty list<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/list#EmptyList</p>
@@ -283,6 +426,27 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">
+  <h3>Freight Carrying Rolling Stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Feature of Rolling stock: ability to carry freight, by design.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature">Rolling Stock Feature</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle">Road Rail Vehicle</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van">Van</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon">Wagon</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons#ListedRollingStock">
   <h3>Listed rolling stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#ListedRollingStock</p>
@@ -316,6 +480,57 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive">
+  <h3>Locomotive<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive</p>
+  <div class="comment">
+   <span class="markdown">Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar">
+  <h3>Motor Car<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar</p>
+  <div class="comment">
+   <span class="markdown">Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs). May or may not carry passengers.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">
+  <h3>Motored Rolling Stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature">Rolling Stock Feature</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive">Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar">Motor Car</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine">On Track Machine</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">Rail Car</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive">Slave Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset">Trainset</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/list#OWLList">
   <h3>O W L List<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/list#OWLList</p>
@@ -328,6 +543,99 @@ This section provides details for each class and property defined by Aggregated 
    </dt>
    <dd>
     <a href="#https://cdm.ovh/rst/cons#ListedRollingStock" title="https://cdm.ovh/rst/cons#ListedRollingStock">Listed rolling stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine">
+  <h3>On Track Machine<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine</p>
+  <div class="comment">
+   <span class="markdown">a motored railway vehicle used for infrastructure maintenance</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">
+  <h3>Passenger Carrying Rolling Stock<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock</p>
+  <div class="comment">
+   <span class="markdown">Feature of Rolling stock: ability to carry freight, by design.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RollingStockFeature">Rolling Stock Feature</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach">Coach</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">Rail Car</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer">Trailer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">
+  <h3>Rail Car<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar</p>
+  <div class="comment">
+   <span class="markdown">Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers. Equiv. to FR: Autorail, DE: Schienenbus (narrower meaning: two axles only). Note however the numerous variants and ambiguities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">Passenger Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake">
+  <h3>Rake<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Rake</p>
+  <div class="comment">
+   <span class="markdown">Any non-powered formation. Examples: wagon rake; (fixed consist) set of TGV trailers; (fixed or variable consist) rake of coaches.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle">
+  <h3>Road Rail Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">Freight Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake">
+  <h3>Road Vehicle Rake<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadVehicleRake</p>
+  <div class="comment">
+   <span class="markdown">From TSI WAG 2023, "unit", 3rd entry: separate rail bogies connected to compatible road vehicle(s), the combination of which forms a rake of a rail compatible system.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -358,6 +666,81 @@ This section provides details for each class and property defined by Aggregated 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive">
+  <h3>Slave Locomotive<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive</p>
+  <div class="comment">
+   <span class="markdown">Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass "slug"). Also called "truck" in France, e.g. TC61000. Do not confuse with master/slave configuration of two normal locomotives ("multiple working" in the UK).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer">
+  <h3>Trailer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer</p>
+  <div class="comment">
+   <span class="markdown">non-traction, passenger-carrying vehicle that is part of a trainset or of a fixed-consist rake, such as TGV trailer or ICE3 trailer or Talgo trailer.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#PassengerCarryingRollingStock">Passenger Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset">
+  <h3>Trainset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trainset</p>
+  <div class="comment">
+   <span class="markdown">TSI LOC&amp;PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation">Formation</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotoredRollingStock">Motored Rolling Stock</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van">
+  <h3>Van<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van</p>
+  <div class="comment">
+   <span class="markdown">TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">Freight Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">
+  <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle</p>
+  <div class="comment">
+   <span class="markdown">Common definition in Directives 2016/797, 2016/798: a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Coach">Coach</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Locomotive">Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#MotorCar">Motor Car</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#OnTrackMachine">On Track Machine</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RailCar">Rail Car</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#RoadRailVehicle">Road Rail Vehicle</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#SlaveLocomotive">Slave Locomotive</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Trailer">Trailer</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Van">Van</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon">Wagon</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons#Vehicle">
   <h3>Vehicle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons#Vehicle</p>
@@ -376,6 +759,21 @@ This section provides details for each class and property defined by Aggregated 
    </dt>
    <dd>
     <a href="#https://cdm.ovh/rst/cons#Formation" title="https://cdm.ovh/rst/cons#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon">
+  <h3>Wagon<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#Wagon</p>
+  <div class="comment">
+   <span class="markdown">A non-powered vehicle designed for carrying freight.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#FreightCarryingRollingStock">Freight Carrying Rolling Stock</a> <sup class="type-c" title="class">c</sup>, <a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Vehicle">Vehicle</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -660,6 +1058,35 @@ This section provides details for each class and property defined by Aggregated 
    </dl>
   </div>
  </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist"> <span>has Fixed Consist</span> </a></li>
+ </ul>
+ <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist">
+  <h3>has Fixed Consist<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist</p>
+  <div class="comment">
+   <span class="markdown">Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation" target="_blank" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_consist#Formation">Formation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
@@ -699,6 +1126,7 @@ This section provides details for each class and property defined by Aggregated 
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
 </div>
 </div>
 </div>
