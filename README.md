@@ -6,6 +6,6 @@ Contents is being transferred from the Semantic RSM Repo. Current contents is:
 
 | File | Purpose | Version | Wiki status |
 | ---- | ------- | ------ | ----------- |
-| cons.ttl | Rolling stock composition (or consist) | 0.1 | 70% |
+| cons.ttl | Rolling stock composition (or consist) | 0.1 | 100% |
 | typo.ttl | Rolling stock typology | N/A | N/A |
 | core.ttl | Imports the above | N/A | N/A |
