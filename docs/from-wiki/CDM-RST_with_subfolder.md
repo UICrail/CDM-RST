@@ -5,7 +5,7 @@ _Self-contained version with local images_
 
 ## Version
 
-This document was generated on 2025-11-19 21:22:37 UTC
+This document was generated on 2025-11-19 21:31:20 UTC
 
 
 ---
@@ -111,4 +111,22 @@ Rolling stock orientation is secondary to rolling stock composition: you can exp
 If, on the other hand, your use case is only about the relative position of two vehicles, these do not need to be part of a formation and you can use the extremities in the second diagram.
 
 <sub>Original page: [01-‐-Rolling-stock-consist.md](https://github.com/UICrail/CDM-RST/wiki/01-%E2%80%90-Rolling-stock-consist)</sub>
+
+
+---
+# Example: ghost train consist
+
+## Purpose
+
+Present the basic mechanism of linked lists in the rst-cons ontology.
+
+## Sample file ex1
+
+The "Ghost train" is a formation composed of a locomotive  and two rakes of three wagons each.
+
+![illustration: ghost train](images/ex1.png)
+
+The corresponding RDF Rurtle is ex1.ttl and can be found under ontology/data.
+
+<sub>Original page: [02-‐-Example:-ghost-train-consist.md](https://github.com/UICrail/CDM-RST/wiki/02-%E2%80%90-Example%3A-ghost-train-consist)</sub>
 
