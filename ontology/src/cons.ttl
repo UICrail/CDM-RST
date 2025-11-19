@@ -100,7 +100,7 @@ rst-cons:hasHeadRollingStock rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf rst-cons:includesRollingStock ;
                              rdf:type owl:FunctionalProperty ,
                                       owl:InverseFunctionalProperty ;
-                             rdfs:domain rst-cons:ListedFormation ;
+                             rdfs:domain rst-cons:Formation ;
                              rdfs:range rst-cons:ListedRollingStock ;
                              rdfs:comment "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."@en ;
                              rdfs:label "has head rolling stock"@en .
@@ -172,18 +172,14 @@ rst-cons:Formation rdf:type owl:Class ;
                    rdfs:label "Formation"@en .
 
 
-###  https://cdm.ovh/rst/cons#ListedFormation
-rst-cons:ListedFormation rdf:type owl:Class ;
-                         rdfs:subClassOf rst-cons:Formation ,
-                                         list:OWLList ;
-                         rdfs:comment "A Formation with an explicit sequence of oriented vehicles or formations."@en ;
-                         rdfs:label "ListedFormation"@en .
-
-
 ###  https://cdm.ovh/rst/cons#ListedRollingStock
 rst-cons:ListedRollingStock rdf:type owl:Class ;
                             rdfs:subClassOf rst-cons:RollingStock ,
-                                            list:OWLList ;
+                                            list:OWLList ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty rst-cons:hasNextRollingStock ;
+                                              owl:someValuesFrom owl:Thing
+                                            ] ;
                             owl:disjointWith list:EmptyList ;
                             rdfs:comment "Rolling stock that may have a predecessor or successor in a formation."@en ;
                             rdfs:label "Listed rolling stock"@en .
