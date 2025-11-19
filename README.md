@@ -7,5 +7,5 @@ Contents is being transferred from the Semantic RSM Repo. Current contents is:
 | File | Purpose | Version | Wiki status |
 | ---- | ------- | ------ | ----------- |
 | cons.ttl | Rolling stock composition (or consist) | 0.1 | 100% |
-| typo.ttl | Rolling stock typology | N/A | N/A |
-| core.ttl | Imports the above | N/A | N/A |
+| typo.ttl | Rolling stock typology | 0.2 | N/A |
+| core.ttl | Imports the above | no version | N/A |
