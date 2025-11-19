@@ -27,41 +27,52 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "7",
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
     "type" : "owl:unionOf"
   }, {
     "id" : "1",
     "type" : "owl:Thing"
   }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
     "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "https://cdm.ovh/rst/cons#Formation",
+    "baseIri" : "https://cdm.ovh/rst/cons",
     "instances" : 0,
-    "union" : [ "5", "6" ],
+    "label" : {
+      "IRI-based" : "Formation",
+      "en" : "Formation"
+    },
+    "comment" : {
+      "en" : "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "11" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "9" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "7"
+    "id" : "12"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -70,47 +81,18 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "https://cdm.ovh/rst/cons#Formation",
-    "baseIri" : "https://cdm.ovh/rst/cons",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Formation",
-      "en" : "Formation"
-    },
-    "subClasses" : [ "10" ],
-    "comment" : {
-      "en" : "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."
-    },
-    "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "9" ]
-  }, {
     "iri" : "https://w3id.org/list#OWLList",
     "baseIri" : "https://w3id.org/list",
     "instances" : 0,
     "label" : {
       "IRI-based" : "OWLList"
     },
-    "subClasses" : [ "5", "10" ],
+    "subClasses" : [ "8" ],
     "comment" : {
       "en" : "Using the List ontology also used by IfcOwl."
     },
     "attributes" : [ "external" ],
-    "id" : "13"
-  }, {
-    "iri" : "https://cdm.ovh/rst/cons#ListedFormation",
-    "baseIri" : "https://cdm.ovh/rst/cons",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ListedFormation",
-      "en" : "ListedFormation"
-    },
-    "comment" : {
-      "en" : "A Formation with an explicit sequence of oriented vehicles or formations."
-    },
-    "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "13", "8" ]
+    "id" : "14"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#Vehicle",
     "baseIri" : "https://cdm.ovh/rst/cons",
@@ -120,11 +102,11 @@
       "en" : "Vehicle"
     },
     "comment" : {
-      "en" : "Common definition in Directives 2016/797, 2016/798:\n a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems\n\nERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."
+      "en" : "Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called \"trailer\").  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being \"atomic\" in operations is a necessary condition, but not a sufficient one to be called vehicle."
     },
     "attributes" : [ "external" ],
-    "id" : "19",
-    "superClasses" : [ "9" ]
+    "id" : "6",
+    "superClasses" : [ "11" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons#ListedRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons",
@@ -137,8 +119,8 @@
       "en" : "Rolling stock that may have a predecessor or successor in a formation."
     },
     "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "13", "9" ]
+    "id" : "8",
+    "superClasses" : [ "14", "11" ]
   }, {
     "iri" : "https://w3id.org/list#EmptyList",
     "baseIri" : "https://w3id.org/list",
@@ -151,7 +133,7 @@
       "en" : "Closing element of any List under the List ontology. This element does not correspond with any rolling stock."
     },
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "9"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#RollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons",
@@ -160,12 +142,12 @@
       "IRI-based" : "RollingStock",
       "en" : "Rolling stock"
     },
-    "subClasses" : [ "19", "5", "8" ],
+    "subClasses" : [ "6", "8", "5" ],
     "comment" : {
       "en" : "Base type for rolling stock. No direct instances are expected."
     },
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "11"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#Extremity",
     "baseIri" : "https://cdm.ovh/rst/cons",
@@ -178,7 +160,7 @@
       "en" : "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."
     },
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "21"
   } ],
   "property" : [ {
     "id" : "0",
@@ -190,13 +172,10 @@
     "id" : "4",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "11",
-    "type" : "rdfs:SubClassOf"
+    "id" : "7",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "12",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "15",
@@ -205,11 +184,8 @@
     "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "22",
-    "type" : "owl:disjointWith"
   }, {
     "id" : "23",
     "type" : "owl:objectProperty"
@@ -229,13 +205,13 @@
     "id" : "2",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "28",
+    "id" : "27",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -251,7 +227,7 @@
     "comment" : {
       "en" : "\"extremity 1\" (actual designation may vary) of a Rolling stock."
     },
-    "attributes" : [ "external", "inverse functional", "object", "functional" ],
+    "attributes" : [ "inverse functional", "functional", "object", "external" ],
     "id" : "0"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#extremity_2",
@@ -266,7 +242,7 @@
     "comment" : {
       "en" : "\"extremity 2\" of a piece of Rolling stock. Designation may vary."
     },
-    "attributes" : [ "external", "inverse functional", "object", "functional" ],
+    "attributes" : [ "inverse functional", "functional", "object", "external" ],
     "id" : "3"
   }, {
     "range" : "6",
@@ -274,51 +250,41 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "4"
   }, {
-    "range" : "8",
-    "domain" : "10",
+    "range" : "9",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "11"
+    "id" : "7"
   }, {
-    "range" : "13",
-    "domain" : "5",
+    "range" : "14",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "12"
-  }, {
-    "range" : "13",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "14"
+    "id" : "13"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#includesRollingStock",
     "inverse" : "16",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "9",
+    "range" : "11",
     "label" : {
       "IRI-based" : "includesRollingStock",
       "en" : "includes Rolling stock"
     },
-    "domain" : "8",
+    "domain" : "5",
     "subproperty" : [ "17" ],
     "comment" : {
       "en" : "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."
     },
-    "attributes" : [ "external", "inverse functional", "object", "irreflexive" ],
+    "attributes" : [ "inverse functional", "irreflexive", "object", "external" ],
     "id" : "15"
   }, {
-    "range" : "9",
-    "domain" : "19",
+    "range" : "11",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
-    "range" : "9",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "20"
-  }, {
-    "range" : "19",
+    "range" : "11",
     "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
+    "id" : "19"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#coupledTo",
     "baseIri" : "https://cdm.ovh/rst/cons",
@@ -330,9 +296,9 @@
     "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
-      "en" : "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
+      "en" : "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
     },
-    "attributes" : [ "external", "inverse functional", "object", "symmetric", "irreflexive", "functional" ],
+    "attributes" : [ "inverse functional", "irreflexive", "functional", "object", "symmetric", "external" ],
     "id" : "23"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#partOfFormation",
@@ -346,70 +312,70 @@
     "comment" : {
       "en" : "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."
     },
-    "attributes" : [ "external", "object", "irreflexive", "functional" ],
+    "attributes" : [ "irreflexive", "functional", "object", "external" ],
     "id" : "16"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasNextRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "7",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasNextRollingStock",
       "en" : "has next rolling stock"
     },
     "superproperty" : [ "26" ],
-    "domain" : "5",
+    "domain" : "8",
     "comment" : {
       "en" : "Indicates which Rolling stock comes next in a Consist."
     },
-    "attributes" : [ "external", "inverse functional", "object", "functional" ],
+    "attributes" : [ "inverse functional", "functional", "object", "external" ],
     "id" : "25"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasHeadRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "5",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasHeadRollingStock",
       "en" : "has head rolling stock"
     },
     "superproperty" : [ "15" ],
-    "domain" : "10",
+    "domain" : "5",
     "comment" : {
       "en" : "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."
     },
-    "attributes" : [ "external", "inverse functional", "object", "functional" ],
+    "attributes" : [ "inverse functional", "functional", "object", "external" ],
     "id" : "17"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#facesExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "27",
+    "range" : "21",
     "label" : {
       "IRI-based" : "facesExtremity",
       "en" : "faces extremity"
     },
-    "domain" : "27",
+    "domain" : "21",
     "subproperty" : [ "23" ],
     "comment" : {
       "en" : "object is the extremity of another Rolling stock that the subject extremity faces."
     },
-    "attributes" : [ "external", "inverse functional", "object", "symmetric", "irreflexive", "functional" ],
+    "attributes" : [ "inverse functional", "irreflexive", "functional", "object", "symmetric", "external" ],
     "id" : "24"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#hasExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "27",
+    "range" : "21",
     "label" : {
       "IRI-based" : "hasExtremity",
       "en" : "has extremity"
     },
-    "domain" : "9",
-    "subproperty" : [ "0", "3", "28" ],
-    "attributes" : [ "external", "inverse functional", "object" ],
+    "domain" : "11",
+    "subproperty" : [ "0", "3", "27" ],
+    "attributes" : [ "inverse functional", "object", "external" ],
     "id" : "2"
   }, {
-    "range" : "9",
-    "domain" : "8",
+    "range" : "11",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "id" : "28"
   }, {
     "iri" : "https://w3id.org/list#hasNext",
     "baseIri" : "https://w3id.org/list",
@@ -420,19 +386,19 @@
     },
     "domain" : "1",
     "subproperty" : [ "25" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "26"
   }, {
     "iri" : "https://cdm.ovh/rst/cons#frontExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons",
-    "range" : "27",
+    "range" : "21",
     "label" : {
       "IRI-based" : "frontExtremity",
       "en" : "front extremity"
     },
     "superproperty" : [ "2" ],
-    "domain" : "5",
-    "attributes" : [ "external", "inverse functional", "object", "functional" ],
-    "id" : "28"
+    "domain" : "8",
+    "attributes" : [ "inverse functional", "functional", "object", "external" ],
+    "id" : "27"
   } ]
 }

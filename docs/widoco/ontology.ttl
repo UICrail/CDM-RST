@@ -51,7 +51,7 @@
                                               owl:InverseFunctionalProperty ,
                                               owl:SymmetricProperty ,
                                               owl:IrreflexiveProperty ;
-                                     rdfs:comment "relate two extremities of two distinct Rolling stock items (hence the \"At\" in the label). A symmetric property. \"Coupled at\" is expressed irrespective of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en ;
+                                     rdfs:comment "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."@en ;
                                      rdfs:label "coupled to" .
 
 
@@ -109,7 +109,7 @@
                                                rdfs:subPropertyOf <https://cdm.ovh/rst/cons#includesRollingStock> ;
                                                rdf:type owl:FunctionalProperty ,
                                                         owl:InverseFunctionalProperty ;
-                                               rdfs:domain <https://cdm.ovh/rst/cons#ListedFormation> ;
+                                               rdfs:domain <https://cdm.ovh/rst/cons#Formation> ;
                                                rdfs:range <https://cdm.ovh/rst/cons#ListedRollingStock> ;
                                                rdfs:comment "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."@en ;
                                                rdfs:label "has head rolling stock"@en .
@@ -160,6 +160,11 @@
 
 ###  https://cdm.ovh/rst/cons#Extremity
 <https://cdm.ovh/rst/cons#Extremity> rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty [ owl:inverseOf <https://cdm.ovh/rst/cons#hasExtremity>
+                                                                      ] ;
+                                                       owl:someValuesFrom owl:Thing
+                                                     ] ;
                                      rdfs:comment "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."@en ;
                                      rdfs:label "Extremity"@en .
 
@@ -176,18 +181,14 @@
                                      rdfs:label "Formation"@en .
 
 
-###  https://cdm.ovh/rst/cons#ListedFormation
-<https://cdm.ovh/rst/cons#ListedFormation> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://cdm.ovh/rst/cons#Formation> ,
-                                                           <https://w3id.org/list#OWLList> ;
-                                           rdfs:comment "A Formation with an explicit sequence of oriented vehicles or formations."@en ;
-                                           rdfs:label "ListedFormation"@en .
-
-
 ###  https://cdm.ovh/rst/cons#ListedRollingStock
 <https://cdm.ovh/rst/cons#ListedRollingStock> rdf:type owl:Class ;
                                               rdfs:subClassOf <https://cdm.ovh/rst/cons#RollingStock> ,
-                                                              <https://w3id.org/list#OWLList> ;
+                                                              <https://w3id.org/list#OWLList> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://cdm.ovh/rst/cons#hasNextRollingStock> ;
+                                                                owl:someValuesFrom owl:Thing
+                                                              ] ;
                                               owl:disjointWith <https://w3id.org/list#EmptyList> ;
                                               rdfs:comment "Rolling stock that may have a predecessor or successor in a formation."@en ;
                                               rdfs:label "Listed rolling stock"@en .
