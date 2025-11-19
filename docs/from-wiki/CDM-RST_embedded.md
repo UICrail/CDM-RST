@@ -5,7 +5,7 @@ _Self-contained version with embedded images_
 
 ## Version
 
-This document was generated on 2025-11-19 14:40:29 UTC
+This document was generated on 2025-11-19 14:53:22 UTC
 
 
 ---
