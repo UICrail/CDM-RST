@@ -59,27 +59,27 @@
     
 
 
-    <!-- https://cdm.ovh/rst/cons#Formation -->
+    <!-- https://cdm.ovh/rst/cons/cons#Formation -->
 
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#Formation">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#Formation">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
     </rdf:Description>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#ListedRollingStock -->
+    <!-- https://cdm.ovh/rst/cons/cons#ListedRollingStock -->
 
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#ListedRollingStock">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#ListedRollingStock">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
     </rdf:Description>
     
 
 
-    <!-- https://cdm.ovh/rst/cons#Vehicle -->
+    <!-- https://cdm.ovh/rst/cons/cons#Vehicle -->
 
-    <rdf:Description rdf:about="https://cdm.ovh/rst/cons#Vehicle">
-        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons#RollingStock"/>
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://cdm.ovh/rst/cons/cons#RollingStock"/>
     </rdf:Description>
     
 
