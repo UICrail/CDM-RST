@@ -94,7 +94,7 @@ pages}\label{cdm-rst-compiled-wiki-pages}}
 \hypertarget{version}{%
 \subsection{Version}\label{version}}
 
-This document was generated on 2025-11-18 17:25:17 UTC
+This document was generated on 2025-11-19 09:16:45 UTC
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -274,6 +274,38 @@ that tells that the set of (rolling stock, extremity) pairs satisfying
 ``extremity\_1''. In set theory, Y does not overlap X iff Y is a subset
 of the complement of X (as the complement of X is the largest set not
 overlapping X).
+
+\hypertarget{formations-as-ordered-sets}{%
+\subsection{Formations as ordered
+sets}\label{formations-as-ordered-sets}}
+
+\hypertarget{purpose-3}{%
+\subsubsection{Purpose}\label{purpose-3}}
+
+Sequences, vectors, arrays are not part of OWL2 syntax elements. To
+express order, one must use some List ontology expressed in OWL2. Here,
+we use the same List ontology also used by IfcOwl. It rests on the
+``linked list'' paradigm, with each element of the list pointing to the
+next.
+
+The list is invariably closed by an instance of EmptyList, a special
+class provided by the List ontology. This ensures that the list has
+actually come to an end.
+
+\emph{Note: given the underlying ``Open World Assumption'', we do not
+assume that data are complete, we only accept positive information
+telling that it is complete. Here, the fact that a list element does not
+point to any next element has no meaning. After all, the next element
+could simply be unknown and get discovered later.}
+
+\hypertarget{diagram-2}{%
+\subsubsection{Diagram}\label{diagram-2}}
+
+\begin{figure}
+\centering
+\includegraphics{images/cons_003 - Consist.png}
+\caption{diagram: rolling stock consist}
+\end{figure}
 
 Original page:
 \href{https://github.com/UICrail/CDM-RST/wiki/01-\%E2\%80\%90-Rolling-stock-consist}{01-‐-Rolling-stock-consist.md}

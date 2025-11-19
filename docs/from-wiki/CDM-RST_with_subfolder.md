@@ -5,7 +5,7 @@ _Self-contained version with local images_
 
 ## Version
 
-This document was generated on 2025-11-18 17:25:17 UTC
+This document was generated on 2025-11-19 09:16:45 UTC
 
 
 ---
@@ -81,6 +81,20 @@ Once extremities are facing each other, one may consider coupling them; if they 
 #### About cardinalities, subproperties, and disjoint properties
 
 Property hasExtremity should have a cardinality of exactly 2 (not available in OWL2 RL) and this cardinality is of little use anyway, since we need to identify extremity 1 and extremity 2 that will orient the rolling stock. These extremities are singled out by sub-properties of hasExtremity. These sub-properties are disjoint: by essence, extremity 2 of a wagon cannot be the same as extremity 1 of the same wagon. This is expressed by the "not" flattened hexagon in GRAPHOL, that tells that the set of (rolling stock, extremity) pairs satisfying "extremity_2" does not overlap the set of pairs satisfying "extremity_1". In set theory, Y does not overlap X iff Y is a subset of the complement of X (as the complement of X is the largest set not overlapping X).
+
+## Formations as ordered sets
+
+### Purpose
+
+Sequences, vectors, arrays are not part of OWL2 syntax elements. To express order, one must use some List ontology expressed in OWL2. Here, we use the same List ontology also used by IfcOwl. It rests on the "linked list" paradigm, with each element of the list pointing to the next.
+
+The list is invariably closed by an instance of EmptyList, a special class provided by the List ontology. This ensures that the list has actually come to an end.
+
+_Note: given the underlying "Open World Assumption", we do not assume that data are complete, we only accept positive information telling that it is complete. Here, the fact that a list element does not point to any next element has no meaning. After all, the next element could simply be unknown and get discovered later._
+
+### Diagram
+
+![diagram: rolling stock consist](images/cons_003 - Consist.png)
 
 <sub>Original page: [01-‐-Rolling-stock-consist.md](https://github.com/UICrail/CDM-RST/wiki/01-%E2%80%90-Rolling-stock-consist)</sub>
 
