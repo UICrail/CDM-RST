@@ -8,8 +8,9 @@
 @base <https://cdm.ovh/rst/core#> .
 
 <https://cdm.ovh/rst/core> rdf:type owl:Ontology ;
-                            owl:imports <https://cdm.ovh/rst/cons/0.1/cons.ttl> ;
+                            owl:imports <https://cdm.ovh/rst/cons/0.1/cons.ttl> , <https://cdm.ovh/rst/typo/0.2/typo.ttl> ;
                             dc:description "Imports all CDM rolling stock-related ontologies" ;
+                            rdfs:comment "Current direct imports: rolling stock consist and typology ontologies." ;
                             dc:license <https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt> ;
                             dc:title "Aggregated Rolling stock ontologies" .
 
