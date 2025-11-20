@@ -76,6 +76,14 @@
     
 
 
+    <!-- https://cdm.ovh/rst/cons/cons#RollingStockSideEnum -->
+
+    <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </rdf:Description>
+    
+
+
     <!-- https://cdm.ovh/rst/cons/cons#Vehicle -->
 
     <rdf:Description rdf:about="https://cdm.ovh/rst/cons/cons#Vehicle">
