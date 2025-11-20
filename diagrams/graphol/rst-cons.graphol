@@ -562,6 +562,12 @@
           </annotations>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#RollingStockSideEnum</value>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#RollingStockSideScheme</value>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#Top</value>
           <annotations>
             <annotation>
@@ -632,20 +638,6 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <object>
                 <lexicalForm>Symmetric property "coupled to" relates two extremities of two distinct Rolling stock items (hence the "to" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</lexicalForm>
                 <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>https://cdm.ovh/rst/cons/cons#dummy</value>
-          <annotations>
-            <annotation>
-              <subject>https://cdm.ovh/rst/cons/cons#dummy</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
-              <object>
-                <lexicalForm>dummy</lexicalForm>
-                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -850,6 +842,21 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           </annotations>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#isExtremityOf</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#isExtremityOf</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>is extremity of</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#isSide</value>
           <functional/>
           <annotations>
@@ -860,6 +867,21 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
                 <lexicalForm>is side</lexicalForm>
                 <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#isSideOf</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#isSideOf</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>is side of</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language/>
               </object>
             </annotation>
           </annotations>
@@ -908,21 +930,6 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <object>
                 <lexicalForm>Starting with 1.</lexicalForm>
                 <datatype/>
-                <language>en</language>
-              </object>
-            </annotation>
-          </annotations>
-        </iri>
-        <iri>
-          <value>https://cdm.ovh/rst/cons/cons#sideOf</value>
-          <functional/>
-          <annotations>
-            <annotation>
-              <subject>https://cdm.ovh/rst/cons/cons#sideOf</subject>
-              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
-              <object>
-                <lexicalForm>side of</lexicalForm>
-                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -1177,8 +1184,8 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         </node>
         <node type="role" color="#fcfcfc" id="n44">
           <geometry width="70" height="50" y="430" x="90"/>
-          <iri>https://cdm.ovh/rst/cons/cons#sideOf</iri>
-          <label width="42" height="23" y="400" customSize="0" x="90" size="12"/>
+          <iri>https://cdm.ovh/rst/cons/cons#isSideOf</iri>
+          <label width="52" height="23" y="400" customSize="0" x="90" size="12"/>
         </node>
         <node type="role-inverse" color="#fcfcfc" id="n45">
           <geometry width="50" height="30" y="350" x="90"/>
@@ -1196,6 +1203,20 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         <node type="range-restriction" color="#000000" id="n48">
           <geometry width="20" height="20" y="280" x="660"/>
           <label width="39" height="23" y="258" customSize="0" x="660" size="12">exists</label>
+        </node>
+        <node type="concept" color="#fcfcfc" id="n49">
+          <geometry width="155" height="50" y="280" x="780"/>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSideEnum</iri>
+          <label width="155" height="23" y="280" customSize="0" x="780" size="12"/>
+        </node>
+        <node type="role-inverse" color="#fcfcfc" id="n50">
+          <geometry width="50" height="30" y="-50" x="160"/>
+          <label width="23" height="23" y="-50" customSize="0" x="160" size="12"/>
+        </node>
+        <node type="role" color="#fcfcfc" id="n51">
+          <geometry width="70" height="50" y="-120" x="160"/>
+          <iri>https://cdm.ovh/rst/cons/cons#isExtremityOf</iri>
+          <label width="79" height="23" y="-150" customSize="0" x="160" size="12"/>
         </node>
         <edge target="n24" type="input" source="n2" id="e4">
           <point y="30" x="570"/>
@@ -1272,13 +1293,33 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <point y="280" x="90"/>
           <point y="350" x="90"/>
         </edge>
-        <edge target="n41" type="inclusion" source="n47" id="e69">
-          <point y="280" x="490"/>
-          <point y="280" x="380"/>
-        </edge>
         <edge target="n45" type="inclusion" source="n44" id="e70">
           <point y="430" x="90"/>
           <point y="350" x="90"/>
+        </edge>
+        <edge target="n47" type="input" source="n46" id="e71">
+          <point y="280" x="570"/>
+          <point y="280" x="490"/>
+        </edge>
+        <edge target="n48" type="input" source="n46" id="e72">
+          <point y="280" x="570"/>
+          <point y="280" x="660"/>
+        </edge>
+        <edge target="n49" type="inclusion" source="n48" id="e73">
+          <point y="280" x="660"/>
+          <point y="280" x="780"/>
+        </edge>
+        <edge target="n50" type="inclusion" source="n51" id="e74">
+          <point y="-120" x="160"/>
+          <point y="-50" x="160"/>
+        </edge>
+        <edge target="n50" type="input" source="n33" id="e75">
+          <point y="30" x="160"/>
+          <point y="-50" x="160"/>
+        </edge>
+        <edge target="n47" type="equivalence" source="n41" id="e77">
+          <point y="280" x="380"/>
+          <point y="280" x="490"/>
         </edge>
       </diagram>
       <diagram width="5000" height="5000" name="003 - Consist">
@@ -1461,7 +1502,7 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         </node>
         <node type="concept" color="#fcfcfc" id="n10">
           <geometry width="155" height="50" y="-100" x="340"/>
-          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSide</iri>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSideEnum</iri>
           <label width="155" height="23" y="-100" customSize="0" x="340" size="12"/>
         </node>
         <node type="role" color="#c2b078" id="n11">
@@ -1478,14 +1519,17 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <label width="39" height="23" y="-202" customSize="0" x="590" size="12">exists</label>
         </node>
         <node type="individual" color="#fcfcfc" id="n17">
-          <geometry width="110" height="60" y="-90" x="880"/>
-          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSide</iri>
-          <label width="110" height="23" y="-90" customSize="0" x="880" size="12"/>
+          <geometry width="100" height="60" y="-100" x="730"/>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSideScheme</iri>
+          <label width="100" height="38" y="-100" customSize="0" x="730" size="12"/>
         </node>
-        <node type="concept" color="#fcfcfc" id="n21">
-          <geometry width="110" height="50" y="-100" x="690"/>
-          <iri>https://cdm.ovh/rst/cons/cons#dummy</iri>
-          <label width="110" height="23" y="-100" customSize="0" x="690" size="12"/>
+        <node type="domain-restriction" color="#fcfcfc" id="n22">
+          <geometry width="20" height="20" y="-100" x="510"/>
+          <label width="39" height="23" y="-122" customSize="0" x="510" size="12">forall</label>
+        </node>
+        <node type="enumeration" color="#fcfcfc" id="n24">
+          <geometry width="50" height="30" y="-100" x="610"/>
+          <label width="40" height="23" y="-100" customSize="0" x="610" size="12"/>
         </node>
         <node type="individual" color="#fcfcfc" id="n3">
           <geometry width="60" height="60" y="40" x="160"/>
@@ -1556,6 +1600,30 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         <edge target="n10" type="membership" source="n8" id="e58">
           <point y="40" x="560"/>
           <point y="-100" x="340"/>
+        </edge>
+        <edge target="n1" type="inclusion" source="n10" id="e59">
+          <point y="-100" x="340"/>
+          <point y="-180" x="340"/>
+        </edge>
+        <edge target="n0" type="membership" source="n17" id="e60">
+          <point y="-100" x="730"/>
+          <point y="-180" x="730"/>
+        </edge>
+        <edge target="n22" type="inclusion" source="n10" id="e61">
+          <point y="-100" x="340"/>
+          <point y="-100" x="510"/>
+        </edge>
+        <edge target="n22" type="input" source="n11" id="e62">
+          <point y="-180" x="510"/>
+          <point y="-100" x="510"/>
+        </edge>
+        <edge target="n24" type="input" source="n17" id="e65">
+          <point y="-100" x="730"/>
+          <point y="-100" x="610"/>
+        </edge>
+        <edge target="n22" type="input" source="n24" id="e66">
+          <point y="-100" x="610"/>
+          <point y="-100" x="510"/>
         </edge>
       </diagram>
     </diagrams>

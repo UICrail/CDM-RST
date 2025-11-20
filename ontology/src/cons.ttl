@@ -156,6 +156,14 @@ cons:includesRollingStock rdf:type owl:ObjectProperty ;
                           rdfs:label "includes Rolling stock"@en .
 
 
+###  https://cdm.ovh/rst/cons/cons#isExtremityOf
+cons:isExtremityOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf [ owl:inverseOf cons:hasExtremity
+                                      ] ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:label "is extremity of"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#isSide
 cons:isSide rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
@@ -164,20 +172,20 @@ cons:isSide rdf:type owl:ObjectProperty ,
             rdfs:label "is side"@en .
 
 
+###  https://cdm.ovh/rst/cons/cons#isSideOf
+cons:isSideOf rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf [ owl:inverseOf cons:hasSide
+                                 ] ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:label "is side of" .
+
+
 ###  https://cdm.ovh/rst/cons/cons#partOfFormation
 cons:partOfFormation rdf:type owl:ObjectProperty ,
                               owl:FunctionalProperty ,
                               owl:IrreflexiveProperty ;
                      rdfs:comment "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."@en ;
                      rdfs:label "part of formation"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#sideOf
-cons:sideOf rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf [ owl:inverseOf cons:hasSide
-                               ] ;
-            rdf:type owl:FunctionalProperty ;
-            rdfs:label "side of"@en .
 
 
 ###  https://w3id.org/list#hasNext
@@ -254,6 +262,10 @@ cons:RollingStock rdf:type owl:Class ;
 
 ###  https://cdm.ovh/rst/cons/cons#RollingStockSide
 cons:RollingStockSide rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty cons:isSide ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] ;
                       rdfs:comment "The side of a particular rolling stock, as in \"the left side of locomotive BB15046\"."@en ;
                       rdfs:label "Rolling stock side"@en .
 
