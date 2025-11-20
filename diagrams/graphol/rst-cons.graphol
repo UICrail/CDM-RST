@@ -29,6 +29,10 @@
           <namespace>http://www.w3.org/2000/01/rdf-schema#</namespace>
         </prefix>
         <prefix>
+          <value>skos</value>
+          <namespace>http://www.w3.org/2004/02/skos/core#</namespace>
+        </prefix>
+        <prefix>
           <value>xml</value>
           <namespace>http://www.w3.org/XML/1998/namespace</namespace>
         </prefix>
@@ -353,6 +357,54 @@
           <value>http://www.w3.org/2002/07/owl#versionInfo</value>
         </iri>
         <iri>
+          <value>http://www.w3.org/2004/02/skos/core#Concept</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2004/02/skos/core#ConceptScheme</value>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2004/02/skos/core#Front</value>
+          <annotations>
+            <annotation>
+              <subject>http://www.w3.org/2004/02/skos/core#Front</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Front</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>http://www.w3.org/2004/02/skos/core#inScheme</value>
+          <annotations>
+            <annotation>
+              <subject>http://www.w3.org/2004/02/skos/core#inScheme</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>in scheme</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Bottom</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Bottom</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Bottom</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#Extremity</value>
           <annotations>
             <annotation>
@@ -399,6 +451,20 @@
           </annotations>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Left</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Left</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Left</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#ListedRollingStock</value>
           <annotations>
             <annotation>
@@ -422,6 +488,34 @@
           </annotations>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Rear</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Rear</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Rear</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Right</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Right</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Right</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#RollingStock</value>
           <annotations>
             <annotation>
@@ -439,6 +533,43 @@
               <object>
                 <lexicalForm>Rolling stock</lexicalForm>
                 <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#RollingStockSide</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#RollingStockSide</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Rolling stock side</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#RollingStockSide</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#comment</property>
+              <object>
+                <lexicalForm>The side of a particular rolling stock, as in "the left side of locomotive BB15046".</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#Top</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#Top</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Top</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -501,6 +632,20 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <object>
                 <lexicalForm>Symmetric property "coupled to" relates two extremities of two distinct Rolling stock items (hence the "to" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...).</lexicalForm>
                 <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#dummy</value>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#dummy</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>dummy</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -665,6 +810,21 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           </annotations>
         </iri>
         <iri>
+          <value>https://cdm.ovh/rst/cons/cons#hasSide</value>
+          <inverseFunctional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#hasSide</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>has side</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
           <value>https://cdm.ovh/rst/cons/cons#includesRollingStock</value>
           <inverseFunctional/>
           <irreflexive/>
@@ -684,6 +844,21 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <object>
                 <lexicalForm>This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts.</lexicalForm>
                 <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#isSide</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#isSide</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>is side</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -733,6 +908,21 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
               <object>
                 <lexicalForm>Starting with 1.</lexicalForm>
                 <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
+          </annotations>
+        </iri>
+        <iri>
+          <value>https://cdm.ovh/rst/cons/cons#sideOf</value>
+          <functional/>
+          <annotations>
+            <annotation>
+              <subject>https://cdm.ovh/rst/cons/cons#sideOf</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>side of</lexicalForm>
+                <datatype>http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral</datatype>
                 <language>en</language>
               </object>
             </annotation>
@@ -913,35 +1103,35 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
       </diagram>
       <diagram width="5000" height="5000" name="002 - Extremities">
         <node type="role" color="#fcfcfc" id="n0">
-          <geometry width="70" height="50" y="140" x="-70"/>
+          <geometry width="70" height="50" y="140" x="70"/>
           <iri>https://cdm.ovh/rst/cons/cons#extremity_1</iri>
-          <label width="69" height="23" y="110" customSize="0" x="-70" size="12"/>
+          <label width="69" height="23" y="110" customSize="0" x="70" size="12"/>
         </node>
         <node type="range-restriction" color="#000000" id="n12">
-          <geometry width="20" height="20" y="30" x="520"/>
-          <label width="39" height="23" y="8" customSize="0" x="520" size="12">exists</label>
+          <geometry width="20" height="20" y="30" x="660"/>
+          <label width="39" height="23" y="8" customSize="0" x="660" size="12">exists</label>
         </node>
         <node type="role" color="#fcfcfc" id="n14">
-          <geometry width="70" height="50" y="140" x="430"/>
+          <geometry width="70" height="50" y="140" x="570"/>
           <iri>https://cdm.ovh/rst/cons/cons#coupledTo</iri>
-          <label width="63" height="23" y="110" customSize="0" x="430" size="12"/>
+          <label width="63" height="23" y="110" customSize="0" x="570" size="12"/>
         </node>
         <node type="range-restriction" color="#000000" id="n19">
-          <geometry width="20" height="20" y="30" x="110"/>
-          <label width="39" height="23" y="8" customSize="0" x="110" size="12">exists</label>
+          <geometry width="20" height="20" y="30" x="250"/>
+          <label width="39" height="23" y="8" customSize="0" x="250" size="12">exists</label>
         </node>
         <node type="role" color="#fcfcfc" id="n2">
-          <geometry width="70" height="50" y="30" x="430"/>
+          <geometry width="70" height="50" y="30" x="570"/>
           <iri>https://cdm.ovh/rst/cons/cons#facesExtremity</iri>
-          <label width="87" height="23" y="0" customSize="0" x="430" size="12"/>
+          <label width="87" height="23" y="0" customSize="0" x="570" size="12"/>
         </node>
         <node type="domain-restriction" color="#fcfcfc" id="n24">
-          <geometry width="20" height="20" y="30" x="340"/>
-          <label width="39" height="23" y="8" customSize="0" x="340" size="12">exists</label>
+          <geometry width="20" height="20" y="30" x="480"/>
+          <label width="39" height="23" y="8" customSize="0" x="480" size="12">exists</label>
         </node>
         <node type="domain-restriction" color="#fcfcfc" id="n29">
-          <geometry width="20" height="20" y="30" x="-70"/>
-          <label width="39" height="23" y="8" customSize="0" x="-70" size="12">exists</label>
+          <geometry width="20" height="20" y="30" x="-60"/>
+          <label width="39" height="23" y="8" customSize="0" x="-60" size="12">exists</label>
         </node>
         <node type="concept" color="#fcfcfc" id="n30">
           <geometry width="117" height="50" y="30" x="-190"/>
@@ -949,78 +1139,146 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
           <label width="117" height="23" y="30" customSize="0" x="-190" size="12"/>
         </node>
         <node type="concept" color="#fcfcfc" id="n31">
-          <geometry width="110" height="50" y="30" x="240"/>
+          <geometry width="110" height="50" y="30" x="380"/>
           <iri>https://cdm.ovh/rst/cons/cons#Extremity</iri>
-          <label width="110" height="23" y="30" customSize="0" x="240" size="12"/>
+          <label width="110" height="23" y="30" customSize="0" x="380" size="12"/>
         </node>
         <node type="role" color="#fcfcfc" id="n32">
-          <geometry width="70" height="50" y="140" x="110"/>
+          <geometry width="70" height="50" y="140" x="250"/>
           <iri>https://cdm.ovh/rst/cons/cons#extremity_2</iri>
-          <label width="69" height="23" y="110" customSize="0" x="110" size="12"/>
+          <label width="69" height="23" y="110" customSize="0" x="250" size="12"/>
         </node>
         <node type="role" color="#fcfcfc" id="n33">
-          <geometry width="70" height="50" y="30" x="20"/>
+          <geometry width="70" height="50" y="30" x="160"/>
           <iri>https://cdm.ovh/rst/cons/cons#hasExtremity</iri>
-          <label width="77" height="23" y="0" customSize="0" x="20" size="12"/>
+          <label width="77" height="23" y="0" customSize="0" x="160" size="12"/>
         </node>
         <node type="complement" color="#fcfcfc" id="n38">
-          <geometry width="50" height="30" y="140" x="20"/>
-          <label width="25" height="23" y="140" customSize="0" x="20" size="12"/>
+          <geometry width="50" height="30" y="140" x="160"/>
+          <label width="25" height="23" y="140" customSize="0" x="160" size="12"/>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n39">
+          <geometry width="20" height="20" y="280" x="-60"/>
+          <label width="39" height="23" y="258" customSize="0" x="-60" size="12">exists</label>
+        </node>
+        <node type="range-restriction" color="#000000" id="n40">
+          <geometry width="20" height="20" y="280" x="250"/>
+          <label width="39" height="23" y="258" customSize="0" x="250" size="12">exists</label>
+        </node>
+        <node type="concept" color="#fcfcfc" id="n41">
+          <geometry width="110" height="50" y="280" x="380"/>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSide</iri>
+          <label width="110" height="23" y="280" customSize="0" x="380" size="12"/>
+        </node>
+        <node type="role" color="#fcfcfc" id="n42">
+          <geometry width="70" height="50" y="280" x="90"/>
+          <iri>https://cdm.ovh/rst/cons/cons#hasSide</iri>
+          <label width="50" height="23" y="250" customSize="0" x="90" size="12"/>
+        </node>
+        <node type="role" color="#fcfcfc" id="n44">
+          <geometry width="70" height="50" y="430" x="90"/>
+          <iri>https://cdm.ovh/rst/cons/cons#sideOf</iri>
+          <label width="42" height="23" y="400" customSize="0" x="90" size="12"/>
+        </node>
+        <node type="role-inverse" color="#fcfcfc" id="n45">
+          <geometry width="50" height="30" y="350" x="90"/>
+          <label width="23" height="23" y="350" customSize="0" x="90" size="12"/>
+        </node>
+        <node type="role" color="#fcfcfc" id="n46">
+          <geometry width="70" height="50" y="280" x="570"/>
+          <iri>https://cdm.ovh/rst/cons/cons#isSide</iri>
+          <label width="40" height="23" y="250" customSize="0" x="570" size="12"/>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n47">
+          <geometry width="20" height="20" y="280" x="490"/>
+          <label width="39" height="23" y="258" customSize="0" x="490" size="12">exists</label>
+        </node>
+        <node type="range-restriction" color="#000000" id="n48">
+          <geometry width="20" height="20" y="280" x="660"/>
+          <label width="39" height="23" y="258" customSize="0" x="660" size="12">exists</label>
         </node>
         <edge target="n24" type="input" source="n2" id="e4">
-          <point y="30" x="430"/>
-          <point y="30" x="340"/>
+          <point y="30" x="570"/>
+          <point y="30" x="480"/>
         </edge>
         <edge target="n30" type="inclusion" source="n29" id="e40">
-          <point y="30" x="-70"/>
+          <point y="30" x="-60"/>
           <point y="30" x="-190"/>
         </edge>
         <edge target="n29" type="input" source="n33" id="e45">
-          <point y="30" x="20"/>
-          <point y="30" x="-70"/>
+          <point y="30" x="160"/>
+          <point y="30" x="-60"/>
         </edge>
         <edge target="n19" type="input" source="n33" id="e46">
-          <point y="30" x="20"/>
-          <point y="30" x="110"/>
+          <point y="30" x="160"/>
+          <point y="30" x="250"/>
         </edge>
         <edge target="n12" type="input" source="n2" id="e5">
-          <point y="30" x="430"/>
-          <point y="30" x="520"/>
+          <point y="30" x="570"/>
+          <point y="30" x="660"/>
         </edge>
         <edge target="n33" type="inclusion" source="n0" id="e53">
-          <point y="140" x="-70"/>
-          <point y="30" x="20"/>
+          <point y="140" x="70"/>
+          <point y="30" x="160"/>
         </edge>
         <edge target="n33" type="inclusion" source="n32" id="e54">
-          <point y="140" x="110"/>
-          <point y="30" x="20"/>
+          <point y="140" x="250"/>
+          <point y="30" x="160"/>
         </edge>
         <edge target="n31" type="inclusion" source="n24" id="e55">
-          <point y="30" x="340"/>
-          <point y="30" x="240"/>
+          <point y="30" x="480"/>
+          <point y="30" x="380"/>
         </edge>
         <edge target="n31" type="inclusion" source="n12" id="e56">
-          <point y="30" x="520"/>
-          <point y="30" x="570"/>
-          <point y="-40" x="570"/>
-          <point y="-40" x="240"/>
-          <point y="30" x="240"/>
+          <point y="30" x="660"/>
+          <point y="30" x="710"/>
+          <point y="-40" x="710"/>
+          <point y="-40" x="380"/>
+          <point y="30" x="380"/>
         </edge>
         <edge target="n38" type="inclusion" source="n32" id="e59">
-          <point y="140" x="110"/>
-          <point y="140" x="20"/>
+          <point y="140" x="250"/>
+          <point y="140" x="160"/>
         </edge>
         <edge target="n2" type="inclusion" source="n14" id="e6">
-          <point y="140" x="430"/>
-          <point y="30" x="430"/>
+          <point y="140" x="570"/>
+          <point y="30" x="570"/>
         </edge>
         <edge target="n38" type="input" source="n0" id="e60">
-          <point y="140" x="-70"/>
-          <point y="140" x="20"/>
+          <point y="140" x="70"/>
+          <point y="140" x="160"/>
         </edge>
         <edge target="n31" type="equivalence" source="n19" id="e61">
-          <point y="30" x="110"/>
-          <point y="30" x="240"/>
+          <point y="30" x="250"/>
+          <point y="30" x="380"/>
+        </edge>
+        <edge target="n30" type="inclusion" source="n39" id="e62">
+          <point y="280" x="-60"/>
+          <point y="30" x="-190"/>
+        </edge>
+        <edge target="n41" type="inclusion" source="n40" id="e63">
+          <point y="280" x="250"/>
+          <point y="280" x="380"/>
+        </edge>
+        <edge target="n39" type="input" source="n42" id="e64">
+          <point y="280" x="90"/>
+          <point y="280" x="-60"/>
+        </edge>
+        <edge target="n40" type="input" source="n42" id="e65">
+          <point y="280" x="90"/>
+          <point y="280" x="250"/>
+        </edge>
+        <edge target="n45" type="input" source="n42" id="e67">
+          <point y="280" x="90"/>
+          <point y="350" x="90"/>
+        </edge>
+        <edge target="n41" type="inclusion" source="n47" id="e69">
+          <point y="280" x="490"/>
+          <point y="280" x="380"/>
+        </edge>
+        <edge target="n45" type="inclusion" source="n44" id="e70">
+          <point y="430" x="90"/>
+          <point y="350" x="90"/>
         </edge>
       </diagram>
       <diagram width="5000" height="5000" name="003 - Consist">
@@ -1188,6 +1446,116 @@ ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway l
         <edge target="n58" type="equivalence" source="n19" id="e93">
           <point y="220" x="-100"/>
           <point y="220" x="70"/>
+        </edge>
+      </diagram>
+      <diagram width="5000" height="5000" name="004 - Concept schemes">
+        <node type="concept" color="#c2b078" id="n0">
+          <geometry width="175" height="50" y="-180" x="730"/>
+          <iri>http://www.w3.org/2004/02/skos/core#ConceptScheme</iri>
+          <label width="175" height="23" y="-180" customSize="0" x="730" size="12"/>
+        </node>
+        <node type="concept" color="#c2b078" id="n1">
+          <geometry width="110" height="50" y="-180" x="340"/>
+          <iri>http://www.w3.org/2004/02/skos/core#Concept</iri>
+          <label width="110" height="23" y="-180" customSize="0" x="340" size="12"/>
+        </node>
+        <node type="concept" color="#fcfcfc" id="n10">
+          <geometry width="155" height="50" y="-100" x="340"/>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSide</iri>
+          <label width="155" height="23" y="-100" customSize="0" x="340" size="12"/>
+        </node>
+        <node type="role" color="#c2b078" id="n11">
+          <geometry width="70" height="50" y="-180" x="510"/>
+          <iri>http://www.w3.org/2004/02/skos/core#inScheme</iri>
+          <label width="60" height="23" y="-210" customSize="0" x="510" size="12"/>
+        </node>
+        <node type="domain-restriction" color="#fcfcfc" id="n14">
+          <geometry width="20" height="20" y="-180" x="430"/>
+          <label width="39" height="23" y="-202" customSize="0" x="430" size="12">exists</label>
+        </node>
+        <node type="range-restriction" color="#000000" id="n15">
+          <geometry width="20" height="20" y="-180" x="590"/>
+          <label width="39" height="23" y="-202" customSize="0" x="590" size="12">exists</label>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n17">
+          <geometry width="110" height="60" y="-90" x="880"/>
+          <iri>https://cdm.ovh/rst/cons/cons#RollingStockSide</iri>
+          <label width="110" height="23" y="-90" customSize="0" x="880" size="12"/>
+        </node>
+        <node type="concept" color="#fcfcfc" id="n21">
+          <geometry width="110" height="50" y="-100" x="690"/>
+          <iri>https://cdm.ovh/rst/cons/cons#dummy</iri>
+          <label width="110" height="23" y="-100" customSize="0" x="690" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n3">
+          <geometry width="60" height="60" y="40" x="160"/>
+          <iri>http://www.w3.org/2004/02/skos/core#Front</iri>
+          <label width="60" height="23" y="40" customSize="0" x="160" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n4">
+          <geometry width="60" height="60" y="40" x="240"/>
+          <iri>https://cdm.ovh/rst/cons/cons#Rear</iri>
+          <label width="60" height="23" y="40" customSize="0" x="240" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n5">
+          <geometry width="60" height="60" y="40" x="320"/>
+          <iri>https://cdm.ovh/rst/cons/cons#Left</iri>
+          <label width="60" height="23" y="40" customSize="0" x="320" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n6">
+          <geometry width="60" height="60" y="40" x="400"/>
+          <iri>https://cdm.ovh/rst/cons/cons#Right</iri>
+          <label width="60" height="23" y="40" customSize="0" x="400" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n7">
+          <geometry width="60" height="60" y="40" x="480"/>
+          <iri>https://cdm.ovh/rst/cons/cons#Top</iri>
+          <label width="60" height="23" y="40" customSize="0" x="480" size="12"/>
+        </node>
+        <node type="individual" color="#fcfcfc" id="n8">
+          <geometry width="60" height="60" y="40" x="560"/>
+          <iri>https://cdm.ovh/rst/cons/cons#Bottom</iri>
+          <label width="60" height="23" y="40" customSize="0" x="560" size="12"/>
+        </node>
+        <edge target="n15" type="input" source="n11" id="e16">
+          <point y="-180" x="510"/>
+          <point y="-180" x="590"/>
+        </edge>
+        <edge target="n14" type="input" source="n11" id="e17">
+          <point y="-180" x="510"/>
+          <point y="-180" x="430"/>
+        </edge>
+        <edge target="n0" type="inclusion" source="n15" id="e18">
+          <point y="-180" x="590"/>
+          <point y="-180" x="730"/>
+        </edge>
+        <edge target="n1" type="inclusion" source="n14" id="e19">
+          <point y="-180" x="430"/>
+          <point y="-180" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n3" id="e53">
+          <point y="40" x="160"/>
+          <point y="-100" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n4" id="e54">
+          <point y="40" x="240"/>
+          <point y="-100" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n5" id="e55">
+          <point y="40" x="320"/>
+          <point y="-100" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n6" id="e56">
+          <point y="40" x="400"/>
+          <point y="-100" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n7" id="e57">
+          <point y="40" x="480"/>
+          <point y="-100" x="340"/>
+        </edge>
+        <edge target="n10" type="membership" source="n8" id="e58">
+          <point y="40" x="560"/>
+          <point y="-100" x="340"/>
         </edge>
       </diagram>
     </diagrams>
