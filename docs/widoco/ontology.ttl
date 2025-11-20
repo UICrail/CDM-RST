@@ -50,6 +50,10 @@
 xsd:boolean rdf:type rdfs:Datatype .
 
 
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -174,6 +178,15 @@ xsd:boolean rdf:type rdfs:Datatype .
                                                                           rdfs:domain <https://cdm.ovh/rst/cons/cons#Formation> ;
                                                                           rdfs:range xsd:boolean ;
                                                                           rdfs:comment "Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop."@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#positionInFormation
+<https://cdm.ovh/rst/cons/cons#positionInFormation> rdf:type owl:DatatypeProperty ,
+                                                             owl:FunctionalProperty ;
+                                                    rdfs:domain <https://cdm.ovh/rst/cons/cons#RollingStock> ;
+                                                    rdfs:range xsd:integer ;
+                                                    rdfs:comment "Starting with 1."@en ;
+                                                    rdfs:label "position in formation"@en .
 
 
 #################################################################

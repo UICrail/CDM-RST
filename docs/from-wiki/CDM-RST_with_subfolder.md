@@ -5,7 +5,7 @@ _Self-contained version with local images_
 
 ## Version
 
-This document was generated on 2025-11-19 21:31:20 UTC
+This document was generated on 2025-11-20 10:10:23 UTC
 
 
 ---
@@ -21,7 +21,7 @@ Represent rolling stock vehicles and formations, their parthood relationships, a
 
 Simple distinction between a vehicle and a formation. A formation consists of vehicles or other formations. A formation that cannot be broken down further is called a "vehicle". The old debate is whether the breakdown can, or cannot be performed in operations. "It depends", not necessarily on the rolling stock, so the rolling stock ontology is neutral about it.
 
-The main statement, under the ontology, is: if a piece of rolling stock cannot be broken down into other pieces of rolling stock, then it is a vehicle.
+The main statement, under the ontology, is: if a piece of rolling stock is either a vehicle (exclusive or) a formation. If it is a vehicle, it cannot be broken down into other pieces of rolling stock.
 
 A TGV trainset or ICE3 for instance have trailers, but these will not be handled separately in operations (ICE case) and cannot even rest on rails (TGV trailers rest on 0 to 2 bogies), but are still considered "vehicles" by many, and for sure they cannot be further broken down into smaller pieces of rolling stock - only parts (carbodies, bogies, HVAC units, seats...).
 
