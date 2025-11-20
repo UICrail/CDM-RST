@@ -32,6 +32,14 @@ dcterms:title rdf:type owl:AnnotationProperty .
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -143,6 +151,19 @@ cons:partOfFormation rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/list#hasNext
 list:hasNext rdf:type owl:ObjectProperty ;
              rdfs:label "has next"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://cdm.ovh/rst/cons/cons#positionInFormation
+cons:positionInFormation rdf:type owl:DatatypeProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain cons:RollingStock ;
+                         rdfs:range xsd:integer ;
+                         rdfs:comment "Starting with 1."@en ;
+                         rdfs:label "position in formation"@en .
 
 
 #################################################################
