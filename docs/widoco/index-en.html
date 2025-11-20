@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Thu Nov 20 13:26:06 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Thu Nov 20 14:32:17 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -252,13 +252,16 @@ This ontology has the following classes and properties.</span>
          title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a>
    </li>
    <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#isExtremityOf" title="https://cdm.ovh/rst/cons/cons#isExtremityOf">is extremity of</a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#isSideOf" title="https://cdm.ovh/rst/cons/cons#isSideOf">is side of</a>
    </li>
    <li>
-      <a href="#https://cdm.ovh/rst/cons/cons#sideOf" title="https://cdm.ovh/rst/cons/cons#sideOf">side of</a>
+      <a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -717,6 +720,10 @@ This section provides details for each class and property defined by Aggregated 
   </div>
   <dl class="description">
    <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
     is in domain of
    </dt>
    <dd>
@@ -871,9 +878,10 @@ This section provides details for each class and property defined by Aggregated 
   <li><a href="#https://cdm.ovh/rst/cons/cons#hasSide" title="https://cdm.ovh/rst/cons/cons#hasSide">has side</a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#isExtremityOf" title="https://cdm.ovh/rst/cons/cons#isExtremityOf">is extremity of</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#isSideOf" title="https://cdm.ovh/rst/cons/cons#isSideOf">is side of</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a></li>
-  <li><a href="#https://cdm.ovh/rst/cons/cons#sideOf" title="https://cdm.ovh/rst/cons/cons#sideOf">side of</a></li>
  </ul>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#coupledTo">
   <h3>coupled to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -1164,6 +1172,19 @@ This section provides details for each class and property defined by Aggregated 
    </dl>
   </div>
  </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#isExtremityOf">
+  <h3>is extremity of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#isExtremityOf</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#isSide">
   <h3>is side<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#isSide</p>
@@ -1185,6 +1206,19 @@ This section provides details for each class and property defined by Aggregated 
    </dl>
   </div>
  </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#isSideOf">
+  <h3>is side of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#isSideOf</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#partOfFormation">
   <h3>part of formation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#partOfFormation</p>
@@ -1200,19 +1234,6 @@ This section provides details for each class and property defined by Aggregated 
     <dd>
      <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://cdm.ovh/rst/cons/cons#sideOf">
-  <h3>side of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#sideOf</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd></dd>
    </dl>
   </div>
  </div>

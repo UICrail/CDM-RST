@@ -10,6 +10,24 @@
   } ]
 }, {
   "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://cdm.ovh/rst/cons/cons#isSide"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid12"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -19,24 +37,29 @@
 }, {
   "@id" : "_:genid4",
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://cdm.ovh/rst/cons/cons#hasSide"
+    "@id" : "https://cdm.ovh/rst/cons/cons#hasExtremity"
   } ]
 }, {
   "@id" : "_:genid5",
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://cdm.ovh/rst/cons/cons#hasSide"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "_:genid6"
+    "@id" : "_:genid7"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#hasExtremity"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#includesRollingStock"
@@ -45,22 +68,13 @@
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#hasNextRollingStock"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
   "@id" : "http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist",
@@ -150,7 +164,7 @@
     "@value" : "Extremity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons/cons#Formation",
@@ -166,7 +180,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#RollingStock"
   }, {
-    "@id" : "_:genid7"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#Vehicle"
@@ -197,7 +211,7 @@
   }, {
     "@id" : "https://w3id.org/list#OWLList"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid9"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/list#EmptyList"
@@ -243,6 +257,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Rolling stock side"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons/cons#RollingStockSideEnum",
@@ -250,7 +267,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid9"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons/cons#RollingStockSideScheme",
@@ -449,6 +466,16 @@
     "@id" : "https://cdm.ovh/rst/cons/cons#partOfFormation"
   } ]
 }, {
+  "@id" : "https://cdm.ovh/rst/cons/cons#isExtremityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is extremity of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
   "@id" : "https://cdm.ovh/rst/cons/cons#isSide",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -460,6 +487,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://cdm.ovh/rst/cons/cons#RollingStockSideEnum"
+  } ]
+}, {
+  "@id" : "https://cdm.ovh/rst/cons/cons#isSideOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is side of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/cons/cons#partOfFormation",
@@ -488,16 +524,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ]
-}, {
-  "@id" : "https://cdm.ovh/rst/cons/cons#sideOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "side of"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "https://cdm.ovh/rst/core",

@@ -30,13 +30,16 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "5",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -45,85 +48,82 @@
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "47",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "66",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
     "type" : "owl:Class"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -137,8 +137,8 @@
       "en" : "Powered vehicle without driving desk, with energy possibly fed from master locomotive ( = subclass \"slug\").\r\nAlso called \"truck\" in France, e.g. TC61000.\r\nDo not confuse with master/slave configuration of two normal locomotives (\"multiple working\" in the UK)."
     },
     "attributes" : [ "external" ],
-    "id" : "5",
-    "superClasses" : [ "2", "6" ]
+    "id" : "3",
+    "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Wagon",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -150,8 +150,8 @@
       "en" : "A non-powered vehicle designed for carrying freight."
     },
     "attributes" : [ "external" ],
-    "id" : "7",
-    "superClasses" : [ "8", "6" ]
+    "id" : "6",
+    "superClasses" : [ "7", "5" ]
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -159,9 +159,9 @@
     "label" : {
       "IRI-based" : "Concept"
     },
-    "subClasses" : [ "10" ],
+    "subClasses" : [ "9" ],
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "8"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#MotorCar",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -173,8 +173,8 @@
       "en" : "Powered vehicle that cannot be used standalone, as can be found in trainset (EMUs or DMUs).\r\nMay or may not carry passengers."
     },
     "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "2", "6" ]
+    "id" : "10",
+    "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#OnTrackMachine",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -186,8 +186,8 @@
       "en" : "a motored railway vehicle used for infrastructure maintenance"
     },
     "attributes" : [ "external" ],
-    "id" : "12",
-    "superClasses" : [ "2", "6" ]
+    "id" : "11",
+    "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Locomotive",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -199,8 +199,8 @@
       "en" : "Powered vehicle having a driving desk and can be used standalone (e.g. for shunting or ferrying movements), but is normally used for hauling other vehicles or formations."
     },
     "attributes" : [ "external" ],
-    "id" : "13",
-    "superClasses" : [ "2", "6" ]
+    "id" : "12",
+    "superClasses" : [ "4", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#RollingStockSideEnum",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -252,8 +252,8 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "9" ]
+    "id" : "9",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#ListedRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -266,8 +266,8 @@
       "en" : "Rolling stock that may have a predecessor or successor in a formation."
     },
     "attributes" : [ "external" ],
-    "id" : "15",
-    "superClasses" : [ "16", "26" ]
+    "id" : "1",
+    "superClasses" : [ "2", "25" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#Vehicle",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -276,13 +276,13 @@
       "IRI-based" : "Vehicle",
       "en" : "Vehicle"
     },
-    "subClasses" : [ "34", "1", "35", "5", "36", "7", "11", "20", "12", "13" ],
+    "subClasses" : [ "33", "34", "35", "3", "19", "6", "10", "27", "11", "12" ],
     "comment" : {
       "en" : "Common definition in Directives 2016/797, 2016/798:\r\n a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems\r\n\r\nERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."
     },
     "attributes" : [ "external" ],
-    "id" : "6",
-    "superClasses" : [ "26" ]
+    "id" : "5",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -298,7 +298,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "45"
+    "id" : "44"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Trailer",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -311,7 +311,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "35",
-    "superClasses" : [ "25", "6" ]
+    "superClasses" : [ "16", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#RoadVehicleRake",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -323,8 +323,8 @@
       "en" : "From TSI WAG 2023, \"unit\", 3rd entry:\r\nseparate rail bogies connected to compatible road vehicle(s), the combination of which forms a rake of a rail compatible system."
     },
     "attributes" : [ "external" ],
-    "id" : "30",
-    "superClasses" : [ "31" ]
+    "id" : "40",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#Formation",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -333,13 +333,13 @@
       "IRI-based" : "Formation",
       "en" : "Formation"
     },
-    "subClasses" : [ "38", "30", "41" ],
+    "subClasses" : [ "29", "40", "38" ],
     "comment" : {
       "en" : "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."
     },
     "attributes" : [ "external" ],
-    "id" : "31",
-    "superClasses" : [ "26" ]
+    "id" : "30",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/list#EmptyList",
     "baseIri" : "https://w3id.org/list",
@@ -352,7 +352,7 @@
       "en" : "Closing element of any List under the List ontology. This element does not correspond with any rolling stock."
     },
     "attributes" : [ "external" ],
-    "id" : "54"
+    "id" : "53"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -360,36 +360,36 @@
     "label" : {
       "IRI-based" : "FreightCarryingRollingStock"
     },
-    "subClasses" : [ "36", "7", "20" ],
+    "subClasses" : [ "19", "6", "27" ],
     "comment" : {
       "en" : "Feature of Rolling stock: ability to carry freight, by design."
     },
     "attributes" : [ "external" ],
-    "id" : "8",
-    "superClasses" : [ "18" ]
+    "id" : "7",
+    "superClasses" : [ "14" ]
   }, {
     "instances" : 0,
-    "union" : [ "15", "54" ],
+    "union" : [ "1", "53" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "43"
+    "id" : "42"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "46",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "63",
+    "id" : "64",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "4",
+    "id" : "21",
     "label" : {
       "undefined" : "Thing"
     }
@@ -404,8 +404,8 @@
       "en" : "TSI LOCPAS 2020:\r\na vehicle without traction in a fixed or variable formation capable of carrying passengers (by extension, requirements specified to apply to coaches in this TSI are deemed to apply also to restaurant cars, sleeping cars, couchettes cars, etc.)\r\n\r\nNote: was \"passenger carriage\" in earlier versions."
     },
     "attributes" : [ "external" ],
-    "id" : "34",
-    "superClasses" : [ "25", "6" ]
+    "id" : "33",
+    "superClasses" : [ "16", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#RollingStockFeature",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -413,9 +413,9 @@
     "label" : {
       "IRI-based" : "RollingStockFeature"
     },
-    "subClasses" : [ "8", "25", "2" ],
+    "subClasses" : [ "7", "16", "4" ],
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "14"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Trainset",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -427,8 +427,8 @@
       "en" : "TSI LOC&PAS, 2020: a fixed formation that can operate as a train; it is by definition not intended to be reconfigured, except within a workshop environment. It is composed of only motored or of motored and non-motored vehicles."
     },
     "attributes" : [ "external" ],
-    "id" : "41",
-    "superClasses" : [ "2", "31" ]
+    "id" : "38",
+    "superClasses" : [ "4", "30" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#RoadRailVehicle",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -437,8 +437,8 @@
       "IRI-based" : "RoadRailVehicle"
     },
     "attributes" : [ "external" ],
-    "id" : "20",
-    "superClasses" : [ "8", "6" ]
+    "id" : "27",
+    "superClasses" : [ "7", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#Extremity",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -451,7 +451,7 @@
       "en" : "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."
     },
     "attributes" : [ "external" ],
-    "id" : "32"
+    "id" : "31"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#RailCar",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -463,8 +463,8 @@
       "en" : "Wikipedia (12/3/2024): self-propelled railway vehicle designed to transport passengers.\r\nEquiv. to FR: Autorail, DE: Schienenbus (narrower meaning: two axles only).\r\nNote however the numerous variants and ambiguities."
     },
     "attributes" : [ "external" ],
-    "id" : "1",
-    "superClasses" : [ "25", "2", "6" ]
+    "id" : "34",
+    "superClasses" : [ "16", "4", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Rake",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -476,8 +476,8 @@
       "en" : "Any non-powered formation. Examples:\r\nwagon rake;\r\n(fixed consist) set of TGV trailers;\r\n(fixed or variable consist) rake of coaches."
     },
     "attributes" : [ "external" ],
-    "id" : "38",
-    "superClasses" : [ "31" ]
+    "id" : "29",
+    "superClasses" : [ "30" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#RollingStockSide",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -490,7 +490,7 @@
       "en" : "The side of a particular rolling stock, as in \"the left side of locomotive BB15046\"."
     },
     "attributes" : [ "external" ],
-    "id" : "66"
+    "id" : "63"
   }, {
     "iri" : "https://w3id.org/list#OWLList",
     "baseIri" : "https://w3id.org/list",
@@ -498,12 +498,12 @@
     "label" : {
       "IRI-based" : "OWLList"
     },
-    "subClasses" : [ "15" ],
+    "subClasses" : [ "1" ],
     "comment" : {
       "en" : "Using the List ontology also used by IfcOwl."
     },
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "2"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#MotoredRollingStock",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -511,13 +511,13 @@
     "label" : {
       "IRI-based" : "MotoredRollingStock"
     },
-    "subClasses" : [ "1", "5", "41", "11", "12", "13" ],
+    "subClasses" : [ "34", "3", "38", "10", "11", "12" ],
     "comment" : {
       "en" : "Feature of rolling stock that is able by design to exert tractive effort on wheels or (rarely) cogwheels."
     },
     "attributes" : [ "external" ],
-    "id" : "2",
-    "superClasses" : [ "18" ]
+    "id" : "4",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#Van",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -529,8 +529,8 @@
       "en" : "TSI LOCPAS 2020: a vehicle without traction capable of carrying payload other than passengers, e.g. luggage or mail, intended to be integrated into a fixed or variable formation which is intended to transport passengers."
     },
     "attributes" : [ "external" ],
-    "id" : "36",
-    "superClasses" : [ "8", "6" ]
+    "id" : "19",
+    "superClasses" : [ "7", "5" ]
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#RollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
@@ -539,12 +539,12 @@
       "IRI-based" : "RollingStock",
       "en" : "Rolling stock"
     },
-    "subClasses" : [ "31", "15", "6" ],
+    "subClasses" : [ "30", "1", "5" ],
     "comment" : {
       "en" : "Base type for rolling stock. No direct instances are expected."
     },
     "attributes" : [ "external" ],
-    "id" : "26"
+    "id" : "25"
   }, {
     "iri" : "https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock",
     "baseIri" : "https://cdm.ovh/rst/typo/typo",
@@ -552,50 +552,50 @@
     "label" : {
       "IRI-based" : "PassengerCarryingRollingStock"
     },
-    "subClasses" : [ "34", "1", "35" ],
+    "subClasses" : [ "33", "34", "35" ],
     "comment" : {
       "en" : "Feature of Rolling stock: ability to carry freight, by design."
     },
     "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "18" ]
+    "id" : "16",
+    "superClasses" : [ "14" ]
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "3",
-    "type" : "owl:objectProperty"
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "14",
+    "id" : "15",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "17",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
+    "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "21",
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
+    "id" : "36",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "27",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "23",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "37",
     "type" : "rdfs:SubClassOf"
@@ -603,14 +603,14 @@
     "id" : "39",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "42",
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "48",
     "type" : "rdfs:SubClassOf"
@@ -627,40 +627,37 @@
     "id" : "52",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "53",
+    "id" : "54",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "55",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "56",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "44",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "59",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "owl:disjointWith"
   }, {
     "id" : "61",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "33",
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "64",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
     "type" : "owl:objectProperty"
   }, {
     "id" : "69",
@@ -669,41 +666,41 @@
     "id" : "71",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
     "id" : "73",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "74",
+    "id" : "75",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "75",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "76",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "77",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "70",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "79",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "80",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "82",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "83",
     "type" : "rdfs:SubClassOf"
@@ -716,408 +713,425 @@
   }, {
     "id" : "86",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
-    "iri" : "https://cdm.ovh/rst/cons/cons#sideOf",
-    "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "sideOf",
-      "en" : "side of"
-    },
+    "range" : "14",
     "domain" : "4",
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "3"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
   }, {
-    "range" : "16",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "14"
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
   }, {
-    "range" : "18",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
-    "range" : "8",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "19"
-  }, {
-    "range" : "8",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "21"
+    "range" : "7",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#extremity_2",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "4",
+    "range" : "21",
     "label" : {
       "IRI-based" : "extremity_2",
       "en" : "extremity_2"
     },
-    "superproperty" : [ "23" ],
-    "domain" : "4",
+    "superproperty" : [ "22" ],
+    "domain" : "21",
     "comment" : {
       "en" : "\"extremity 2\" of a piece of Rolling stock. Designation may vary."
     },
-    "attributes" : [ "functional", "inverse functional", "object", "external" ],
-    "id" : "22"
+    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "id" : "20"
   }, {
-    "range" : "18",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
+    "range" : "14",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#extremity_1",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "4",
+    "range" : "21",
     "label" : {
       "IRI-based" : "extremity_1",
       "en" : "extremity_1"
     },
-    "superproperty" : [ "23" ],
-    "domain" : "4",
+    "superproperty" : [ "22" ],
+    "domain" : "21",
     "comment" : {
       "en" : "\"extremity 1\" (actual designation may vary) of a Rolling stock."
     },
-    "attributes" : [ "functional", "inverse functional", "object", "external" ],
-    "id" : "27"
+    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "id" : "24"
   }, {
-    "range" : "18",
-    "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "7",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "28"
-  }, {
-    "range" : "31",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#hasExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "32",
+    "range" : "31",
     "label" : {
       "IRI-based" : "hasExtremity",
       "en" : "has extremity"
     },
-    "domain" : "26",
-    "subproperty" : [ "22", "27", "33" ],
-    "attributes" : [ "inverse functional", "object", "external" ],
-    "id" : "23"
+    "domain" : "25",
+    "subproperty" : [ "20", "24", "32" ],
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "22"
   }, {
-    "range" : "31",
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "30",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
-    "range" : "8",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "30",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "39"
-  }, {
-    "range" : "31",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#hasNextRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "43",
+    "range" : "42",
     "label" : {
       "IRI-based" : "hasNextRollingStock",
       "en" : "has next rolling stock"
     },
-    "superproperty" : [ "44" ],
-    "domain" : "15",
+    "superproperty" : [ "43" ],
+    "domain" : "1",
     "comment" : {
       "en" : "Indicates which Rolling stock comes next in a Consist."
     },
-    "attributes" : [ "functional", "inverse functional", "object", "external" ],
-    "id" : "42"
+    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "id" : "41"
   }, {
     "iri" : "http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist",
     "baseIri" : "http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology",
-    "range" : "47",
+    "range" : "46",
     "label" : {
       "IRI-based" : "hasFixedConsist"
     },
-    "domain" : "31",
+    "domain" : "30",
     "comment" : {
       "en" : "Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "46"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "45"
   }, {
-    "range" : "6",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "5",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "48"
   }, {
-    "range" : "6",
-    "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
-    "range" : "6",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "50"
   }, {
-    "range" : "6",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
-    "range" : "6",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
+    "range" : "5",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
   }, {
-    "range" : "6",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "55"
-  }, {
-    "range" : "6",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
   }, {
     "iri" : "https://w3id.org/list#hasNext",
     "baseIri" : "https://w3id.org/list",
-    "range" : "4",
+    "range" : "21",
     "label" : {
       "IRI-based" : "hasNext",
       "en" : "has next"
     },
-    "domain" : "4",
-    "subproperty" : [ "42" ],
+    "domain" : "21",
+    "subproperty" : [ "41" ],
     "attributes" : [ "object", "external" ],
-    "id" : "44"
+    "id" : "43"
   }, {
-    "range" : "6",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "5",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "5",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
-  }, {
-    "range" : "6",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
-    "range" : "45",
+    "range" : "44",
     "label" : {
       "IRI-based" : "inScheme",
       "en" : "in scheme"
     },
-    "domain" : "9",
+    "domain" : "8",
     "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "5",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
-    "range" : "6",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "54",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "53",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#frontExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "32",
+    "range" : "31",
     "label" : {
       "IRI-based" : "frontExtremity",
       "en" : "front extremity"
     },
-    "superproperty" : [ "23" ],
-    "domain" : "15",
-    "attributes" : [ "functional", "inverse functional", "object", "external" ],
-    "id" : "33"
+    "superproperty" : [ "22" ],
+    "domain" : "1",
+    "attributes" : [ "object", "functional", "inverse functional", "external" ],
+    "id" : "32"
   }, {
-    "range" : "9",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "64"
+    "iri" : "https://cdm.ovh/rst/cons/cons#isExtremityOf",
+    "baseIri" : "https://cdm.ovh/rst/cons/cons",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isExtremityOf",
+      "en" : "is extremity of"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "65"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#hasSide",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "66",
+    "range" : "63",
     "label" : {
       "IRI-based" : "hasSide",
       "en" : "has side"
     },
-    "domain" : "26",
-    "attributes" : [ "inverse functional", "object", "external" ],
-    "id" : "65"
+    "domain" : "25",
+    "attributes" : [ "object", "inverse functional", "external" ],
+    "id" : "66"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#facesExtremity",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "32",
+    "range" : "31",
     "label" : {
       "IRI-based" : "facesExtremity",
       "en" : "faces extremity"
     },
-    "domain" : "32",
+    "domain" : "31",
     "subproperty" : [ "70" ],
     "comment" : {
       "en" : "object is the extremity of another Rolling stock that the subject extremity faces."
     },
-    "attributes" : [ "functional", "inverse functional", "irreflexive", "object", "symmetric", "external" ],
+    "attributes" : [ "object", "irreflexive", "functional", "inverse functional", "external", "symmetric" ],
     "id" : "69"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#includesRollingStock",
     "inverse" : "72",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "26",
+    "range" : "25",
     "label" : {
       "IRI-based" : "includesRollingStock",
       "en" : "includes Rolling stock"
     },
-    "domain" : "31",
+    "domain" : "30",
     "subproperty" : [ "73" ],
     "comment" : {
       "en" : "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."
     },
-    "attributes" : [ "inverse functional", "irreflexive", "object", "external" ],
+    "attributes" : [ "object", "irreflexive", "inverse functional", "external" ],
     "id" : "71"
+  }, {
+    "range" : "16",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#hasHeadRollingStock",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "15",
+    "range" : "1",
     "label" : {
       "IRI-based" : "hasHeadRollingStock",
       "en" : "has head rolling stock"
     },
     "superproperty" : [ "71" ],
-    "domain" : "31",
+    "domain" : "30",
     "comment" : {
       "en" : "Each formation has exactly one \"First\" rolling stock. This notion of \"first\" is only related to the rolling stock, not however to the direction of travel which may vary (general case of multiple units or reversible trains) or not (case of hauled freight trains). Please also not that the direction of movement is yet another notion (think of shunting)."
     },
-    "attributes" : [ "functional", "inverse functional", "object", "external" ],
+    "attributes" : [ "object", "functional", "inverse functional", "external" ],
     "id" : "73"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#positionInFormation",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "63",
+    "range" : "64",
     "label" : {
       "IRI-based" : "positionInFormation",
       "en" : "position in formation"
     },
-    "domain" : "26",
+    "domain" : "25",
     "comment" : {
       "en" : "Starting with 1."
     },
-    "attributes" : [ "functional", "datatype", "external" ],
-    "id" : "74"
+    "attributes" : [ "functional", "external", "datatype" ],
+    "id" : "75"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#isSide",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "10",
+    "range" : "9",
     "label" : {
       "IRI-based" : "isSide",
       "en" : "is side"
     },
-    "domain" : "66",
-    "attributes" : [ "functional", "object", "external" ],
-    "id" : "75"
-  }, {
-    "range" : "25",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "63",
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "76"
   }, {
-    "range" : "25",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "16",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "77"
+  }, {
+    "range" : "16",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://cdm.ovh/rst/cons/cons#isSideOf",
+    "baseIri" : "https://cdm.ovh/rst/cons/cons",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "isSideOf",
+      "undefined" : "is side of"
+    },
+    "domain" : "21",
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "79"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#coupledTo",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "4",
+    "range" : "21",
     "label" : {
       "IRI-based" : "coupledTo",
       "undefined" : "coupled to"
     },
     "superproperty" : [ "69" ],
-    "domain" : "4",
+    "domain" : "21",
     "comment" : {
       "en" : "Symmetric property \"coupled to\" relates two extremities of two distinct Rolling stock items (hence the \"to\" in the label). The property is expressed irrespectively of the type of coupling (mechanical, virtual) or coupler (UIC, Scharfenberg...)."
     },
-    "attributes" : [ "functional", "inverse functional", "irreflexive", "object", "symmetric", "external" ],
+    "attributes" : [ "object", "irreflexive", "functional", "inverse functional", "external", "symmetric" ],
     "id" : "70"
   }, {
     "range" : "25",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "78"
-  }, {
-    "range" : "26",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "79"
-  }, {
-    "range" : "2",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "80"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
   }, {
     "iri" : "https://cdm.ovh/rst/cons/cons#partOfFormation",
     "baseIri" : "https://cdm.ovh/rst/cons/cons",
-    "range" : "4",
+    "range" : "21",
     "label" : {
       "IRI-based" : "partOfFormation",
       "en" : "part of formation"
     },
-    "domain" : "4",
+    "domain" : "21",
     "comment" : {
       "en" : "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."
     },
-    "attributes" : [ "functional", "irreflexive", "object", "external" ],
+    "attributes" : [ "object", "irreflexive", "functional", "external" ],
     "id" : "72"
   }, {
-    "range" : "26",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "81"
-  }, {
-    "range" : "26",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "82"
-  }, {
-    "range" : "2",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "25",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "83"
   }, {
-    "range" : "2",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "25",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "84"
   }, {
-    "range" : "2",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
-    "range" : "2",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "4",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
   } ]
 }

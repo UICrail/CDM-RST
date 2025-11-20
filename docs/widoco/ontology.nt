@@ -161,6 +161,13 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://cdm.ovh/rst/cons/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."@en .
 <https://cdm.ovh/rst/cons/cons#includesRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "includes Rolling stock"@en .
 # 
+# https://cdm.ovh/rst/cons/cons#isExtremityOf
+<https://cdm.ovh/rst/cons/cons#isExtremityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons/cons#isExtremityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/cons#hasExtremity> .
+<https://cdm.ovh/rst/cons/cons#isExtremityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons/cons#isExtremityOf> <http://www.w3.org/2000/01/rdf-schema#label> "is extremity of"@en .
+# 
 # https://cdm.ovh/rst/cons/cons#isSide
 <https://cdm.ovh/rst/cons/cons#isSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://cdm.ovh/rst/cons/cons#isSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -168,19 +175,19 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://cdm.ovh/rst/cons/cons#isSide> <http://www.w3.org/2000/01/rdf-schema#range> <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> .
 <https://cdm.ovh/rst/cons/cons#isSide> <http://www.w3.org/2000/01/rdf-schema#label> "is side"@en .
 # 
+# https://cdm.ovh/rst/cons/cons#isSideOf
+<https://cdm.ovh/rst/cons/cons#isSideOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://cdm.ovh/rst/cons/cons#isSideOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/cons#hasSide> .
+<https://cdm.ovh/rst/cons/cons#isSideOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons/cons#isSideOf> <http://www.w3.org/2000/01/rdf-schema#label> "is side of" .
+# 
 # https://cdm.ovh/rst/cons/cons#partOfFormation
 <https://cdm.ovh/rst/cons/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://cdm.ovh/rst/cons/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://cdm.ovh/rst/cons/cons#partOfFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
 <https://cdm.ovh/rst/cons/cons#partOfFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."@en .
 <https://cdm.ovh/rst/cons/cons#partOfFormation> <http://www.w3.org/2000/01/rdf-schema#label> "part of formation"@en .
-# 
-# https://cdm.ovh/rst/cons/cons#sideOf
-<https://cdm.ovh/rst/cons/cons#sideOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://cdm.ovh/rst/cons/cons#sideOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/cons#hasSide> .
-<https://cdm.ovh/rst/cons/cons#sideOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://cdm.ovh/rst/cons/cons#sideOf> <http://www.w3.org/2000/01/rdf-schema#label> "side of"@en .
 # 
 # https://w3id.org/list#hasNext
 <https://w3id.org/list#hasNext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -227,21 +234,21 @@ _:genid4 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/con
 # 
 # https://cdm.ovh/rst/cons/cons#Extremity
 <https://cdm.ovh/rst/cons/cons#Extremity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://cdm.ovh/rst/cons/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/cons#hasExtremity> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://cdm.ovh/rst/cons/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#inverseOf> <https://cdm.ovh/rst/cons/cons#hasExtremity> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://cdm.ovh/rst/cons/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#comment> "denotes the extremity of a rolling stock. The extremity designation is either set at design and manufacturing time (e.g. extremity1, extremity 2 in the case of a wagon), or rests on other conventions (e.g. extremities of a variable-consist trainset)."@en .
 <https://cdm.ovh/rst/cons/cons#Extremity> <http://www.w3.org/2000/01/rdf-schema#label> "Extremity"@en .
 # 
 # https://cdm.ovh/rst/cons/cons#Formation
 <https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons/cons#RollingStock> .
-<https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons/cons#includesRollingStock> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons/cons#includesRollingStock> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2002/07/owl#disjointWith> <https://cdm.ovh/rst/cons/cons#Vehicle> .
 <https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#comment> "A sequence of vehicles (or other formations) that are coupled in some way (mechanically or virtually)."@en .
 <https://cdm.ovh/rst/cons/cons#Formation> <http://www.w3.org/2000/01/rdf-schema#label> "Formation"@en .
@@ -250,10 +257,10 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://cdm.ovh/rst/cons/cons#RollingStock> .
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/list#OWLList> .
-<https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons/cons#hasNextRollingStock> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons/cons#hasNextRollingStock> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/list#EmptyList> .
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#comment> "Rolling stock that may have a predecessor or successor in a formation."@en .
 <https://cdm.ovh/rst/cons/cons#ListedRollingStock> <http://www.w3.org/2000/01/rdf-schema#label> "Listed rolling stock"@en .
@@ -265,21 +272,25 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://cdm.ovh/rst/cons/cons#RollingStockSide
 <https://cdm.ovh/rst/cons/cons#RollingStockSide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://cdm.ovh/rst/cons/cons#RollingStockSide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://cdm.ovh/rst/cons/cons#isSide> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://cdm.ovh/rst/cons/cons#RollingStockSide> <http://www.w3.org/2000/01/rdf-schema#comment> "The side of a particular rolling stock, as in \"the left side of locomotive BB15046\"."@en .
 <https://cdm.ovh/rst/cons/cons#RollingStockSide> <http://www.w3.org/2000/01/rdf-schema#label> "Rolling stock side"@en .
 # 
 # https://cdm.ovh/rst/cons/cons#RollingStockSideEnum
 <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#oneOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://cdm.ovh/rst/cons/cons#RollingStockSideScheme> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://cdm.ovh/rst/cons/cons#RollingStockSideScheme> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://cdm.ovh/rst/cons/cons#Vehicle
 <https://cdm.ovh/rst/cons/cons#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
