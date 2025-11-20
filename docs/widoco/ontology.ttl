@@ -58,6 +58,13 @@ xsd:integer rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:label "in scheme"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#coupledTo
 <https://cdm.ovh/rst/cons/cons#coupledTo> rdf:type owl:ObjectProperty ;
                                           rdfs:subPropertyOf <https://cdm.ovh/rst/cons/cons#facesExtremity> ;
@@ -144,6 +151,14 @@ xsd:integer rdf:type rdfs:Datatype .
                                                     rdfs:label "has next rolling stock"@en .
 
 
+###  https://cdm.ovh/rst/cons/cons#hasSide
+<https://cdm.ovh/rst/cons/cons#hasSide> rdf:type owl:ObjectProperty ,
+                                                 owl:InverseFunctionalProperty ;
+                                        rdfs:domain <https://cdm.ovh/rst/cons/cons#RollingStock> ;
+                                        rdfs:range <https://cdm.ovh/rst/cons/cons#RollingStockSide> ;
+                                        rdfs:label "has side"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#includesRollingStock
 <https://cdm.ovh/rst/cons/cons#includesRollingStock> rdf:type owl:ObjectProperty ;
                                                      owl:inverseOf <https://cdm.ovh/rst/cons/cons#partOfFormation> ;
@@ -155,12 +170,28 @@ xsd:integer rdf:type rdfs:Datatype .
                                                      rdfs:label "includes Rolling stock"@en .
 
 
+###  https://cdm.ovh/rst/cons/cons#isSide
+<https://cdm.ovh/rst/cons/cons#isSide> rdf:type owl:ObjectProperty ,
+                                                owl:FunctionalProperty ;
+                                       rdfs:domain <https://cdm.ovh/rst/cons/cons#RollingStockSide> ;
+                                       rdfs:range <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                       rdfs:label "is side"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#partOfFormation
 <https://cdm.ovh/rst/cons/cons#partOfFormation> rdf:type owl:ObjectProperty ,
                                                          owl:FunctionalProperty ,
                                                          owl:IrreflexiveProperty ;
                                                 rdfs:comment "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."@en ;
                                                 rdfs:label "part of formation"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#sideOf
+<https://cdm.ovh/rst/cons/cons#sideOf> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf [ owl:inverseOf <https://cdm.ovh/rst/cons/cons#hasSide>
+                                                          ] ;
+                                       rdf:type owl:FunctionalProperty ;
+                                       rdfs:label "side of"@en .
 
 
 ###  https://w3id.org/list#hasNext
@@ -192,6 +223,14 @@ xsd:integer rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
 
 ###  https://cdm.ovh/rst/cons/cons#Extremity
 <https://cdm.ovh/rst/cons/cons#Extremity> rdf:type owl:Class ;
@@ -233,6 +272,24 @@ xsd:integer rdf:type rdfs:Datatype .
 <https://cdm.ovh/rst/cons/cons#RollingStock> rdf:type owl:Class ;
                                              rdfs:comment "Base type for rolling stock. No direct instances are expected."@en ;
                                              rdfs:label "Rolling stock"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#RollingStockSide
+<https://cdm.ovh/rst/cons/cons#RollingStockSide> rdf:type owl:Class ;
+                                                 rdfs:comment "The side of a particular rolling stock, as in \"the left side of locomotive BB15046\"."@en ;
+                                                 rdfs:label "Rolling stock side"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#RollingStockSideEnum
+<https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                       owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                           owl:oneOf ( <https://cdm.ovh/rst/cons/cons#RollingStockSideScheme>
+                                                                                                     )
+                                                                                         ]
+                                                                     ] .
 
 
 ###  https://cdm.ovh/rst/cons/cons#Vehicle
@@ -378,6 +435,51 @@ Do not confuse with master/slave configuration of two normal locomotives (\"mult
 ###  https://w3id.org/list#OWLList
 <https://w3id.org/list#OWLList> rdf:type owl:Class ;
                                 rdfs:comment "Using the List ontology also used by IfcOwl."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Front
+<http://www.w3.org/2004/02/skos/core#Front> rdf:type owl:NamedIndividual ,
+                                                     <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                            rdfs:label "Front"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#Bottom
+<https://cdm.ovh/rst/cons/cons#Bottom> rdf:type owl:NamedIndividual ,
+                                                <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                       rdfs:label "Bottom"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#Left
+<https://cdm.ovh/rst/cons/cons#Left> rdf:type owl:NamedIndividual ,
+                                              <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                     rdfs:label "Left"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#Rear
+<https://cdm.ovh/rst/cons/cons#Rear> rdf:type owl:NamedIndividual ,
+                                              <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                     rdfs:label "Rear"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#Right
+<https://cdm.ovh/rst/cons/cons#Right> rdf:type owl:NamedIndividual ,
+                                               <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                      rdfs:label "Right"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#RollingStockSideScheme
+<https://cdm.ovh/rst/cons/cons#RollingStockSideScheme> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  https://cdm.ovh/rst/cons/cons#Top
+<https://cdm.ovh/rst/cons/cons#Top> rdf:type owl:NamedIndividual ,
+                                             <https://cdm.ovh/rst/cons/cons#RollingStockSideEnum> ;
+                                    rdfs:label "Top"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

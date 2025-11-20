@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Thu Nov 20 13:12:27 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Thu Nov 20 13:26:06 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -173,6 +173,15 @@ This ontology has the following classes and properties.</span>
       <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a>
    </li>
    <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSide" title="https://cdm.ovh/rst/cons/cons#RollingStockSide">Rolling stock side</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum"
+         title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">
+         <span>Rolling Stock Side Enum</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/typo/typo#SlaveLocomotive" title="https://cdm.ovh/rst/typo/typo#SlaveLocomotive">
          <span>Slave Locomotive</span>
       </a>
@@ -233,11 +242,23 @@ This ontology has the following classes and properties.</span>
          title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a>
    </li>
    <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#hasSide" title="https://cdm.ovh/rst/cons/cons#hasSide">has side</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock"
          title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a>
    </li>
    <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a>
+   </li>
+   <li>
       <a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#sideOf" title="https://cdm.ovh/rst/cons/cons#sideOf">side of</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -285,6 +306,33 @@ This ontology has the following classes and properties.</span>
          <span>title</span>
       </a>
    </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#Bottom" title="https://cdm.ovh/rst/cons/cons#Bottom">Bottom</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2004/02/skos/core#Front" title="http://www.w3.org/2004/02/skos/core#Front">Front</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#Left" title="https://cdm.ovh/rst/cons/cons#Left">Left</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#Rear" title="https://cdm.ovh/rst/cons/cons#Rear">Rear</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#Right" title="https://cdm.ovh/rst/cons/cons#Right">Right</a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideScheme"
+         title="https://cdm.ovh/rst/cons/cons#RollingStockSideScheme">
+         <span>Rolling Stock Side Scheme</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#Top" title="https://cdm.ovh/rst/cons/cons#Top">Top</a>
+   </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
   
@@ -318,6 +366,8 @@ This section provides details for each class and property defined by Aggregated 
   <li><a href="#https://cdm.ovh/rst/typo/typo#RoadRailVehicle" title="https://cdm.ovh/rst/typo/typo#RoadRailVehicle"> <span>Road Rail Vehicle</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#RoadVehicleRake" title="https://cdm.ovh/rst/typo/typo#RoadVehicleRake"> <span>Road Vehicle Rake</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#RollingStockSide" title="https://cdm.ovh/rst/cons/cons#RollingStockSide">Rolling stock side</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum"> <span>Rolling Stock Side Enum</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#SlaveLocomotive" title="https://cdm.ovh/rst/typo/typo#SlaveLocomotive"> <span>Slave Locomotive</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Trailer" title="https://cdm.ovh/rst/typo/typo#Trailer"> <span>Trailer</span> </a></li>
   <li><a href="#https://cdm.ovh/rst/typo/typo#Trainset" title="https://cdm.ovh/rst/typo/typo#Trainset"> <span>Trainset</span> </a></li>
@@ -649,13 +699,58 @@ This section provides details for each class and property defined by Aggregated 
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#positionInFormation" title="https://cdm.ovh/rst/cons/cons#positionInFormation">position in formation</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#hasSide" title="https://cdm.ovh/rst/cons/cons#hasSide">has side</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#positionInFormation" title="https://cdm.ovh/rst/cons/cons#positionInFormation">position in formation</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
     <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#RollingStockSide">
+  <h3>Rolling stock side<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#RollingStockSide</p>
+  <div class="comment">
+   <span class="markdown">The side of a particular rolling stock, as in "the left side of locomotive BB15046".</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasSide" title="https://cdm.ovh/rst/cons/cons#hasSide">has side</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">
+  <h3>Rolling Stock Side Enum<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#RollingStockSideEnum</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#Bottom" title="https://cdm.ovh/rst/cons/cons#Bottom">Bottom</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.w3.org/2004/02/skos/core#Front" title="http://www.w3.org/2004/02/skos/core#Front">Front</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://cdm.ovh/rst/cons/cons#Left" title="https://cdm.ovh/rst/cons/cons#Left">Left</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://cdm.ovh/rst/cons/cons#Rear" title="https://cdm.ovh/rst/cons/cons#Rear">Rear</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://cdm.ovh/rst/cons/cons#Right" title="https://cdm.ovh/rst/cons/cons#Right">Right</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://cdm.ovh/rst/cons/cons#Top" title="https://cdm.ovh/rst/cons/cons#Top">Top</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -773,8 +868,12 @@ This section provides details for each class and property defined by Aggregated 
   <li><a href="#https://cdm.ovh/rst/cons/cons#hasHeadRollingStock" title="https://cdm.ovh/rst/cons/cons#hasHeadRollingStock">has head rolling stock</a></li>
   <li><a href="#https://w3id.org/list#hasNext" title="https://w3id.org/list#hasNext">has next</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#hasNextRollingStock" title="https://cdm.ovh/rst/cons/cons#hasNextRollingStock">has next rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#hasSide" title="https://cdm.ovh/rst/cons/cons#hasSide">has side</a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">in scheme</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#isSide" title="https://cdm.ovh/rst/cons/cons#isSide">is side</a></li>
   <li><a href="#https://cdm.ovh/rst/cons/cons#partOfFormation" title="https://cdm.ovh/rst/cons/cons#partOfFormation">part of formation</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#sideOf" title="https://cdm.ovh/rst/cons/cons#sideOf">side of</a></li>
  </ul>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#coupledTo">
   <h3>coupled to<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -988,6 +1087,47 @@ This section provides details for each class and property defined by Aggregated 
    </dl>
   </div>
  </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#hasSide">
+  <h3>has side<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#hasSide</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> inverse functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSide" title="https://cdm.ovh/rst/cons/cons#RollingStockSide">Rolling stock side</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#inScheme">
+  <h3>in scheme<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#inScheme</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#includesRollingStock">
   <h3>includes Rolling stock<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#includesRollingStock</p>
@@ -1024,6 +1164,27 @@ This section provides details for each class and property defined by Aggregated 
    </dl>
   </div>
  </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#isSide">
+  <h3>is side<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#isSide</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSide" title="https://cdm.ovh/rst/cons/cons#RollingStockSide">Rolling stock side</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="https://cdm.ovh/rst/cons/cons#partOfFormation">
   <h3>part of formation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#partOfFormation</p>
@@ -1039,6 +1200,19 @@ This section provides details for each class and property defined by Aggregated 
     <dd>
      <a href="#https://cdm.ovh/rst/cons/cons#includesRollingStock" title="https://cdm.ovh/rst/cons/cons#includesRollingStock">includes Rolling stock</a> <sup class="type-op" title="object property">op</sup>
     </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#sideOf">
+  <h3>side of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#sideOf</p>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd></dd>
    </dl>
   </div>
  </div>
@@ -1130,12 +1304,108 @@ This section provides details for each class and property defined by Aggregated 
   <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
  </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Bottom" title="https://cdm.ovh/rst/cons/cons#Bottom">Bottom</a></li>
+  <li><a href="#http://www.w3.org/2004/02/skos/core#Front" title="http://www.w3.org/2004/02/skos/core#Front">Front</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Left" title="https://cdm.ovh/rst/cons/cons#Left">Left</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Rear" title="https://cdm.ovh/rst/cons/cons#Rear">Rear</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Right" title="https://cdm.ovh/rst/cons/cons#Right">Right</a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideScheme" title="https://cdm.ovh/rst/cons/cons#RollingStockSideScheme"> <span>Rolling Stock Side Scheme</span> </a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#Top" title="https://cdm.ovh/rst/cons/cons#Top">Top</a></li>
+ </ul>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Bottom">
+  <h3>Bottom<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Bottom</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/2004/02/skos/core#Front">
+  <h3>Front<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#Front</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Left">
+  <h3>Left<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Left</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Rear">
+  <h3>Rear<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Rear</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Right">
+  <h3>Right<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Right</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#RollingStockSideScheme">
+  <h3>Rolling Stock Side Scheme<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#RollingStockSideScheme</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#Top">
+  <h3>Top<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#Top</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://cdm.ovh/rst/cons/cons#RollingStockSideEnum" title="https://cdm.ovh/rst/cons/cons#RollingStockSideEnum">Rolling Stock Side Enum</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>
 </div>
