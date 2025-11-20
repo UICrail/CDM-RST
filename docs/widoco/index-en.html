@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Wed Nov 19 21:31:01 UTC 2025"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://cdm.ovh/rst/core","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://cdm.ovh/rst/core","name":"Aggregated Rolling stock ontologies", "headline":"Document describing the ontology https://cdm.ovh/rst/core", "dateReleased":"Thu Nov 20 10:10:01 UTC 2025"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -247,6 +247,10 @@ This ontology has the following classes and properties.</span>
          title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist">
          <span>has Fixed Consist</span>
       </a>
+   </li>
+   <li>
+      <a href="#https://cdm.ovh/rst/cons/cons#positionInFormation"
+         title="https://cdm.ovh/rst/cons/cons#positionInFormation">position in formation</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -645,7 +649,7 @@ This section provides details for each class and property defined by Aggregated 
     is in domain of
    </dt>
    <dd>
-    <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#https://cdm.ovh/rst/cons/cons#hasExtremity" title="https://cdm.ovh/rst/cons/cons#hasExtremity">has extremity</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://cdm.ovh/rst/cons/cons#positionInFormation" title="https://cdm.ovh/rst/cons/cons#positionInFormation">position in formation</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
@@ -1042,6 +1046,7 @@ This section provides details for each class and property defined by Aggregated 
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist" title="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist"> <span>has Fixed Consist</span> </a></li>
+  <li><a href="#https://cdm.ovh/rst/cons/cons#positionInFormation" title="https://cdm.ovh/rst/cons/cons#positionInFormation">position in formation</a></li>
  </ul>
  <div class="entity" id="http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist">
   <h3>has Fixed Consist<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
@@ -1063,6 +1068,30 @@ This section provides details for each class and property defined by Aggregated 
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://cdm.ovh/rst/cons/cons#positionInFormation">
+  <h3>position in formation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://cdm.ovh/rst/cons/cons#positionInFormation</p>
+  <div class="comment">
+   <span class="markdown">Starting with 1.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://cdm.ovh/rst/cons/cons#RollingStock" title="https://cdm.ovh/rst/cons/cons#RollingStock">Rolling stock</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
     </dd>
    </dl>
   </div>

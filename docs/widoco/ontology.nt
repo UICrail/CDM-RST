@@ -44,6 +44,9 @@
 # http://www.w3.org/2001/XMLSchema#boolean
 <http://www.w3.org/2001/XMLSchema#boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
+# http://www.w3.org/2001/XMLSchema#integer
+<http://www.w3.org/2001/XMLSchema#integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -171,6 +174,14 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons/cons#Formation> .
 <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist> <http://www.w3.org/2000/01/rdf-schema#comment> "Train formation, the consist of which cannot be changed while in operations as it would require interventions in a workshop."@en .
+# 
+# https://cdm.ovh/rst/cons/cons#positionInFormation
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://cdm.ovh/rst/cons/cons#RollingStock> .
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/2000/01/rdf-schema#comment> "Starting with 1."@en .
+<https://cdm.ovh/rst/cons/cons#positionInFormation> <http://www.w3.org/2000/01/rdf-schema#label> "position in formation"@en .
 # 
 # 
 # 
