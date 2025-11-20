@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}CDM-RST compiled wiki pages}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Version}{1}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Rolling stock consist}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Purpose}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Vehicles and formations}{2}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Purpose}{2}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Diagram}{2}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Comments}{2}{subsubsection.2.2.3}%
+\contentsline {paragraph}{\numberline {2.2.3.1}More details about the representation of properties in GRAPHOL}{2}{paragraph.2.2.3.1}%
+\contentsline {paragraph}{\numberline {2.2.3.2}About handling of constraints}{4}{paragraph.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.3}Extremities}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Purpose}{4}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Diagram}{4}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Comments}{5}{subsubsection.2.3.3}%
+\contentsline {paragraph}{\numberline {2.3.3.1}About cardinalities, subproperties, and disjoint properties}{5}{paragraph.2.3.3.1}%
+\contentsline {subsection}{\numberline {2.4}Formations as ordered sets}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Purpose}{5}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Diagram}{6}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Comments}{7}{subsubsection.2.4.3}%
+\contentsline {section}{\numberline {3}Example: ghost train consist}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Purpose}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Sample file ex1}{7}{subsection.3.2}%
