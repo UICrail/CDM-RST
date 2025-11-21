@@ -5,7 +5,7 @@ _Self-contained version with embedded images_
 
 ## Version
 
-This document was generated on 2025-11-20 14:32:36 UTC
+This document was generated on 2025-11-21 10:31:43 UTC
 
 
 ---
@@ -99,10 +99,10 @@ In the case of sides:
 In the case of extremities:
 
 * extremities have no "attributes" or subclasses that would allow to distinguish them. Instead, there are two properties that are disjoint (mutually exclusive), namely extremity_1 and extremity_2. What is expressed very _concisely_ here is that a rolling stock has two distinct extremities 1 and 2; they cannot point to the same individual.
-* here, any mistake would be caught by nay OWL2 reasoner.
-* **we did not use that strong semantic guardrail in the case of sides** although we could have used it. A matter of taste: introducing 6 subproperties and 15 pairwise disjoints look rather confusing to the human reader.
+* here, any mistake would be caught by any OWL2 reasoner.
+* **we did not use that strong semantic guardrail in the case of sides** although we could have used it. A matter of taste: introducing 6 subproperties and 15 pairwise disjoints would look rather confusing to the human reader.
 
-Designers may be ;ore or less concerned about conciseness according to the intended usage of the ontologies. Here (aiming at TRL 8), the argument for conciseness might still be heard. And in case of higher TRLs, precautions will rather be taken with additional SHACL shapes, most likely.
+Designers may be more or less concerned about conciseness according to the intended usage of the ontologies. Here (aiming at TRL 8), the argument for conciseness might still be heard. And in case of higher TRLs, precautions will rather be taken with additional SHACL shapes, most likely.
 
 ## Formations as ordered sets
 
