@@ -270,6 +270,21 @@
     
 
 
+    <!-- https://cdm.ovh/rst/cons/cons#isExtremityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#isExtremityOf">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasExtremity"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">is extremity of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://cdm.ovh/rst/cons/cons#isSide -->
 
 
@@ -282,6 +297,21 @@
     
 
 
+    <!-- https://cdm.ovh/rst/cons/cons#isSideOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#isSideOf">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasSide"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label>is side of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://cdm.ovh/rst/cons/cons#partOfFormation -->
 
 
@@ -290,21 +320,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:comment xml:lang="en">Inverse of &quot;includes Rolling Stock&quot;. A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself.</rdfs:comment>
         <rdfs:label xml:lang="en">part of formation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://cdm.ovh/rst/cons/cons#sideOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://cdm.ovh/rst/cons/cons#sideOf">
-        <rdfs:subPropertyOf>
-            <rdf:Description>
-                <owl:inverseOf rdf:resource="https://cdm.ovh/rst/cons/cons#hasSide"/>
-            </rdf:Description>
-        </rdfs:subPropertyOf>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:label xml:lang="en">side of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -452,6 +467,12 @@
 
 
     <owl:Class rdf:about="https://cdm.ovh/rst/cons/cons#RollingStockSide">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://cdm.ovh/rst/cons/cons#isSide"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The side of a particular rolling stock, as in &quot;the left side of locomotive BB15046&quot;.</rdfs:comment>
         <rdfs:label xml:lang="en">Rolling stock side</rdfs:label>
     </owl:Class>

@@ -5,7 +5,7 @@ _Self-contained version with local images_
 
 ## Version
 
-This document was generated on 2025-11-20 13:26:57 UTC
+This document was generated on 2025-11-21 10:31:43 UTC
 
 
 ---
@@ -58,11 +58,13 @@ Constraints only dealing with data correctness are better represented as SHACL s
 
 In some cases, we move to SHACL such constraints that are semantically relevant but do not match the self-imposed limitations on OWL2 usage. For instance, an ETCS Balise Group consists of at most 7 balises, but the qualified cardinality restriction "at most 7" cannot be expressed in the OWL2 RL profile; the OWL2 DL profile at least is required.
 
-## Extremities
+## Extremities and sides
 
 ### Purpose
 
 All rolling stock is oriented on the drawing board. Extremities are usually designated "extremity 1", "extremity 2", and this distinction helps differentiating driving cabs on a locomotive, the placement of axles or loads, etc. independently from other information (e.g. running direction). Rolling stock orientation is conventional and may rest on standards: see for instance EN 13775-1.
+
+Once the extremities are defined, the sides can be defined too. We consider any rolling stock to have an elongated box shape with six outer surfaces (sides): front, rear, left, right, top, bottom. Again, the sides refer to the intrinsic orientation of the rolling stock, not to its travel direction.
 
 ### Diagram
 
@@ -76,11 +78,31 @@ Extremities of two adjacent wagons may face each other: this is expressed by "fa
 
 Once extremities are facing each other, one may consider coupling them; if they are coupled, they are obviously facing each other. This is exactly the meaning of "coupled to" being a subproperty of "faces extremity".
 
+The sides are "objects" in their own right, and characterized by "Left", "Right", etc. in a ternary relationship", e.g. "This particular side is a side of (_isSideOf property_) that particular rolling stock, and more precisely is it (isSide property) a Left (a skos concept) side".
+
 ### Comments
 
 #### About cardinalities, subproperties, and disjoint properties
 
 Property hasExtremity should have a cardinality of exactly 2 (not available in OWL2 RL) and this cardinality is of little use anyway, since we need to identify extremity 1 and extremity 2 that will orient the rolling stock. These extremities are singled out by sub-properties of hasExtremity. These sub-properties are disjoint: by essence, extremity 2 of a wagon cannot be the same as extremity 1 of the same wagon. This is expressed by the "not" flattened hexagon in GRAPHOL, that tells that the set of (rolling stock, extremity) pairs satisfying "extremity_2" does not overlap the set of pairs satisfying "extremity_1". In set theory, Y does not overlap X iff Y is a subset of the complement of X (as the complement of X is the largest set not overlapping X).
+
+#### About the representation of ternary relations
+
+In the same diagram, two different ways were chosen. This apparent inconsistency deserves some explanations.
+
+In the case of sides:
+
+* a rolling stock has six sides but the diagram would allow any number. One may consider a SHACL shape to forbid more than 6 sides, which would reveal a wrong representation of the rolling stock. If there is no interest in rolling stock sides, the cardinality could be zero, no harm done: this is why there should be no minimum cardinality in that case.
+* what a side "is" (a left side, etc.) is however indispensable for a "side" to make sense, so property "is side" must have exactly one value. This qualified cardinality is semantically relevant, and is expressed here in the usual OWL2 RL-compliant way: a functional property (hence max cardinality = 1) and an existential restriction (class RollingStockSide must have at least one value on property "is side").
+* however, the diagram allows two or more sides to be defined as e.g. "left side". Again, this would be a mistaken use, to be caught by either SHACL shapes or SWRL rules, because OWL2 does not allow to express restrictions involving two distinct properties.
+
+In the case of extremities:
+
+* extremities have no "attributes" or subclasses that would allow to distinguish them. Instead, there are two properties that are disjoint (mutually exclusive), namely extremity_1 and extremity_2. What is expressed very _concisely_ here is that a rolling stock has two distinct extremities 1 and 2; they cannot point to the same individual.
+* here, any mistake would be caught by any OWL2 reasoner.
+* **we did not use that strong semantic guardrail in the case of sides** although we could have used it. A matter of taste: introducing 6 subproperties and 15 pairwise disjoints would look rather confusing to the human reader.
+
+Designers may be more or less concerned about conciseness according to the intended usage of the ontologies. Here (aiming at TRL 8), the argument for conciseness might still be heard. And in case of higher TRLs, precautions will rather be taken with additional SHACL shapes, most likely.
 
 ## Formations as ordered sets
 
