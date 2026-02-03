@@ -5,13 +5,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cons: <https://cdm.ovh/rst/cons/cons#> .
 @prefix list: <https://w3id.org/list#> .
+@prefix loca: <https://cdm.ovh/rsm/localisation/loca#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://cdm.ovh/rst/cons/cons> .
 
 <http://cdm.ovh/rst/cons/cons> rdf:type owl:Ontology ;
-                                owl:versionIRI <http://cdm.ovh/rst/cons/0.1/cons> ;
+                                owl:versionIRI <http://cdm.ovh/rst/cons/0.2/cons> ;
+                                owl:imports <https://cdm.ovh/rsm/localisation/loca> ;
                                 dcterms:description "Defines rolling stock (vehicles, formations), their partship relations, and their coupling relations."@en ;
                                 dcterms:license <https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt> ;
                                 dcterms:title "Rolling stock consist ontology"@en .
@@ -44,13 +46,6 @@ xsd:integer rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.w3.org/2004/02/skos/core#inScheme
-skos:inScheme rdf:type owl:ObjectProperty ;
-              rdfs:domain skos:Concept ;
-              rdfs:range skos:ConceptScheme ;
-              rdfs:label "in scheme"@en .
-
-
 ###  https://cdm.ovh/rst/cons/cons#coupledTo
 cons:coupledTo rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf cons:facesExtremity ;
@@ -68,7 +63,7 @@ cons:extremity_1 rdf:type owl:ObjectProperty ;
                  rdf:type owl:FunctionalProperty ,
                           owl:InverseFunctionalProperty ;
                  owl:propertyDisjointWith cons:extremity_2 ;
-                 rdfs:comment "\"extremity 1\" (actual designation may vary) of a Rolling stock."@en ;
+                 rdfs:comment "\"extremity 1\" (actual designation may vary) of a Rolling stock. This extremity is inherent to the rolling stock, this unrelated to the direction of travel."@en ;
                  rdfs:label "extremity_1"@en .
 
 
@@ -168,7 +163,7 @@ cons:isExtremityOf rdf:type owl:ObjectProperty ;
 cons:isSide rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain cons:RollingStockSide ;
-            rdfs:range cons:RollingStockSideEnum ;
+            rdfs:range loca:SideEnum ;
             rdfs:label "is side"@en .
 
 
@@ -186,6 +181,13 @@ cons:partOfFormation rdf:type owl:ObjectProperty ,
                               owl:IrreflexiveProperty ;
                      rdfs:comment "Inverse of \"includes Rolling Stock\". A functional property: a rolling stock can only be part of one formation. Irreflexive property: A formation cannot be part of itself."@en ;
                      rdfs:label "part of formation"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#rstLocation
+cons:rstLocation rdf:type owl:ObjectProperty ,
+                          owl:InverseFunctionalProperty ;
+                 rdfs:domain cons:LocatedRollingStockElement ;
+                 rdfs:range <https://cdm.ovh/rsm/localisation/localisation#BaseLocation> .
 
 
 ###  https://w3id.org/list#hasNext
@@ -210,17 +212,18 @@ cons:positionInFormation rdf:type owl:DatatypeProperty ,
 #    Classes
 #################################################################
 
-###  http://www.w3.org/2004/02/skos/core#Concept
-skos:Concept rdf:type owl:Class .
+###  https://cdm.ovh/rsm/localisation/loca#SideEnum
+loca:SideEnum rdf:type owl:Class .
 
 
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-skos:ConceptScheme rdf:type owl:Class .
+###  https://cdm.ovh/rsm/localisation/localisation#BaseLocation
+<https://cdm.ovh/rsm/localisation/localisation#BaseLocation> rdf:type owl:Class .
 
 
 ###  https://cdm.ovh/rst/cons/cons#Extremity
 cons:Extremity rdf:type owl:Class ;
-               rdfs:subClassOf [ rdf:type owl:Restriction ;
+               rdfs:subClassOf cons:LocatedRollingStockElement ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty [ owl:inverseOf cons:hasExtremity
                                                 ] ;
                                  owl:someValuesFrom owl:Thing
@@ -254,8 +257,14 @@ cons:ListedRollingStock rdf:type owl:Class ;
                         rdfs:label "Listed rolling stock"@en .
 
 
+###  https://cdm.ovh/rst/cons/cons#LocatedRollingStockElement
+cons:LocatedRollingStockElement rdf:type owl:Class ;
+                                rdfs:label "Located rolling stock element"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#RollingStock
 cons:RollingStock rdf:type owl:Class ;
+                  rdfs:subClassOf cons:LocatedRollingStockElement ;
                   rdfs:comment "Base type for rolling stock. No direct instances are expected."@en ;
                   rdfs:label "Rolling stock"@en .
 
@@ -268,18 +277,6 @@ cons:RollingStockSide rdf:type owl:Class ;
                                       ] ;
                       rdfs:comment "The side of a particular rolling stock, as in \"the left side of locomotive BB15046\"."@en ;
                       rdfs:label "Rolling stock side"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#RollingStockSideEnum
-cons:RollingStockSideEnum rdf:type owl:Class ;
-                          rdfs:subClassOf skos:Concept ,
-                                          [ rdf:type owl:Restriction ;
-                                            owl:onProperty skos:inScheme ;
-                                            owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                owl:oneOf ( cons:RollingStockSideScheme
-                                                                          )
-                                                              ]
-                                          ] .
 
 
 ###  https://cdm.ovh/rst/cons/cons#Vehicle
@@ -302,51 +299,6 @@ list:EmptyList rdf:type owl:Class ;
 ###  https://w3id.org/list#OWLList
 list:OWLList rdf:type owl:Class ;
              rdfs:comment "Using the List ontology also used by IfcOwl."@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Front
-skos:Front rdf:type owl:NamedIndividual ,
-                    cons:RollingStockSideEnum ;
-           rdfs:label "Front"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#Bottom
-cons:Bottom rdf:type owl:NamedIndividual ,
-                     cons:RollingStockSideEnum ;
-            rdfs:label "Bottom"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#Left
-cons:Left rdf:type owl:NamedIndividual ,
-                   cons:RollingStockSideEnum ;
-          rdfs:label "Left"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#Rear
-cons:Rear rdf:type owl:NamedIndividual ,
-                   cons:RollingStockSideEnum ;
-          rdfs:label "Rear"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#Right
-cons:Right rdf:type owl:NamedIndividual ,
-                    cons:RollingStockSideEnum ;
-           rdfs:label "Right"@en .
-
-
-###  https://cdm.ovh/rst/cons/cons#RollingStockSideScheme
-cons:RollingStockSideScheme rdf:type owl:NamedIndividual ,
-                                     skos:ConceptScheme .
-
-
-###  https://cdm.ovh/rst/cons/cons#Top
-cons:Top rdf:type owl:NamedIndividual ,
-                  cons:RollingStockSideEnum ;
-         rdfs:label "Top"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
