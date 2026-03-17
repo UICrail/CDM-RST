@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <graphol version="3">
   <project name="RollingStock" version="http://cdm.ovh/rst/typo/0.2/typo">
-    <ontology addLabelFromUserInput="0" lang="en" addLabelFromSimpleName="0" iri="http://cdm.ovh/rst/typo/typo">
+    <ontology lang="en" addLabelFromSimpleName="0" addLabelFromUserInput="0" iri="http://cdm.ovh/rst/typo/typo">
       <imports/>
       <prefixes>
         <prefix>
@@ -437,6 +437,15 @@ Note: was "passenger carriage" in earlier versions.</lexicalForm>
                 <language>en</language>
               </object>
             </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Locomotive</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Locomotive</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
           </annotations>
         </iri>
         <iri>
@@ -620,6 +629,15 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
                 <language>en</language>
               </object>
             </annotation>
+            <annotation>
+              <subject>https://cdm.ovh/rst/typo/typo#Wagon</subject>
+              <property>http://www.w3.org/2000/01/rdf-schema#label</property>
+              <object>
+                <lexicalForm>Wagon</lexicalForm>
+                <datatype/>
+                <language>en</language>
+              </object>
+            </annotation>
           </annotations>
         </iri>
         <iri>
@@ -632,246 +650,246 @@ Do not confuse with master/slave configuration of two normal locomotives ("multi
     </ontology>
     <diagrams>
       <diagram name="Typology" width="12750" height="12750">
-        <node color="#fcfcfc" id="n0" type="concept">
-          <geometry height="50" width="165" y="-200" x="-240"/>
+        <node type="concept" id="n0" color="#fcfcfc">
+          <geometry y="-200" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#RailCar</iri>
-          <label size="12" height="23" width="165" y="-200" x="-240" customSize="0"/>
+          <label y="-200" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n1" type="concept">
-          <geometry height="50" width="165" y="140" x="-240"/>
+        <node type="concept" id="n1" color="#fcfcfc">
+          <geometry y="140" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Van</iri>
-          <label size="12" height="23" width="165" y="140" x="-240" customSize="0"/>
+          <label y="140" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#c2b078" id="n10" type="concept">
-          <geometry height="50" width="110" y="-300" x="-510"/>
+        <node type="concept" id="n10" color="#c2b078">
+          <geometry y="-300" width="110" height="50" x="-510"/>
           <iri>https://cdm.ovh/rst/cons/cons#Vehicle</iri>
-          <label size="12" height="23" width="110" y="-300" x="-510" customSize="0"/>
+          <label y="-300" size="12" width="110" customSize="0" height="23" x="-510"/>
         </node>
-        <node color="#fcfcfc" id="n11" type="concept">
-          <geometry height="50" width="165" y="340" x="-240"/>
+        <node type="concept" id="n11" color="#fcfcfc">
+          <geometry y="340" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#RoadVehicleRake</iri>
-          <label size="12" height="23" width="165" y="332" x="-240" customSize="0"/>
+          <label y="332" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n12" type="concept">
-          <geometry height="50" width="165" y="220" x="-240"/>
+        <node type="concept" id="n12" color="#fcfcfc">
+          <geometry y="220" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Trainset</iri>
-          <label size="12" height="23" width="165" y="220" x="-240" customSize="0"/>
+          <label y="220" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n13" type="concept">
-          <geometry height="50" width="165" y="280" x="-240"/>
+        <node type="concept" id="n13" color="#fcfcfc">
+          <geometry y="280" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Rake</iri>
-          <label size="12" height="23" width="165" y="280" x="-240" customSize="0"/>
+          <label y="280" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n18" type="concept">
-          <geometry height="50" width="225" y="70" x="150"/>
+        <node type="concept" id="n18" color="#fcfcfc">
+          <geometry y="70" width="225" height="50" x="150"/>
           <iri>https://cdm.ovh/rst/typo/typo#FreightCarryingRollingStock</iri>
-          <label size="12" height="23" width="225" y="62" x="150" customSize="0"/>
+          <label y="62" size="12" width="225" customSize="0" height="23" x="150"/>
         </node>
-        <node color="#fcfcfc" id="n2" type="concept">
-          <geometry height="50" width="165" y="-380" x="-240"/>
+        <node type="concept" id="n2" color="#fcfcfc">
+          <geometry y="-380" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#SlaveLocomotive</iri>
-          <label size="12" height="23" width="165" y="-387" x="-240" customSize="0"/>
+          <label y="-387" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n25" type="concept">
-          <geometry height="50" width="225" y="-340" x="150"/>
+        <node type="concept" id="n25" color="#fcfcfc">
+          <geometry y="-340" width="225" height="50" x="150"/>
           <iri>https://cdm.ovh/rst/typo/typo#MotoredRollingStock</iri>
-          <label size="12" height="23" width="225" y="-347" x="150" customSize="0"/>
+          <label y="-347" size="12" width="225" customSize="0" height="23" x="150"/>
         </node>
-        <node color="#fcfcfc" id="n29" type="concept">
-          <geometry height="50" width="250" y="-100" x="160"/>
+        <node type="concept" id="n29" color="#fcfcfc">
+          <geometry y="-100" width="250" height="50" x="160"/>
           <iri>https://cdm.ovh/rst/typo/typo#PassengerCarryingRollingStock</iri>
-          <label size="12" height="23" width="250" y="-115" x="145" customSize="0"/>
+          <label y="-115" size="12" width="250" customSize="0" height="23" x="145"/>
         </node>
-        <node color="#fcfcfc" id="n3" type="concept">
-          <geometry height="50" width="165" y="80" x="-240"/>
+        <node type="concept" id="n3" color="#fcfcfc">
+          <geometry y="80" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#RoadRailVehicle</iri>
-          <label size="12" height="23" width="165" y="72" x="-240" customSize="0"/>
+          <label y="72" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n30" type="concept">
-          <geometry height="115" width="175" y="-100" x="460"/>
+        <node type="concept" id="n30" color="#fcfcfc">
+          <geometry y="-100" width="175" height="115" x="460"/>
           <iri>https://cdm.ovh/rst/typo/typo#RollingStockFeature</iri>
-          <label size="12" height="23" width="175" y="-140" x="460" customSize="0"/>
+          <label y="-140" size="12" width="175" customSize="0" height="23" x="460"/>
         </node>
-        <node color="#c2b078" id="n35" type="concept">
-          <geometry height="50" width="145" y="270" x="-520"/>
+        <node type="concept" id="n35" color="#c2b078">
+          <geometry y="270" width="145" height="50" x="-520"/>
           <iri>https://cdm.ovh/rst/cons/cons#Formation</iri>
-          <label size="12" height="23" width="145" y="270" x="-520" customSize="0"/>
+          <label y="270" size="12" width="145" customSize="0" height="23" x="-520"/>
         </node>
-        <node color="#fcfcfc" id="n39" type="attribute">
-          <geometry height="20" width="20" y="420" x="-520"/>
+        <node type="attribute" id="n39" color="#fcfcfc">
+          <geometry y="420" width="20" height="20" x="-520"/>
           <iri>http://cdm.ovh/rsm/rolling_stock/rolling_stock_typology#hasFixedConsist</iri>
-          <label size="12" height="23" width="96" y="398" x="-520" customSize="0"/>
+          <label y="398" size="12" width="96" customSize="0" height="23" x="-520"/>
         </node>
-        <node color="#fcfcfc" id="n4" type="concept">
-          <geometry height="50" width="165" y="-260" x="-240"/>
+        <node type="concept" id="n4" color="#fcfcfc">
+          <geometry y="-260" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#OnTrackMachine</iri>
-          <label size="12" height="23" width="165" y="-267" x="-240" customSize="0"/>
+          <label y="-267" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n40" type="domain-restriction">
-          <geometry height="20" width="20" y="360" x="-520"/>
-          <label size="12" height="23" width="39" y="338" x="-520" customSize="0">exists</label>
+        <node type="domain-restriction" id="n40" color="#fcfcfc">
+          <geometry y="360" width="20" height="20" x="-520"/>
+          <label y="338" size="12" width="39" customSize="0" height="23" x="-520">exists</label>
         </node>
-        <node color="#fcfcfc" id="n41" type="value-domain">
-          <geometry height="40" width="90" y="480" x="-410"/>
+        <node type="value-domain" id="n41" color="#fcfcfc">
+          <geometry y="480" width="90" height="40" x="-410"/>
           <iri>http://www.w3.org/2001/XMLSchema#boolean</iri>
-          <label size="12" height="23" width="90" y="480" x="-410" customSize="0"/>
+          <label y="480" size="12" width="90" customSize="0" height="23" x="-410"/>
         </node>
-        <node color="#000000" id="n42" type="range-restriction">
-          <geometry height="20" width="20" y="480" x="-520"/>
-          <label size="12" height="23" width="39" y="458" x="-520" customSize="0">exists</label>
+        <node type="range-restriction" id="n42" color="#000000">
+          <geometry y="480" width="20" height="20" x="-520"/>
+          <label y="458" size="12" width="39" customSize="0" height="23" x="-520">exists</label>
         </node>
-        <node color="#fcfcfc" id="n5" type="concept">
-          <geometry height="50" width="165" y="-440" x="-240"/>
+        <node type="concept" id="n5" color="#fcfcfc">
+          <geometry y="-440" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Locomotive</iri>
-          <label size="12" height="23" width="165" y="-447" x="-240" customSize="0"/>
+          <label y="-447" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n6" type="concept">
-          <geometry height="50" width="165" y="-120" x="-240"/>
+        <node type="concept" id="n6" color="#fcfcfc">
+          <geometry y="-120" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Coach</iri>
-          <label size="12" height="23" width="165" y="-120" x="-240" customSize="0"/>
+          <label y="-120" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n7" type="concept">
-          <geometry height="50" width="165" y="-60" x="-240"/>
+        <node type="concept" id="n7" color="#fcfcfc">
+          <geometry y="-60" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Trailer</iri>
-          <label size="12" height="23" width="165" y="-60" x="-240" customSize="0"/>
+          <label y="-60" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n8" type="concept">
-          <geometry height="50" width="165" y="20" x="-240"/>
+        <node type="concept" id="n8" color="#fcfcfc">
+          <geometry y="20" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#Wagon</iri>
-          <label size="12" height="23" width="165" y="20" x="-240" customSize="0"/>
+          <label y="20" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <node color="#fcfcfc" id="n9" type="concept">
-          <geometry height="50" width="165" y="-320" x="-240"/>
+        <node type="concept" id="n9" color="#fcfcfc">
+          <geometry y="-320" width="165" height="50" x="-240"/>
           <iri>https://cdm.ovh/rst/typo/typo#MotorCar</iri>
-          <label size="12" height="23" width="165" y="-320" x="-240" customSize="0"/>
+          <label y="-320" size="12" width="165" customSize="0" height="23" x="-240"/>
         </node>
-        <edge source="n0" target="n10" id="e0" type="inclusion">
+        <edge source="n0" target="n10" type="inclusion" id="e0">
           <point y="-200" x="-240"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n1" target="n10" id="e1" type="inclusion">
+        <edge source="n1" target="n10" type="inclusion" id="e1">
           <point y="144" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n2" target="n10" id="e2" type="inclusion">
+        <edge source="n2" target="n10" type="inclusion" id="e2">
           <point y="-380" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n18" target="n30" id="e26" type="inclusion">
+        <edge source="n18" target="n30" type="inclusion" id="e26">
           <point y="70" x="150"/>
           <point y="-100" x="460"/>
         </edge>
-        <edge source="n25" target="n30" id="e27" type="inclusion">
+        <edge source="n25" target="n30" type="inclusion" id="e27">
           <point y="-340" x="150"/>
           <point y="-100" x="460"/>
         </edge>
-        <edge source="n29" target="n30" id="e28" type="inclusion">
+        <edge source="n29" target="n30" type="inclusion" id="e28">
           <point y="-100" x="160"/>
           <point y="-100" x="460"/>
         </edge>
-        <edge source="n3" target="n10" id="e3" type="inclusion">
+        <edge source="n3" target="n10" type="inclusion" id="e3">
           <point y="84" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n12" target="n25" id="e37" type="inclusion">
+        <edge source="n12" target="n25" type="inclusion" id="e37">
           <point y="220" x="-240"/>
           <point y="220" x="600"/>
           <point y="-340" x="600"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n4" target="n25" id="e39" type="inclusion">
+        <edge source="n4" target="n25" type="inclusion" id="e39">
           <point y="-260" x="-158"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n4" target="n10" id="e4" type="inclusion">
+        <edge source="n4" target="n10" type="inclusion" id="e4">
           <point y="-260" x="-240"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n1" target="n18" id="e40" type="inclusion">
+        <edge source="n1" target="n18" type="inclusion" id="e40">
           <point y="139" x="-158"/>
           <point y="70" x="150"/>
         </edge>
-        <edge source="n8" target="n18" id="e41" type="inclusion">
+        <edge source="n8" target="n18" type="inclusion" id="e41">
           <point y="19" x="-158"/>
           <point y="70" x="150"/>
         </edge>
-        <edge source="n3" target="n18" id="e42" type="inclusion">
+        <edge source="n3" target="n18" type="inclusion" id="e42">
           <point y="79" x="-158"/>
           <point y="70" x="150"/>
         </edge>
-        <edge source="n9" target="n25" id="e43" type="inclusion">
+        <edge source="n9" target="n25" type="inclusion" id="e43">
           <point y="-320" x="-158"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n6" target="n29" id="e44" type="inclusion">
+        <edge source="n6" target="n29" type="inclusion" id="e44">
           <point y="-120" x="-158"/>
           <point y="-100" x="160"/>
         </edge>
-        <edge source="n7" target="n29" id="e45" type="inclusion">
+        <edge source="n7" target="n29" type="inclusion" id="e45">
           <point y="-59" x="-158"/>
           <point y="-100" x="160"/>
         </edge>
-        <edge source="n0" target="n29" id="e46" type="inclusion">
+        <edge source="n0" target="n29" type="inclusion" id="e46">
           <point y="-189" x="-158"/>
           <point y="-114" x="35"/>
         </edge>
-        <edge source="n5" target="n25" id="e47" type="inclusion">
+        <edge source="n5" target="n25" type="inclusion" id="e47">
           <point y="-440" x="-158"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n2" target="n25" id="e48" type="inclusion">
+        <edge source="n2" target="n25" type="inclusion" id="e48">
           <point y="-380" x="-158"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n0" target="n25" id="e49" type="inclusion">
+        <edge source="n0" target="n25" type="inclusion" id="e49">
           <point y="-210" x="-158"/>
           <point y="-340" x="150"/>
         </edge>
-        <edge source="n5" target="n10" id="e5" type="inclusion">
+        <edge source="n5" target="n10" type="inclusion" id="e5">
           <point y="-440" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n12" target="n35" id="e50" type="inclusion">
+        <edge source="n12" target="n35" type="inclusion" id="e50">
           <point y="220" x="-240"/>
           <point y="270" x="-520"/>
         </edge>
-        <edge source="n13" target="n35" id="e51" type="inclusion">
+        <edge source="n13" target="n35" type="inclusion" id="e51">
           <point y="280" x="-240"/>
           <point y="270" x="-520"/>
         </edge>
-        <edge source="n11" target="n35" id="e52" type="inclusion">
+        <edge source="n11" target="n35" type="inclusion" id="e52">
           <point y="340" x="-240"/>
           <point y="270" x="-520"/>
         </edge>
-        <edge source="n39" target="n40" id="e55" type="input">
+        <edge source="n39" target="n40" type="input" id="e55">
           <point y="420" x="-520"/>
           <point y="360" x="-520"/>
         </edge>
-        <edge source="n39" target="n42" id="e57" type="input">
+        <edge source="n39" target="n42" type="input" id="e57">
           <point y="420" x="-520"/>
           <point y="480" x="-520"/>
         </edge>
-        <edge source="n42" target="n41" id="e58" type="inclusion">
+        <edge source="n42" target="n41" type="inclusion" id="e58">
           <point y="480" x="-520"/>
           <point y="480" x="-410"/>
         </edge>
-        <edge source="n6" target="n10" id="e6" type="inclusion">
+        <edge source="n6" target="n10" type="inclusion" id="e6">
           <point y="-124" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n40" target="n35" id="e63" type="inclusion">
+        <edge source="n40" target="n35" type="inclusion" id="e63">
           <point y="360" x="-520"/>
           <point y="270" x="-520"/>
         </edge>
-        <edge source="n7" target="n10" id="e7" type="inclusion">
+        <edge source="n7" target="n10" type="inclusion" id="e7">
           <point y="-56" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n8" target="n10" id="e8" type="inclusion">
+        <edge source="n8" target="n10" type="inclusion" id="e8">
           <point y="21" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
-        <edge source="n9" target="n10" id="e9" type="inclusion">
+        <edge source="n9" target="n10" type="inclusion" id="e9">
           <point y="-318" x="-322"/>
           <point y="-300" x="-510"/>
         </edge>
