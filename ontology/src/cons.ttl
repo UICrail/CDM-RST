@@ -1,4 +1,5 @@
 @prefix : <http://cdm.ovh/rst/cons/cons#> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -16,7 +17,8 @@
                                 owl:imports <https://cdm.ovh/rsm/localisation/loca> ;
                                 dcterms:description "Defines rolling stock (vehicles, formations), their partship relations, and their coupling relations."@en ;
                                 dcterms:license <https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt> ;
-                                dcterms:title "Rolling stock consist ontology"@en .
+                                dcterms:title "Rolling stock consist ontology"@en ;
+                                owl:versionInfo "added some DUL alignment"@en .
 
 #################################################################
 #    Annotation properties
@@ -160,10 +162,10 @@ cons:isExtremityOf rdf:type owl:ObjectProperty ;
 
 
 ###  https://cdm.ovh/rst/cons/cons#isSide
-cons:isSide rdf:type owl:ObjectProperty ,
-                     owl:FunctionalProperty ;
+cons:isSide rdf:type owl:ObjectProperty ;
             rdfs:domain cons:RollingStockSide ;
-            rdfs:range loca:SideEnum ;
+            rdfs:range skos:Concept ;
+            rdfs:comment "property objects can be found under the scheme https://cdm.ovh/rsm/schemes/side. Not a functional property, as e.g. \"left\" can be combined with either \"exterior\" or \" interior\" (orientation + polarity)"@en ;
             rdfs:label "is side"@en .
 
 
@@ -212,8 +214,17 @@ cons:positionInFormation rdf:type owl:DatatypeProperty ,
 #    Classes
 #################################################################
 
-###  https://cdm.ovh/rsm/localisation/loca#SideEnum
-loca:SideEnum rdf:type owl:Class .
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact
+dul:DesignedArtifact rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact
+dul:PhysicalArtifact rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             rdfs:label "Concept"@en .
 
 
 ###  https://cdm.ovh/rsm/localisation/localisation#BaseLocation
@@ -264,7 +275,8 @@ cons:LocatedRollingStockElement rdf:type owl:Class ;
 
 ###  https://cdm.ovh/rst/cons/cons#RollingStock
 cons:RollingStock rdf:type owl:Class ;
-                  rdfs:subClassOf cons:LocatedRollingStockElement ;
+                  rdfs:subClassOf dul:PhysicalArtifact ,
+                                  cons:LocatedRollingStockElement ;
                   rdfs:comment "Base type for rolling stock. No direct instances are expected."@en ;
                   rdfs:label "Rolling stock"@en .
 
@@ -281,7 +293,8 @@ cons:RollingStockSide rdf:type owl:Class ;
 
 ###  https://cdm.ovh/rst/cons/cons#Vehicle
 cons:Vehicle rdf:type owl:Class ;
-             rdfs:subClassOf cons:RollingStock ;
+             rdfs:subClassOf dul:DesignedArtifact ,
+                             cons:RollingStock ;
              rdfs:comment """Common definition in Directives 2016/797, 2016/798:
  a railway vehicle suitable for circulation on wheels on railway lines, with or without traction; a vehicle is composed of one or more structural and functional subsystems
 
