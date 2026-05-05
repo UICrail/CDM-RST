@@ -1,29 +1,44 @@
 @prefix : <http://cdm.ovh/rst/cons/cons#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cons: <https://cdm.ovh/rst/cons/cons#> .
-@prefix list: <https://w3id.org/list#> .
+@prefix list: <https://cdm.ovh/rsm/list2/list2#> .
 @prefix loca: <https://cdm.ovh/rsm/localisation/loca#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <https://vocab.org/vann/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://cdm.ovh/rst/cons/cons> .
 
 <http://cdm.ovh/rst/cons/cons> rdf:type owl:Ontology ;
-                                owl:versionIRI <http://cdm.ovh/rst/cons/0.2/cons> ;
-                                owl:imports <https://cdm.ovh/rsm/localisation/loca> ;
+                                owl:versionIRI <http://cdm.ovh/rst/cons/0.3/cons> ;
+                                owl:imports <https://cdm.ovh/rsm/list2/list2> ;
+                                dc:creator "Airy Magnien, UIC" ;
+                                dc:date "20 April 2026" ;
                                 dcterms:description "Defines rolling stock (vehicles, formations), their partship relations, and their coupling relations."@en ;
-                                dcterms:license <https://interoperable-europe.ec.europa.eu/sites/default/files/custom-page/attachment/2020-03/EUPL-1.2%20EN.txt> ;
+                                dcterms:license <http://purl.org/dc/elements/1.1/https://creativecommons.org/licenses/by-sa/4.0/> ;
                                 dcterms:title "Rolling stock consist ontology"@en ;
-                                owl:versionInfo "added some DUL alignment"@en .
+                                owl:versionInfo "0.2: added some DUL alignment. Using the 'side' SKOS concept scheme."@en ,
+                                                "0.3: Imports modified List ontology"@en ;
+                                vann:preferredNamespacePrefix "cons" ;
+                                vann:preferredNamespaceURI <https://cdm.ovh/rst/cons/cons> .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/description
 dcterms:description rdf:type owl:AnnotationProperty .
 
@@ -36,10 +51,22 @@ dcterms:license rdf:type owl:AnnotationProperty .
 dcterms:title rdf:type owl:AnnotationProperty .
 
 
+###  https://vocab.org/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  https://vocab.org/vann/preferredNamespaceURI
+vann:preferredNamespaceURI rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Datatypes
 #################################################################
 
+###  http://www.w3.org/2001/XMLSchema#decimal
+xsd:decimal rdf:type rdfs:Datatype .
+
+
 ###  http://www.w3.org/2001/XMLSchema#integer
 xsd:integer rdf:type rdfs:Datatype .
 
@@ -48,6 +75,10 @@ xsd:integer rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://cdm.ovh/rsm/list2/list2#hasNext
+list:hasNext rdf:type owl:ObjectProperty .
+
+
 ###  https://cdm.ovh/rst/cons/cons#coupledTo
 cons:coupledTo rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf cons:facesExtremity ;
@@ -97,6 +128,7 @@ cons:frontExtremity rdf:type owl:ObjectProperty ;
                              owl:InverseFunctionalProperty ;
                     rdfs:domain cons:ListedRollingStock ;
                     rdfs:range cons:Extremity ;
+                    rdfs:comment "The extremity first encountered when considering the formation in the listed order. This property orients the vehicle in the formation that itself is oriented. Note: when considering a passing-by train, the first encountered vehicles and vehicle extremities depend on running direction that is NOT considered here at all. The preeent ontology only describes rolling stock."@en ;
                     rdfs:label "front extremity"@en .
 
 
@@ -126,11 +158,11 @@ cons:hasNextRollingStock rdf:type owl:ObjectProperty ;
                                   owl:InverseFunctionalProperty ;
                          rdfs:domain cons:ListedRollingStock ;
                          rdfs:range [ rdf:type owl:Class ;
-                                      owl:unionOf ( cons:ListedRollingStock
-                                                    list:EmptyList
+                                      owl:unionOf ( list:EmptyList
+                                                    cons:ListedRollingStock
                                                   )
                                     ] ;
-                         rdfs:comment "Indicates which Rolling stock comes next in a Consist."@en ;
+                         rdfs:comment "Indicates which Rolling stock comes next in a Consist. The ' next rolling stock' can be a vehicle, a formation, or an instance of EmptyList (for which the list:emptyList individual is the recommended form)."@en ;
                          rdfs:label "has next rolling stock"@en .
 
 
@@ -149,7 +181,7 @@ cons:includesRollingStock rdf:type owl:ObjectProperty ;
                                    owl:IrreflexiveProperty ;
                           rdfs:domain cons:Formation ;
                           rdfs:range cons:RollingStock ;
-                          rdfs:comment "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts."@en ;
+                          rdfs:comment "This property describes the composition of a Formation. A Formation may incude any rolling stock (i.e. vehicles or formations). Irreflexive property: a formation cannot include itself; in other words, it may only have proper parts. This property and its inverse are ancillary properties, to be derived from the nested, listed rolling stock. Consistency of consist representations is the responsibility of the user."@en ;
                           rdfs:label "includes Rolling stock"@en .
 
 
@@ -189,24 +221,40 @@ cons:partOfFormation rdf:type owl:ObjectProperty ,
 cons:rstLocation rdf:type owl:ObjectProperty ,
                           owl:InverseFunctionalProperty ;
                  rdfs:domain cons:LocatedRollingStockElement ;
-                 rdfs:range <https://cdm.ovh/rsm/localisation/localisation#BaseLocation> .
-
-
-###  https://w3id.org/list#hasNext
-list:hasNext rdf:type owl:ObjectProperty ;
-             rdfs:label "has next"@en .
+                 rdfs:range loca:BaseLocation ;
+                 rdfs:comment "The rolling stock location can be represented as a linear location (e.g. position along a track) or a spot location (e.g. location of the front axle on the track centerline) according to needs or conventions. These may give rise to several subclasses with definite semantics. In less typical cases (e.g. workshop floorplan), an area location can be used."@en ;
+                 rdfs:label "rolling stock location"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
+###  https://cdm.ovh/rst/cons/cons#hasMetricLength
+cons:hasMetricLength rdf:type owl:DatatypeProperty ;
+                     rdfs:domain cons:RollingStock ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "has metric length"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#lengthOverBuffers
+cons:lengthOverBuffers rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf cons:hasMetricLength ;
+                       rdfs:label "length over buffers"@en .
+
+
+###  https://cdm.ovh/rst/cons/cons#lengthOverCouplers
+cons:lengthOverCouplers rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf cons:hasMetricLength ;
+                        rdfs:label "length over couplers"@en .
+
+
 ###  https://cdm.ovh/rst/cons/cons#positionInFormation
 cons:positionInFormation rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
                          rdfs:domain cons:RollingStock ;
                          rdfs:range xsd:integer ;
-                         rdfs:comment "Starting with 1."@en ;
+                         rdfs:comment "Starting with 1. Ancillary property, the value of which shall be derived from the nested rolling stock list"@en ;
                          rdfs:label "position in formation"@en .
 
 
@@ -227,8 +275,17 @@ skos:Concept rdf:type owl:Class ;
              rdfs:label "Concept"@en .
 
 
-###  https://cdm.ovh/rsm/localisation/localisation#BaseLocation
-<https://cdm.ovh/rsm/localisation/localisation#BaseLocation> rdf:type owl:Class .
+###  https://cdm.ovh/rsm/list2/list2#EmptyList
+list:EmptyList rdf:type owl:Class ;
+               owl:disjointWith cons:ListedRollingStock .
+
+
+###  https://cdm.ovh/rsm/list2/list2#OWLList
+list:OWLList rdf:type owl:Class .
+
+
+###  https://cdm.ovh/rsm/localisation/loca#BaseLocation
+loca:BaseLocation rdf:type owl:Class .
 
 
 ###  https://cdm.ovh/rst/cons/cons#Extremity
@@ -257,13 +314,12 @@ cons:Formation rdf:type owl:Class ;
 
 ###  https://cdm.ovh/rst/cons/cons#ListedRollingStock
 cons:ListedRollingStock rdf:type owl:Class ;
-                        rdfs:subClassOf cons:RollingStock ,
-                                        list:OWLList ,
+                        rdfs:subClassOf list:OWLList ,
+                                        cons:RollingStock ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty cons:hasNextRollingStock ;
                                           owl:someValuesFrom owl:Thing
                                         ] ;
-                        owl:disjointWith list:EmptyList ;
                         rdfs:comment "Rolling stock that may have a predecessor or successor in a formation."@en ;
                         rdfs:label "Listed rolling stock"@en .
 
@@ -301,17 +357,6 @@ cons:Vehicle rdf:type owl:Class ;
 ERA vocabulary 3.0.0: A specific vehicle or wagon able to operate over railway lines."""@en ,
                           "Considered to be the atomic part of a piece of rolling stock, although disassembly may be carried out in special circumstances. Example: a TALGO or TGV trailer does not rest on two axles resp. bogies, but has a distinct carbody and it considered a vehicle (called \"trailer\").  Further example: an articulated wagon (3-axle, e.g. carrying cars) is generally considered a single vehicle although it has two distinct chassis. So the distinction vehicle / formation is conventional; being \"atomic\" in operations is a necessary condition, but not a sufficient one to be called vehicle."@en ;
              rdfs:label "Vehicle"@en .
-
-
-###  https://w3id.org/list#EmptyList
-list:EmptyList rdf:type owl:Class ;
-               rdfs:comment "Closing element of any List under the List ontology. This element does not correspond with any rolling stock."@en ;
-               rdfs:label "Empty list"@en .
-
-
-###  https://w3id.org/list#OWLList
-list:OWLList rdf:type owl:Class ;
-             rdfs:comment "Using the List ontology also used by IfcOwl."@en .
 
 
 ###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi
